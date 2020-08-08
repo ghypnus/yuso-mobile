@@ -1,6 +1,6 @@
 @import "../../style/theme/default.less";
 @import "../../style/mixin/common.less";
-.wme-message {
+.yuso-message {
     display: flex;
     width: 100%;
     height: 100%;
@@ -20,7 +20,7 @@
         flex-direction: column;
         overflow: hidden;
         .border-shadow();
-        .wme-message-icon {
+        .yuso-message-icon {
             width: 100%;
             padding-top: 65.48%;
             margin-bottom: calc(2 * @em);
@@ -34,13 +34,13 @@
             //     background-image: url('../image/fail.svg');
             // }
         }
-        .wme-message-title {
+        .yuso-message-title {
             display: flex;
             align-items: center;
             font-size: @font-size-title;
             color: @color-text-title;
             padding-bottom: calc(0.875 * @em);
-            .wme-message-title-success {
+            .yuso-message-title-success {
                 width: calc(1.125 * @em);
                 height: calc(1.125 * @em);
                 /* background-image: url('../image/ok.png'); */
@@ -50,7 +50,7 @@
                 margin-right: calc(0.625 * @em);
             }
         }
-        .wme-message-content {
+        .yuso-message-content {
             color: @color-text-base;
             padding: 0 @em;
             margin-bottom: calc(0.875 * @em);
@@ -59,7 +59,7 @@
             display: flex;
             justify-content: center;
         }
-        .wme-message-action {
+        .yuso-message-action {
             display: flex;
             width: 100%;
             border-top: @hd solid @border-color-divider;

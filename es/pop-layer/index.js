@@ -126,7 +126,7 @@ var PopLayer = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(PopLayer, "defaultProps", {
-  prefixCls: 'wme-pop-layer'
+  prefixCls: 'yuso-pop-layer'
 });
 
 export { PopLayer as default };

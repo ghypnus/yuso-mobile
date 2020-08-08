@@ -75,14 +75,14 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-accordion {
+.yuso-accordion {
   border-radius: 3px;
   background-color: #fff;
 }
-.wme-accordion > .wme-accordion-item:first-child > .wme-accordion-title {
+.yuso-accordion > .yuso-accordion-item:first-child > .yuso-accordion-title {
   border-top: 0;
 }
-.wme-accordion > .wme-accordion-item > .wme-accordion-title {
+.yuso-accordion > .yuso-accordion-item > .yuso-accordion-title {
   display: flex;
   align-items: center;
   line-height: 22px;
@@ -92,37 +92,37 @@
   border-top: 1px solid #e1e1e1;
   position: relative;
 }
-.wme-accordion > .wme-accordion-item > .wme-accordion-title .arrow {
+.yuso-accordion > .yuso-accordion-item > .yuso-accordion-title .arrow {
   position: absolute;
   right: 1rem;
   fill: rgba(0, 0, 0, 0.45);
 }
-.wme-accordion > .wme-accordion-item > .wme-accordion-title .wme-accordion-extra {
+.yuso-accordion > .yuso-accordion-item > .yuso-accordion-title .yuso-accordion-extra {
   margin: 0 2rem 0 auto;
 }
-.wme-accordion > .wme-accordion-item-disabled > .wme-accordion-title {
+.yuso-accordion > .yuso-accordion-item-disabled > .yuso-accordion-title {
   cursor: not-allowed;
   color: #999;
   background-color: #f3f3f3;
 }
-.wme-accordion-content {
+.yuso-accordion-content {
   overflow: hidden;
   padding: 0 1rem;
   transition: all 0.2s ease-out;
 }
-.wme-accordion-content > .wme-accordion-content-box {
+.yuso-accordion-content > .yuso-accordion-content-box {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.wme-accordion-content-inactive {
+.yuso-accordion-content-inactive {
   height: 0;
 }
-.wme-accordion-content-active {
+.yuso-accordion-content-active {
   height: auto;
 }
-.wme-accordion > .wme-accordion-item-active > .wme-accordion-title {
+.yuso-accordion > .yuso-accordion-item-active > .yuso-accordion-title {
   border-bottom: 1px solid #e1e1e1;
 }
-.wme-accordion > .wme-accordion-item-active > .wme-accordion-title .arrow {
+.yuso-accordion > .yuso-accordion-item-active > .yuso-accordion-title .arrow {
   transform: rotate(180deg);
 }

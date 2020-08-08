@@ -56,7 +56,7 @@ class Toast extends React.Component {
 }
 
 Toast.defaultProps = {
-  prefixCls: 'wme-toast',
+  prefixCls: 'yuso-toast',
   duration: 2.5,
 };
 

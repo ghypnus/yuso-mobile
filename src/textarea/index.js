@@ -19,7 +19,7 @@ function countCharacters(v = '') {
 
 export default class TextArea extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-textarea',
+    prefixCls: 'yuso-textarea',
     autoHeight: false,
     disabled: false,
     rows: 2,
@@ -156,7 +156,7 @@ export default class TextArea extends React.Component {
     const wrapCls = classnames(className, prefixCls, {
       [`${prefixCls}-disabled`]: disabled,
       [`${prefixCls}-focus`]: focus,
-      [`${prefixCls}-read-only`]: readOnly
+      [`${prefixCls}-read-only`]: readOnly,
     });
     const characterLength = countCharacters(value);
     const lengthCtrlProps = {};

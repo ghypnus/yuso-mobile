@@ -44,7 +44,7 @@ const utils = {
 
 export default class Scroller extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-scroller',
+    prefixCls: 'yuso-scroller',
     startX: 0,
     startY: 0,
     bounce: true, // 超出边界是否反弹
@@ -189,12 +189,12 @@ export default class Scroller extends React.Component {
   }
 
   _translate(x, y) {
-    const {scroll} = this.props;
+    const { scroll } = this.props;
     if (this.contentRef) {
       this.contentRef.style.transform = `translate3d(${-x}px,${-y}px, 0)`;
       this.scrollX = x;
       this.scrollY = y;
-      if(scroll) {
+      if (scroll) {
         scroll(this.scrollX, this.scrollY);
       }
     }
@@ -202,7 +202,7 @@ export default class Scroller extends React.Component {
 
   getMaxScrollY() {
     const wrapperHeight = this.rootRef.clientHeight;
-    const scrollerHeight = this.contentRef ? this.contentRef.offsetHeight: 0;
+    const scrollerHeight = this.contentRef ? this.contentRef.offsetHeight : 0;
 
     let maxScrollY = scrollerHeight - wrapperHeight;
 

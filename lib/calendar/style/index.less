@@ -1,9 +1,9 @@
 @import '../../style/theme/default.less';
 @import '../../style/mixin/common.less';
 
-.wme-calendar {
+.yuso-calendar {
   background-color: @fill-base;
-  .wme-calendar-grid {
+  .yuso-calendar-grid {
     width: 100%;
     thead th {
       border-bottom: 1px solid @border-color-base;
@@ -15,12 +15,12 @@
       padding: 0.8rem 0.2rem;
     }
   }
-  .wme-calendar-header {
+  .yuso-calendar-header {
     display: flex;
     padding: 0.7rem 0.8rem;
     border-bottom: 1px solid @border-color-base;
     align-items: center;
-    .wme-calendar-title {
+    .yuso-calendar-title {
       display: flex;
       flex-grow: 1;
       .current-month {
@@ -36,11 +36,11 @@
       }
     }
   }
-  .wme-calendar-week {
+  .yuso-calendar-week {
     color: @color-text-secondary;
     font-size: 0.75rem;
   }
-  .wme-calendar-grid-cell {
+  .yuso-calendar-grid-cell {
     min-width: 0.9rem;
     color: @color-text-placeholder;
     font-weight: bold;
@@ -63,7 +63,7 @@
       cursor: not-allowed;
     }
     &-selected {
-      .wme-calendar-grid-cell-inner {
+      .yuso-calendar-grid-cell-inner {
         background-color: @calendar-fill-selected;
       }
     }
@@ -71,8 +71,8 @@
       color: @brand-primary;
     }
   }
-  .wme-calendar-list {
-    .wme-list-content {
+  .yuso-calendar-list {
+    .yuso-list-content {
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
     }
@@ -80,7 +80,7 @@
       display: flex;
       align-items: center;
       &-disabled {
-        .wme-calendar-list-item-day {
+        .yuso-calendar-list-item-day {
           .day-text {
             color: @color-text-disabled;
           }
@@ -89,7 +89,7 @@
         cursor: not-allowed;
       }
       &-current {
-        .wme-calendar-list-item-day {
+        .yuso-calendar-list-item-day {
           .day-text {
             color: @brand-primary;
           }
@@ -98,7 +98,7 @@
       &-check {
         width: 1.5rem;
         margin-right: 0.75rem;
-        .wme-checkbox {
+        .yuso-checkbox {
           padding-left: 0;
           background-color: transparent;
         }

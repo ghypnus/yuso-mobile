@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import isArray from 'lodash/isArray';
-import WmePicker from '../picker/index';
+import YusoPicker from '../picker/index';
 import PopLayer from '../pop-layer/index';
 import Icon from '../icon/index';
 import { isEmpty } from '../_utils/data_util';
@@ -12,9 +12,9 @@ const SHOW_CHILD = 'SHOW_CHILD';
 
 class SelectPicker extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-select-picker',
+    prefixCls: 'yuso-select-picker',
     arrow: 'horizontal',
-    showSelectedType: SHOW_ALL
+    showSelectedType: SHOW_ALL,
   }
 
   constructor(props) {
@@ -22,7 +22,7 @@ class SelectPicker extends React.Component {
 
     this.state = {
       visible: false,
-      useDefaultValue: true, //是否使用默认值
+      useDefaultValue: true, // 是否使用默认值
     };
   }
 
@@ -36,12 +36,10 @@ class SelectPicker extends React.Component {
     if (value) {
       if (typeof value === 'string' || typeof value === 'number') {
         return [value];
-      } else {
-        return value;
       }
-    } else {
-      return useDefaultValue ? defaultValue : null;
+      return value;
     }
+    return useDefaultValue ? defaultValue : null;
   }
 
   /**
@@ -98,7 +96,7 @@ class SelectPicker extends React.Component {
 
   /**
    * 获取显示名称
-   * @param {Any} selectedValues 
+   * @param {Any} selectedValues
    */
   getSelectedLabels(selectedValues) {
     const { sign, showSelectedType } = this.props;
@@ -106,7 +104,7 @@ class SelectPicker extends React.Component {
     if (isArray(selectedValues)) {
       switch (showSelectedType) {
         case SHOW_ALL:
-          result = selectedValues.map((item) => item.label).join(sign)
+          result = selectedValues.map((item) => item.label).join(sign);
           break;
         case SHOW_CHILD:
           result = !isEmpty(selectedValues) ? selectedValues[selectedValues.length - 1].label : '';
@@ -115,7 +113,7 @@ class SelectPicker extends React.Component {
           break;
       }
     } else {
-      result = selectedValues.label
+      result = selectedValues.label;
     }
     return result;
   }
@@ -144,16 +142,15 @@ class SelectPicker extends React.Component {
             e.stopPropagation();
             const resetVal = Array.isArray(this.props.value) ? [] : '';
             this.setState({
-              useDefaultValue: false
-            })
+              useDefaultValue: false,
+            });
             onReset && onReset(resetVal);
             onOk && onOk(resetVal);
           }}
         />
       );
-    } else {
-      return <Icon type="enter" size="small" className={arrowCls} />;
     }
+    return <Icon type="enter" size="small" className={arrowCls} />;
   }
 
   render() {
@@ -184,68 +181,70 @@ class SelectPicker extends React.Component {
       [`${prefixCls}-disabled`]: disabled,
       [`${prefixCls}-read-only`]: readOnly,
     });
-    return <Consumer>
-      {({ SelectPicker }) => {
-        return <div
-          className={wrapperCls}
-          style={style}
-        >
-          <div className={`${prefixCls}-area`}
-            onClick={() => {
-              if (!disabled && !readOnly) {
-                this.setState({
-                  visible: true,
-                });
-              }
-            }}
+    return (
+      <Consumer>
+        {({ SelectPicker }) => (
+          <div
+            className={wrapperCls}
+            style={style}
           >
-            <div className={`${prefixCls}-title`}>
-              <span>{ismust ? '*' : ''}</span>
-              {title}
+            <div className={`${prefixCls}-area`}
+              onClick={() => {
+                if (!disabled && !readOnly) {
+                  this.setState({
+                    visible: true,
+                  });
+                }
+              }}
+            >
+              <div className={`${prefixCls}-title`}>
+                <span>{ismust ? '*' : ''}</span>
+                {title}
+              </div>
+              <div className={`${prefixCls}-content`}>
+                {!isEmpty(selectedValues) ? labels
+                  : <span className={`${prefixCls}-place-holder`}>{placeholder}</span>}
+              </div>
+              {this.renderSuffixIcon()}
             </div>
-            <div className={`${prefixCls}-content`}>
-              {!isEmpty(selectedValues) ? labels
-                : <span className={`${prefixCls}-place-holder`}>{placeholder}</span>}
-            </div>
-            {this.renderSuffixIcon()}
+            <PopLayer
+              visible={this.state.visible}
+              direction="bottom"
+            >
+              <yusoPicker
+                title={pickerTitle || SelectPicker.pickerTitle}
+                defaultValue={this.getValue(value)}
+                cascade={cascade}
+                data={data}
+                onChange={onChange}
+                cols={cols}
+                onOk={(val) => {
+                  this.setState({
+                    visible: false,
+                    useDefaultValue: true,
+                  });
+                  if (onOk) {
+                    onOk(val, this.getSelectedValues(val));
+                  }
+                }}
+                onCancel={() => {
+                  this.setState({
+                    visible: false,
+                  });
+                  if (onCancel) {
+                    onCancel();
+                  }
+                }}
+              />
+            </PopLayer>
           </div>
-          <PopLayer
-            visible={this.state.visible}
-            direction="bottom"
-          >
-            <WmePicker
-              title={pickerTitle || SelectPicker.pickerTitle}
-              defaultValue={this.getValue(value)}
-              cascade={cascade}
-              data={data}
-              onChange={onChange}
-              cols={cols}
-              onOk={(val) => {
-                this.setState({
-                  visible: false,
-                  useDefaultValue: true
-                });
-                if (onOk) {
-                  onOk(val, this.getSelectedValues(val));
-                }
-              }}
-              onCancel={() => {
-                this.setState({
-                  visible: false,
-                });
-                if (onCancel) {
-                  onCancel();
-                }
-              }}
-            />
-          </PopLayer>
-        </div>
-      }}
-    </Consumer>
+        )}
+      </Consumer>
+    );
   }
 }
 
 SelectPicker.SHOW_ALL = SHOW_ALL;
 SelectPicker.SHOW_CHILD = SHOW_CHILD;
 
-export default SelectPicker
+export default SelectPicker;

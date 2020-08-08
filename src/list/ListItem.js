@@ -10,7 +10,7 @@ const errSrc = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7b
 
 export default class ListItem extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-list',
+    prefixCls: 'yuso-list',
     align: 'center',
     error: false,
     multipleLine: false,
@@ -100,10 +100,13 @@ export default class ListItem extends React.Component {
                      { extra }
                    </div>
                    ) }
-                   { arrow && <Icon 
-                   type="enter" 
-                   size="small"
-                   className={arrowCls} /> }
+                   { arrow && (
+                   <Icon
+                     type="enter"
+                     size="small"
+                     className={arrowCls}
+                   />
+                   ) }
                    { underline && selected && <div className={underlineCls} /> }
                  </div>
                  ) }

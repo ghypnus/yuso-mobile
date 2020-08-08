@@ -77,7 +77,7 @@ var Switch = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 Switch.defaultProps = {
-  prefixCls: 'wme-switch',
+  prefixCls: 'yuso-switch',
   name: '',
   value: false,
   disabled: false,

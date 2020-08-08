@@ -430,7 +430,7 @@ var Gesture = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Gesture, "defaultProps", {
-  prefixCls: 'wme-gesture',
+  prefixCls: 'yuso-gesture',
   roundRadii: 30,
   // 大圆点的半径
   pointRadii: 10,

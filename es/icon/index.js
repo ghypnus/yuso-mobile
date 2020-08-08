@@ -64,7 +64,7 @@ var Icon = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Icon, "defaultProps", {
-  prefixCls: 'wme-icon'
+  prefixCls: 'yuso-icon'
 });
 
 export { Icon as default };

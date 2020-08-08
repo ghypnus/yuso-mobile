@@ -134,7 +134,7 @@ var Grade = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Grade, "defaultProps", {
-  prefixCls: 'wme-grade',
+  prefixCls: 'yuso-grade',
   visible: false,
   title: '',
   value: function value() {}

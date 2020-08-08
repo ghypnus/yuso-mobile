@@ -78,7 +78,7 @@
 /* svg - 箭头 */
 /* 超出省略号 */
 /* 边框阴影 */
-.wme-select-picker {
+.yuso-select-picker {
   display: flex;
   background-color: #fff;
   height: calc(3 * 1rem);
@@ -86,61 +86,61 @@
   padding-left: calc(10 * 1px);
   /* 右侧箭头*/
 }
-.wme-select-picker-title {
+.yuso-select-picker-title {
   flex-grow: 1;
   flex-shrink: 0;
   color: rgba(0, 0, 0, 0.65);
 }
-.wme-select-picker-title span {
+.yuso-select-picker-title span {
   width: 10px;
   display: inline-block;
   color: #ff6454;
   margin-right: calc(3 * 1px);
 }
-.wme-select-picker-content {
+.yuso-select-picker-content {
   color: #4285f4;
   padding-left: calc(0.625 * 1rem);
 }
-.wme-select-picker-place-holder {
+.yuso-select-picker-place-holder {
   color: rgba(0, 0, 0, 0.25);
 }
-.wme-select-picker-area {
+.yuso-select-picker-area {
   display: flex;
   flex-grow: 1;
   align-items: center;
   cursor: pointer;
 }
-.wme-select-picker-close {
+.yuso-select-picker-close {
   cursor: pointer;
   display: block;
   margin-left: calc(0.625 * 1rem);
   align-self: center;
   fill: rgba(0, 0, 0, 0.45);
 }
-.wme-select-picker-arrow {
+.yuso-select-picker-arrow {
   display: block;
   margin-left: calc(0.625 * 1rem);
   visibility: hidden;
   fill: #c7c7cc;
 }
-.wme-select-picker-arrow-horizontal {
+.yuso-select-picker-arrow-horizontal {
   visibility: visible;
 }
-.wme-select-picker-arrow-vertical {
+.yuso-select-picker-arrow-vertical {
   visibility: visible;
   transform: rotate(90deg);
 }
-.wme-select-picker-arrow-vertical-up {
+.yuso-select-picker-arrow-vertical-up {
   visibility: visible;
   transform: rotate(270deg);
 }
-.wme-select-picker-read-only .wme-select-picker-content {
+.yuso-select-picker-read-only .yuso-select-picker-content {
   color: rgba(0, 0, 0, 0.85);
   text-align: right;
 }
-.wme-select-picker-read-only .wme-select-picker-arrow {
+.yuso-select-picker-read-only .yuso-select-picker-arrow {
   display: none;
 }
-.wme-select-picker-disabled .wme-select-picker-content {
+.yuso-select-picker-disabled .yuso-select-picker-content {
   color: rgba(0, 0, 0, 0.45);
 }

@@ -124,7 +124,7 @@ class Message extends React.Component {
 }
 
 Message.defaultProps = {
-  prefixCls: 'wme-message',
+  prefixCls: 'yuso-message',
   direction: 'row',
 };
 

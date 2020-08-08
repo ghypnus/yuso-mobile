@@ -52,7 +52,7 @@ class Flex extends React.Component {
 }
 
 Flex.defaultProps = {
-  prefixCls: 'wme-flexbox',
+  prefixCls: 'yuso-flexbox',
   align: 'center',
 };
 

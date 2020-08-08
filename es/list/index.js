@@ -74,7 +74,7 @@ var List = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 List.defaultProps = {
-  prefixCls: 'wme-list',
+  prefixCls: 'yuso-list',
   direction: 'row'
 };
 List.Item = Item;

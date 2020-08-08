@@ -31,7 +31,7 @@ function arrayRecurrenceFilter(dateList, filterFn, options) {
 
 export default class MutilDatePicker extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-picker',
+    prefixCls: 'yuso-picker',
     cols: 3, // 列
     cascade: false, // 是否级联
     title: '', // 标题
@@ -209,37 +209,38 @@ export default class MutilDatePicker extends React.Component {
   render() {
     const { prefixCls, title, okText, cancelText, timeList, cascade } = this.props;
     const { value } = this.state;
-    return <Consumer>
-      {({ DatePicker }) => {
-        return <div>
-          <div className={`${prefixCls}-action`}>
-            <div
-              className={`${prefixCls}-action-cancel`}
-              onClick={(e) => this.onCancel(e)}
-            >
-              {cancelText || DatePicker.cancel}
+    return (
+      <Consumer>
+        {({ DatePicker }) => (
+          <div>
+            <div className={`${prefixCls}-action`}>
+              <div
+                className={`${prefixCls}-action-cancel`}
+                onClick={(e) => this.onCancel(e)}
+              >
+                {cancelText || DatePicker.cancel}
+              </div>
+              <div className={`${prefixCls}-action-title`}>
+                {title}
+              </div>
+              <div
+                className={`${prefixCls}-action-ok`}
+                onClick={(e) => this.onOk(e)}
+              >
+                {okText || DatePicker.ok}
+              </div>
             </div>
-            <div className={`${prefixCls}-action-title`}>
-              {title}
-            </div>
-            <div
-              className={`${prefixCls}-action-ok`}
-              onClick={(e) => this.onOk(e)}
-            >
-              {okText || DatePicker.ok}
-            </div>
-          </div>
-          <div style={{ display: 'flex' }}>
-            <MultiPicker
-              style={{ flexGrow: 3 }}
-              cascade
-              selectedValue={value ? [value[0], value[1], value[2]] : []}
-              onValueChange={(v, i) => this.onCasecadeValueChange(v, i)}
-              onScrollChange={(v) => this.setCasecadeScrollValue(v)}
-            >
-              {this.getCascadeCols()}
-            </MultiPicker>
-            {timeList && (
+            <div style={{ display: 'flex' }}>
+              <MultiPicker
+                style={{ flexGrow: 3 }}
+                cascade
+                selectedValue={value ? [value[0], value[1], value[2]] : []}
+                onValueChange={(v, i) => this.onCasecadeValueChange(v, i)}
+                onScrollChange={(v) => this.setCasecadeScrollValue(v)}
+              >
+                {this.getCascadeCols()}
+              </MultiPicker>
+              {timeList && (
               <MultiPicker
                 style={{ flexGrow: 2 }}
                 selectedValue={value ? [value[3], value[4]] : []}
@@ -248,10 +249,11 @@ export default class MutilDatePicker extends React.Component {
               >
                 {this.getPickerCol()}
               </MultiPicker>
-            )}
+              )}
+            </div>
           </div>
-        </div>
-      }}
-    </Consumer>
+        )}
+      </Consumer>
+    );
   }
 }

@@ -60,7 +60,7 @@ var Loading = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Loading, "defaultProps", {
-  prefixCls: 'wme-loading'
+  prefixCls: 'yuso-loading'
 });
 
 export { Loading as default };

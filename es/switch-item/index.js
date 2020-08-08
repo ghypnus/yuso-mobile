@@ -87,7 +87,7 @@ var SwitchItem = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(SwitchItem, "defaultProps", {
-  prefixCls: 'wme-switch-item'
+  prefixCls: 'yuso-switch-item'
 });
 
 export { SwitchItem as default };

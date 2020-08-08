@@ -6,7 +6,7 @@ import List from '../list/index';
 
 export default class Menu extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-menu',
+    prefixCls: 'yuso-menu',
     direction: 'row',
     height: '3rem',
     data: [],

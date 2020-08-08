@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 export default class HrSection extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-section',
+    prefixCls: 'yuso-section',
   }
 
   render() {

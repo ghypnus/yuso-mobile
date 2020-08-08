@@ -75,7 +75,7 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-pull-to-refresh {
+.yuso-pull-to-refresh {
   position: absolute;
   left: 0;
   top: 0;
@@ -84,7 +84,7 @@
   z-index: 1;
   /* overflow: hidden; */
 }
-.wme-pull-to-refresh-scrollbar {
+.yuso-pull-to-refresh-scrollbar {
   width: 6px;
   bottom: 2px;
   top: 2px;
@@ -93,7 +93,7 @@
   position: absolute;
   overflow: hidden;
 }
-.wme-pull-to-refresh-scrollbar .indicator {
+.yuso-pull-to-refresh-scrollbar .indicator {
   width: 100%;
   box-sizing: border-box;
   position: absolute;
@@ -101,8 +101,8 @@
   border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 3px;
 }
-.wme-pull-to-refresh-down,
-.wme-pull-to-refresh-up {
+.yuso-pull-to-refresh-down,
+.yuso-pull-to-refresh-up {
   color: #888;
   align-items: center;
   justify-content: center;
@@ -112,19 +112,19 @@
   font-size: calc(0.875 * 1rem);
   transition: margin-top 0.3s;
 }
-.wme-pull-to-refresh-down .loading,
-.wme-pull-to-refresh-up .loading {
+.yuso-pull-to-refresh-down .loading,
+.yuso-pull-to-refresh-up .loading {
   fill: #4285f4;
   width: 20px;
   height: 20px;
   -webkit-animation: scroll-loading 1.5s linear infinite;
           animation: scroll-loading 1.5s linear infinite;
 }
-.wme-pull-to-refresh-down .label,
-.wme-pull-to-refresh-up .label {
+.yuso-pull-to-refresh-down .label,
+.yuso-pull-to-refresh-up .label {
   margin-left: 10px;
 }
-.wme-pull-to-refresh-down {
+.yuso-pull-to-refresh-down {
   margin-top: -45px;
 }
 @-webkit-keyframes scroll-loading {

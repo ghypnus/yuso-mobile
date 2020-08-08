@@ -65,16 +65,16 @@ const MIN_PULL_DISTANCE = 10;
 
 export default class PullToRefresh extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-pull-to-refresh',
+    prefixCls: 'yuso-pull-to-refresh',
     startX: 0,
     startY: 0,
-    scrollbars: true // 是否有滚动条
+    scrollbars: true, // 是否有滚动条
   }
 
   constructor(props) {
     super(props);
     this.state = {
-      pullDownLabel: ''
+      pullDownLabel: '',
     };
   }
 
@@ -91,7 +91,7 @@ export default class PullToRefresh extends React.Component {
       this.onPullDown(scrollY, locale);
     }
     if (beforeScrollComplete) {
-      beforeScrollComplete(scrollY)
+      beforeScrollComplete(scrollY);
     }
   }
 
@@ -101,14 +101,14 @@ export default class PullToRefresh extends React.Component {
       this.onPullUp(scrollY);
     }
     if (scrollComplete) {
-      scrollComplete(scrollY)
+      scrollComplete(scrollY);
     }
   }
 
   onPullDown(scrollY, locale) {
     if (scrollY < -MAX_PULL_DISTANCE) {
       this.setState({
-        pullDownLabel: locale.loadingLabel
+        pullDownLabel: locale.loadingLabel,
       });
       if (this.props.onPullDown) {
         this.props.onPullDown(this);
@@ -124,7 +124,7 @@ export default class PullToRefresh extends React.Component {
       this.pullDownRef.style.marginTop = '-45px';
       setTimeout(() => {
         this.setState({
-          pullDownLabel: ''
+          pullDownLabel: '',
         });
       }, 300);
     }, time || 600);
@@ -154,7 +154,7 @@ export default class PullToRefresh extends React.Component {
       this.pullDownRef.style.marginTop = `${distance - MAX_PULL_DISTANCE}px`;
       if (distance === MAX_PULL_DISTANCE) {
         this.setState({
-          pullDownLabel: locale.releaseLabel
+          pullDownLabel: locale.releaseLabel,
         });
       }
     } else if (scrollY > maxScrollY) {
@@ -243,65 +243,67 @@ export default class PullToRefresh extends React.Component {
   }
 
   render() {
-    const { prefixCls, children, onPullDown, onPullUp, style = {}, startX, startY,  scroll } = this.props;
+    const { prefixCls, children, onPullDown, onPullUp, style = {}, startX, startY, scroll } = this.props;
     const { pullDownLabel } = this.state;
     let { top, height } = style;
     let newStyle = { ...style };
     if (top && !height) {
       newStyle.height = `calc(100% - ${top})`;
     }
-    return <Consumer>
-      {({ PullToRefresh }) => {
-        return <div
-          style={newStyle}
-          className={prefixCls}
-        >
-          <Scroller
-            ref={(comp) => this.scroller = comp}
-            startX={startX}
-            startY={startY}
-            scrollX={false}
-            scrollY
-            scroll={(scrollX, scrollY) => {
-              if (scroll) {
-                scroll(scrollX, scrollY)
-              }
-            }}
-            onScrollChange={(scrollY) => this.onScrollChange(scrollY, PullToRefresh)}
-            beforeScrollComplete={(scrollX, scrollY) => this.beforeScrollComplete(scrollX, scrollY, PullToRefresh)}
-            scrollComplete={(scrollX, scrollY) => this.scrollComplete(scrollX, scrollY, PullToRefresh)}
+    return (
+      <Consumer>
+        {({ PullToRefresh }) => (
+          <div
+            style={newStyle}
+            className={prefixCls}
           >
-            <div
-              ref={(el) => this.pullDownRef = el}
-              style={{ display: onPullDown ? 'flex' : 'none' }}
-              className={classnames(`${prefixCls}-down`)}
+            <Scroller
+              ref={(comp) => this.scroller = comp}
+              startX={startX}
+              startY={startY}
+              scrollX={false}
+              scrollY
+              scroll={(scrollX, scrollY) => {
+                if (scroll) {
+                  scroll(scrollX, scrollY);
+                }
+              }}
+              onScrollChange={(scrollY) => this.onScrollChange(scrollY, PullToRefresh)}
+              beforeScrollComplete={(scrollX, scrollY) => this.beforeScrollComplete(scrollX, scrollY, PullToRefresh)}
+              scrollComplete={(scrollX, scrollY) => this.scrollComplete(scrollX, scrollY, PullToRefresh)}
             >
-              <Icon type="loading" className="loading" />
-              <span
-                ref={(el) => this.pullDownLabelRef = el}
-                className="label"
+              <div
+                ref={(el) => this.pullDownRef = el}
+                style={{ display: onPullDown ? 'flex' : 'none' }}
+                className={classnames(`${prefixCls}-down`)}
               >
-                {pullDownLabel || PullToRefresh.downLabel}
-              </span>
-            </div>
-            <div className={`${prefixCls}-wrapper`}>
-              {children}
-            </div>
-            <div
-              ref={(el) => this.pullUpRef = el}
-              style={{ display: onPullUp ? 'flex' : 'none' }}
-              className={`${prefixCls}-up`}
-            >
-              <Icon type="loading" className="loading" />
-            </div>
-          </Scroller>
-          { /* <div
+                <Icon type="loading" className="loading" />
+                <span
+                  ref={(el) => this.pullDownLabelRef = el}
+                  className="label"
+                >
+                  {pullDownLabel || PullToRefresh.downLabel}
+                </span>
+              </div>
+              <div className={`${prefixCls}-wrapper`}>
+                {children}
+              </div>
+              <div
+                ref={(el) => this.pullUpRef = el}
+                style={{ display: onPullUp ? 'flex' : 'none' }}
+                className={`${prefixCls}-up`}
+              >
+                <Icon type="loading" className="loading" />
+              </div>
+            </Scroller>
+            { /* <div
                                                                                                                              ref={ el => this.scrollbarRef = el }
                                                                                                                              className={ `${prefixCls}-scrollbar` }>
                                                                                                                           <div className="indicator"></div>
                                                                                                                         </div> */ }
-        </div>
-      }}
-    </Consumer>
+          </div>
+        )}
+      </Consumer>
+    );
   }
 }

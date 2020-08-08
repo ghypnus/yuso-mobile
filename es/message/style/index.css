@@ -78,7 +78,7 @@
 /* svg - 箭头 */
 /* 超出省略号 */
 /* 边框阴影 */
-.wme-message {
+.yuso-message {
   display: flex;
   width: 100%;
   height: 100%;
@@ -88,7 +88,7 @@
   background-color: rgba(0, 0, 0, 0.45);
   z-index: 1999;
 }
-.wme-message .wme-message-container {
+.yuso-message .yuso-message-container {
   display: flex;
   padding-top: calc(1.2 * 1rem);
   width: 90%;
@@ -100,7 +100,7 @@
   overflow: hidden;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
 }
-.wme-message .wme-message-container .wme-message-icon {
+.yuso-message .yuso-message-container .yuso-message-icon {
   width: 100%;
   padding-top: 65.48%;
   margin-bottom: calc(2 * 1rem);
@@ -108,14 +108,14 @@
   background-position: center;
   background-size: cover;
 }
-.wme-message .wme-message-container .wme-message-title {
+.yuso-message .yuso-message-container .yuso-message-title {
   display: flex;
   align-items: center;
   font-size: calc(1 * 1rem);
   color: rgba(0, 0, 0, 0.85);
   padding-bottom: calc(0.875 * 1rem);
 }
-.wme-message .wme-message-container .wme-message-title .wme-message-title-success {
+.yuso-message .yuso-message-container .yuso-message-title .yuso-message-title-success {
   width: calc(1.125 * 1rem);
   height: calc(1.125 * 1rem);
   /* background-image: url('../image/ok.png'); */
@@ -124,7 +124,7 @@
   background-repeat: no-repeat;
   margin-right: calc(0.625 * 1rem);
 }
-.wme-message .wme-message-container .wme-message-content {
+.yuso-message .yuso-message-container .yuso-message-content {
   color: rgba(0, 0, 0, 0.65);
   padding: 0 1rem;
   margin-bottom: calc(0.875 * 1rem);
@@ -133,28 +133,28 @@
   display: flex;
   justify-content: center;
 }
-.wme-message .wme-message-container .wme-message-action {
+.yuso-message .yuso-message-container .yuso-message-action {
   display: flex;
   width: 100%;
   border-top: 1px solid #f0f0f0;
 }
-.wme-message .wme-message-container .wme-message-action-row {
+.yuso-message .yuso-message-container .yuso-message-action-row {
   flex-direction: row;
 }
-.wme-message .wme-message-container .wme-message-action-row .button:not(:last-child) {
+.yuso-message .yuso-message-container .yuso-message-action-row .button:not(:last-child) {
   border-right: 1px solid #f0f0f0;
 }
-.wme-message .wme-message-container .wme-message-action-column {
+.yuso-message .yuso-message-container .yuso-message-action-column {
   flex-direction: column;
 }
-.wme-message .wme-message-container .wme-message-action-column .button:not(:last-child) {
+.yuso-message .yuso-message-container .yuso-message-action-column .button:not(:last-child) {
   border-bottom: 1px solid #f0f0f0;
 }
-.wme-message .wme-message-container .wme-message-action .button {
+.yuso-message .yuso-message-container .yuso-message-action .button {
   flex-grow: 1;
   border: 0;
   color: rgba(0, 0, 0, 0.85);
 }
-.wme-message .wme-message-container .wme-message-action .button:not(:first-child):last-child {
+.yuso-message .yuso-message-container .yuso-message-action .button:not(:first-child):last-child {
   color: #4285f4;
 }

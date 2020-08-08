@@ -145,7 +145,7 @@ var Menu = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Menu, "defaultProps", {
-  prefixCls: 'wme-menu',
+  prefixCls: 'yuso-menu',
   direction: 'row',
   height: '3rem',
   data: []

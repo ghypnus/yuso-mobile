@@ -1,18 +1,18 @@
 @import "../../style/theme/default.less";
 
-.wme-accordion {
+.yuso-accordion {
   border-radius: 3px;
   background-color: @fill-base;
 
   & > &-item {
 
     &:first-child {
-        > .wme-accordion-title {
+        > .yuso-accordion-title {
           border-top: 0;
         }
       }
 
-    > .wme-accordion-title {
+    > .yuso-accordion-title {
       display: flex;
       align-items: center;
       line-height: 22px;
@@ -28,13 +28,13 @@
         fill: @color-icon-base;
       }
 
-      .wme-accordion-extra {
+      .yuso-accordion-extra {
         margin: 0 2rem 0 auto;
       }
     }
   }
 
-  & > &-item-disabled > .wme-accordion-title {
+  & > &-item-disabled > .yuso-accordion-title {
     cursor: not-allowed;
     color: #999;
     background-color: #f3f3f3;
@@ -60,7 +60,7 @@
   }
 
   & > &-item-active {
-    > .wme-accordion-title {
+    > .yuso-accordion-title {
       border-bottom: 1px solid @border-color-base;
       .arrow {
         transform: rotate(180deg);

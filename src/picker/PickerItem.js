@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 class PickerItem extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-picker',
+    prefixCls: 'yuso-picker',
     value: null,
   }
 

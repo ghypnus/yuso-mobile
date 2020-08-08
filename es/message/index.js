@@ -12,7 +12,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Message from './Message';
 var messageInstance;
-var prefixCls = 'wme-message';
+var prefixCls = 'yuso-message';
 /**
  * opts: 参数
  * @param {String}  title       标题

@@ -4,7 +4,7 @@ import Item from './PickerItem';
 
 class Picker extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-picker',
+    prefixCls: 'yuso-picker',
   };
 
   static Item = Item

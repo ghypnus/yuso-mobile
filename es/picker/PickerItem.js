@@ -56,7 +56,7 @@ var PickerItem = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(PickerItem, "defaultProps", {
-  prefixCls: 'wme-picker',
+  prefixCls: 'yuso-picker',
   value: null
 });
 

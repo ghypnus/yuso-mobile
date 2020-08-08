@@ -67,7 +67,7 @@ var Flex = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 Flex.defaultProps = {
-  prefixCls: 'wme-flexbox',
+  prefixCls: 'yuso-flexbox',
   align: 'center'
 };
 export default Flex;

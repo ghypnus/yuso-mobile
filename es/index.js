@@ -16,7 +16,7 @@ export { default as Gesture } from './gesture/index';
 export { default as TextArea } from './textarea/index';
 export { default as Picker } from './picker/Picker';
 export { default as MultiPicker } from './picker/MultiPicker';
-export { default as WmePicker } from './picker/index';
+export { default as YusoPicker } from './picker/index';
 export { default as Scroller } from './scroller/index';
 export { default as PullToRefresh } from './pull-to-refresh/index';
 export { default as Grid } from './grid/index';

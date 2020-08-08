@@ -78,55 +78,55 @@
 /* svg - 箭头 */
 /* 超出省略号 */
 /* 边框阴影 */
-.wme-calendar {
+.yuso-calendar {
   background-color: #fff;
 }
-.wme-calendar .wme-calendar-grid {
+.yuso-calendar .yuso-calendar-grid {
   width: 100%;
 }
-.wme-calendar .wme-calendar-grid thead th {
+.yuso-calendar .yuso-calendar-grid thead th {
   border-bottom: 1px solid #e1e1e1;
   line-height: 2.4rem;
 }
-.wme-calendar .wme-calendar-grid td {
+.yuso-calendar .yuso-calendar-grid td {
   text-align: center;
   position: relative;
   padding: 0.8rem 0.2rem;
 }
-.wme-calendar .wme-calendar-header {
+.yuso-calendar .yuso-calendar-header {
   display: flex;
   padding: 0.7rem 0.8rem;
   border-bottom: 1px solid #e1e1e1;
   align-items: center;
 }
-.wme-calendar .wme-calendar-header .wme-calendar-title {
+.yuso-calendar .yuso-calendar-header .yuso-calendar-title {
   display: flex;
   flex-grow: 1;
 }
-.wme-calendar .wme-calendar-header .wme-calendar-title .current-month {
+.yuso-calendar .yuso-calendar-header .yuso-calendar-title .current-month {
   flex-grow: 1;
   text-align: center;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);
 }
-.wme-calendar .wme-calendar-header .wme-calendar-title .prev-btn svg,
-.wme-calendar .wme-calendar-header .wme-calendar-title .next-btn svg {
+.yuso-calendar .yuso-calendar-header .yuso-calendar-title .prev-btn svg,
+.yuso-calendar .yuso-calendar-header .yuso-calendar-title .next-btn svg {
   width: 0.8rem;
   height: 0.8rem;
 }
-.wme-calendar .wme-calendar-week {
+.yuso-calendar .yuso-calendar-week {
   color: rgba(0, 0, 0, 0.45);
   font-size: 0.75rem;
 }
-.wme-calendar .wme-calendar-grid-cell {
+.yuso-calendar .yuso-calendar-grid-cell {
   min-width: 0.9rem;
   color: rgba(0, 0, 0, 0.25);
   font-weight: bold;
 }
-.wme-calendar .wme-calendar-grid-cell-in-view {
+.yuso-calendar .yuso-calendar-grid-cell-in-view {
   color: rgba(0, 0, 0, 0.85);
 }
-.wme-calendar .wme-calendar-grid-cell-inner {
+.yuso-calendar .yuso-calendar-grid-cell-inner {
   width: 1.75rem;
   height: 1.75rem;
   line-height: 1.75rem;
@@ -136,44 +136,44 @@
   transition: background 0.3s, border 0.3s;
   border-radius: 1rem;
 }
-.wme-calendar .wme-calendar-grid-cell-disabled {
+.yuso-calendar .yuso-calendar-grid-cell-disabled {
   color: rgba(0, 0, 0, 0.45);
   pointer-events: none;
   cursor: not-allowed;
 }
-.wme-calendar .wme-calendar-grid-cell-selected .wme-calendar-grid-cell-inner {
+.yuso-calendar .yuso-calendar-grid-cell-selected .yuso-calendar-grid-cell-inner {
   background-color: #cfcfcf;
 }
-.wme-calendar .wme-calendar-grid-cell-current {
+.yuso-calendar .yuso-calendar-grid-cell-current {
   color: #4285f4;
 }
-.wme-calendar .wme-calendar-list .wme-list-content {
+.yuso-calendar .yuso-calendar-list .yuso-list-content {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.wme-calendar .wme-calendar-list-item {
+.yuso-calendar .yuso-calendar-list-item {
   display: flex;
   align-items: center;
 }
-.wme-calendar .wme-calendar-list-item-disabled {
+.yuso-calendar .yuso-calendar-list-item-disabled {
   pointer-events: none;
   cursor: not-allowed;
 }
-.wme-calendar .wme-calendar-list-item-disabled .wme-calendar-list-item-day .day-text {
+.yuso-calendar .yuso-calendar-list-item-disabled .yuso-calendar-list-item-day .day-text {
   color: rgba(0, 0, 0, 0.45);
 }
-.wme-calendar .wme-calendar-list-item-current .wme-calendar-list-item-day .day-text {
+.yuso-calendar .yuso-calendar-list-item-current .yuso-calendar-list-item-day .day-text {
   color: #4285f4;
 }
-.wme-calendar .wme-calendar-list-item-check {
+.yuso-calendar .yuso-calendar-list-item-check {
   width: 1.5rem;
   margin-right: 0.75rem;
 }
-.wme-calendar .wme-calendar-list-item-check .wme-checkbox {
+.yuso-calendar .yuso-calendar-list-item-check .yuso-checkbox {
   padding-left: 0;
   background-color: transparent;
 }
-.wme-calendar .wme-calendar-list-item-day {
+.yuso-calendar .yuso-calendar-list-item-day {
   display: flex;
   width: 2.4rem;
   height: 2.6rem;
@@ -183,10 +183,10 @@
   font-size: 0.9rem;
   border-radius: 0.2rem;
 }
-.wme-calendar .wme-calendar-list-item-day .day-text {
+.yuso-calendar .yuso-calendar-list-item-day .day-text {
   color: rgba(0, 0, 0, 0.85);
 }
-.wme-calendar .wme-calendar-list-item-day .day-week {
+.yuso-calendar .yuso-calendar-list-item-day .day-week {
   font-size: 0.75rem;
   color: rgba(0, 0, 0, 0.45);
 }

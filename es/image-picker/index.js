@@ -187,8 +187,8 @@ var IMagePicker = /*#__PURE__*/function (_React$Component) {
           return /*#__PURE__*/React.createElement("img", {
             key: idx,
             style: {
-              maxHeight: "100%",
-              maxWidth: "100%"
+              maxHeight: '100%',
+              maxWidth: '100%'
             },
             src: item.src,
             onClick: function onClick(_) {
@@ -206,7 +206,7 @@ var IMagePicker = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(IMagePicker, "defaultProps", {
-  prefixCls: 'wme-image-picker',
+  prefixCls: 'yuso-image-picker',
   count: 9,
   onSelect: function onSelect() {}
 });

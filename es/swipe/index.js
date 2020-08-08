@@ -32,8 +32,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 import React from 'react';
 import SwipeIso from 'swipe-js-iso';
-import Icon from '../icon/index';
 import classnames from 'classnames';
+import Icon from '../icon/index';
 
 var Swipe = /*#__PURE__*/function (_React$Component) {
   _inherits(Swipe, _React$Component);
@@ -163,16 +163,17 @@ var Swipe = /*#__PURE__*/function (_React$Component) {
           id = _this$props2.id,
           className = _this$props2.className,
           defaultStyle = _this$props2.defaultStyle,
-          style = _this$props2.style,
+          _this$props2$style = _this$props2.style,
+          style = _this$props2$style === void 0 ? {} : _this$props2$style,
           children = _this$props2.children,
           prefixCls = _this$props2.prefixCls,
           indicator = _this$props2.indicator,
           showCloseBtn = _this$props2.showCloseBtn,
           close = _this$props2.close;
       var syl = {
-        container: _objectSpread({}, style && style.container, {}, defaultStyle.container),
-        wrapper: _objectSpread({}, style && style.wrapper, {}, defaultStyle.wrapper),
-        child: _objectSpread({}, style && style.child, {}, defaultStyle.child),
+        container: _objectSpread({}, defaultStyle.container, {}, style.container),
+        wrapper: _objectSpread({}, defaultStyle.wrapper, {}, style.wrapper),
+        child: _objectSpread({}, defaultStyle.child, {}, style.child),
         pagination: style && style.pagination || null
       };
       var wrapCls = classnames(prefixCls, className);
@@ -217,7 +218,7 @@ var Swipe = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Swipe, "defaultProps", {
-  prefixCls: 'swipe-container',
+  prefixCls: 'yuso-swipe',
   swipeOptions: {},
   defaultStyle: {
     container: {

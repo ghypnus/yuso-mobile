@@ -9,7 +9,7 @@ import classnames from 'classnames';
 
 export default class Axis extends React.Component {
     static defaultProps = {
-      prefixCls: 'wme-axis',
+      prefixCls: 'yuso-axis',
     }
 
     render() {

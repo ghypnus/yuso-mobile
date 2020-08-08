@@ -10,7 +10,7 @@ import Loading from './Loading';
 
 let loadingInstance;
 
-const prefixCls = 'wme-loading';
+const prefixCls = 'yuso-loading';
 
 
 function newInstance() {

@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 export default class MultiPicker extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-multi-picker',
+    prefixCls: 'yuso-multi-picker',
     onValueChange() {},
   }
 

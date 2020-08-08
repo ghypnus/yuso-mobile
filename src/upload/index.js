@@ -9,7 +9,7 @@ import classnames from 'classnames';
 
 class Upload extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-upload',
+    prefixCls: 'yuso-upload',
     fileTypes: '*.*', // 允许上传的文件类型，格式'*.jpg,*.doc'
     isPress: true, // 是否压缩
     multiple: false, // 是否允许选择多个文件
@@ -146,7 +146,7 @@ class Upload extends React.Component {
       orientation = orientation || 1;
       const newPressSize = 1024 * pressSize;
       let reader = new FileReader();
-      reader.onload = e => {
+      reader.onload = (e) => {
         const result = e.target.result;
         if (!result) return;
         if (file.size <= newPressSize) {
@@ -155,7 +155,7 @@ class Upload extends React.Component {
         } else {
           const img = new Image();
           img.src = result;
-          img.onload = e => {
+          img.onload = (e) => {
             let degree = 0;
             let width;
             let height;

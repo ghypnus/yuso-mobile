@@ -1,7 +1,7 @@
 import React from 'react';
 import SwipeIso from 'swipe-js-iso';
-import Icon from '../icon/index';
 import classnames from 'classnames';
+import Icon from '../icon/index';
 
 export default class Swipe extends React.Component {
   /**
@@ -28,7 +28,7 @@ export default class Swipe extends React.Component {
    * childCount
    */
   static defaultProps = {
-    prefixCls: 'swipe-container',
+    prefixCls: 'yuso-swipe',
     swipeOptions: {},
     defaultStyle: {
       container: {
@@ -121,12 +121,12 @@ export default class Swipe extends React.Component {
   }
 
   render() {
-    const { id, className, defaultStyle, style, children, prefixCls, indicator, showCloseBtn, close } = this.props;
+    const { id, className, defaultStyle, style = {}, children, prefixCls, indicator, showCloseBtn, close } = this.props;
 
     const syl = {
-      container: { ...style && style.container, ...defaultStyle.container },
-      wrapper: { ...style && style.wrapper, ...defaultStyle.wrapper },
-      child: { ...style && style.child, ...defaultStyle.child },
+      container: { ...defaultStyle.container, ...style.container },
+      wrapper: { ...defaultStyle.wrapper, ...style.wrapper },
+      child: { ...defaultStyle.child, ...style.child },
       pagination: style && style.pagination || null,
     };
 
@@ -159,7 +159,7 @@ export default class Swipe extends React.Component {
           }}
             className={`${prefixCls}-close`}
           >
-            <Icon  type="delete_fill" />
+            <Icon type="delete_fill" />
           </div>
           )
         }

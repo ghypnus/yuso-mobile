@@ -75,10 +75,10 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-section {
+.yuso-section {
   background-color: #fff;
 }
-.wme-section-toolbar {
+.yuso-section-toolbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,7 +86,7 @@
   padding: 0 0.75rem;
   border-bottom: 1px solid #e1e1e1;
 }
-.wme-section-title {
+.yuso-section-title {
   font-size: 0.875rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);

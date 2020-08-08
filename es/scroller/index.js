@@ -528,7 +528,7 @@ var Scroller = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Scroller, "defaultProps", {
-  prefixCls: 'wme-scroller',
+  prefixCls: 'yuso-scroller',
   startX: 0,
   startY: 0,
   bounce: true,

@@ -16,7 +16,7 @@ const getPanDirection = (direction) => {
   }
 };
 
-export default class WmeTabs extends Component {
+export default class YusoTabs extends Component {
   static DefaultTabBar = DefaultTabBar;
 
   static defaultProps = {
@@ -30,7 +30,7 @@ export default class WmeTabs extends Component {
     usePaged: true,
     tabDirection: 'horizontal',
     distanceToChangeTab: 0.3,
-    prefixCls: 'wme-tabs',
+    prefixCls: 'yuso-tabs',
     useOnPan: true,
   }
 

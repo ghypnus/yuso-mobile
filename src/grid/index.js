@@ -8,7 +8,7 @@ import Item from './GridItem';
 
 class Grid extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-grid',
+    prefixCls: 'yuso-grid',
     cols: 4,
   }
 

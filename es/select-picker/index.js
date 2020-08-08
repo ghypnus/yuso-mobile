@@ -25,7 +25,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 import React from 'react';
 import classnames from 'classnames';
 import isArray from 'lodash/isArray';
-import WmePicker from '../picker/index';
+import YusoPicker from '../picker/index';
 import PopLayer from '../pop-layer/index';
 import Icon from '../icon/index';
 import { isEmpty } from '../_utils/data_util';
@@ -46,7 +46,7 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
     _this.state = {
       visible: false,
-      useDefaultValue: true //是否使用默认值
+      useDefaultValue: true // 是否使用默认值
 
     };
     return _this;
@@ -66,12 +66,12 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
       if (value) {
         if (typeof value === 'string' || typeof value === 'number') {
           return [value];
-        } else {
-          return value;
         }
-      } else {
-        return useDefaultValue ? defaultValue : null;
+
+        return value;
       }
+
+      return useDefaultValue ? defaultValue : null;
     }
     /**
      * 递归获取值数组
@@ -144,7 +144,7 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
     }
     /**
      * 获取显示名称
-     * @param {Any} selectedValues 
+     * @param {Any} selectedValues
      */
 
   }, {
@@ -217,13 +217,13 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
             onOk && onOk(resetVal);
           }
         });
-      } else {
-        return /*#__PURE__*/React.createElement(Icon, {
-          type: "enter",
-          size: "small",
-          className: arrowCls
-        });
       }
+
+      return /*#__PURE__*/React.createElement(Icon, {
+        type: "enter",
+        size: "small",
+        className: arrowCls
+      });
     }
   }, {
     key: "render",
@@ -276,7 +276,7 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
         }, placeholder)), _this4.renderSuffixIcon()), /*#__PURE__*/React.createElement(PopLayer, {
           visible: _this4.state.visible,
           direction: "bottom"
-        }, /*#__PURE__*/React.createElement(WmePicker, {
+        }, /*#__PURE__*/React.createElement("yusoPicker", {
           title: pickerTitle || SelectPicker.pickerTitle,
           defaultValue: _this4.getValue(value),
           cascade: cascade,
@@ -311,7 +311,7 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(SelectPicker, "defaultProps", {
-  prefixCls: 'wme-select-picker',
+  prefixCls: 'yuso-select-picker',
   arrow: 'horizontal',
   showSelectedType: SHOW_ALL
 });

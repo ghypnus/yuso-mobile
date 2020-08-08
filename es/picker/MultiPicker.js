@@ -123,7 +123,7 @@ var MultiPicker = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(MultiPicker, "defaultProps", {
-  prefixCls: 'wme-multi-picker',
+  prefixCls: 'yuso-multi-picker',
   onValueChange: function onValueChange() {}
 });
 

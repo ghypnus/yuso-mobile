@@ -75,7 +75,7 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-scroller {
+.yuso-scroller {
   position: absolute;
   z-index: 1;
 }

@@ -25,7 +25,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 import React from 'react';
 import classnames from 'classnames';
 import moment from 'moment';
-import WmePicker from '../picker/index';
+import YusoPicker from '../picker/index';
 import MutilDatePicker from './MutilDatePicker';
 import PopLayer from '../pop-layer/index';
 import Icon from '../icon/index';
@@ -163,7 +163,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           case 'yyyy/MM/dd':
-            content = /*#__PURE__*/React.createElement(WmePicker, {
+            content = /*#__PURE__*/React.createElement("yusoPicker", {
               title: _pickerTitle,
               defaultValue: value || defaultDateV,
               cascade: true,
@@ -190,7 +190,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           case 'yyyy/MM':
-            content = /*#__PURE__*/React.createElement(WmePicker, {
+            content = /*#__PURE__*/React.createElement("yusoPicker", {
               title: _pickerTitle,
               defaultValue: value || defaultYearMonthV,
               data: _this2.yearMonthList,
@@ -216,7 +216,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           case 'HH:mm:ss':
-            content = /*#__PURE__*/React.createElement(WmePicker, {
+            content = /*#__PURE__*/React.createElement("yusoPicker", {
               title: _pickerTitle,
               defaultValue: value || defaultSecondV,
               data: _this2.secondList,
@@ -242,7 +242,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           case 'HH:mm':
-            content = /*#__PURE__*/React.createElement(WmePicker, {
+            content = /*#__PURE__*/React.createElement("yusoPicker", {
               title: _pickerTitle,
               defaultValue: value || defaultTimeV,
               data: _this2.timeList,
@@ -268,7 +268,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           default:
-            content = /*#__PURE__*/React.createElement(WmePicker, {
+            content = /*#__PURE__*/React.createElement("yusoPicker", {
               title: _pickerTitle,
               value: value,
               data: data,
@@ -631,7 +631,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(DatePicker, "defaultProps", {
-  prefixCls: 'wme-date-picker',
+  prefixCls: 'yuso-date-picker',
   arrow: 'horizontal',
   yearStep: 100 // 取前后100年的日期
 

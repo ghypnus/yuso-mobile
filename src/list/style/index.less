@@ -1,7 +1,7 @@
 @import "../../style/theme/default.less";
 @import "../../style/mixin/common.less";
 
-.wme-list {
+.yuso-list {
     background-color: @fill-base;
     flex-grow: 1;
 
@@ -50,25 +50,25 @@
         box-sizing: border-box;
 
         &-top {
-            .wme-list-line {
+            .yuso-list-line {
                 align-items: flex-start;
             }
         }
 
         &-center {
-            .wme-list-line {
+            .yuso-list-line {
                 align-items: center;
             }
         }
 
         &-bottom {
-            .wme-list-line {
+            .yuso-list-line {
                 align-items: flex-end;
             }
         }
 
         &-text-left {
-            .wme-list-content {
+            .yuso-list-content {
                 text-align: left;
             }
         }
@@ -81,15 +81,15 @@
 
         &-title {
             background-color: @list-item-fill-title;
-            .wme-list-line {
-                .wme-list-content,
-                .wme-list-extra {
+            .yuso-list-line {
+                .yuso-list-content,
+                .yuso-list-extra {
                     color: @color-text-base-inverse !important;
                 }
             }
         }
 
-        .wme-list-thumb {
+        .yuso-list-thumb {
             margin-left: @h-spacing-xxl;
             width: calc(1.6 * @em);
             height: calc(1.6 * @em);
@@ -118,7 +118,7 @@
             }
         }
 
-        .wme-list-icon {
+        .yuso-list-icon {
           margin-top: 0.4rem;
           margin-bottom: -5px;
           &-active {
@@ -129,7 +129,7 @@
           }
         }
 
-        .wme-list-line {
+        .yuso-list-line {
             position: relative;
             display: flex;
             flex-grow: 1;
@@ -139,7 +139,7 @@
             overflow: hidden;
 
             /* list左侧主内容*/
-            .wme-list-content {
+            .yuso-list-content {
                 flex-grow: 1;
                 color: @color-text-base;
                 font-size: @font-size-text;
@@ -148,7 +148,7 @@
             }
 
             /* list右补充内容*/
-            .wme-list-extra {
+            .yuso-list-extra {
                 color: @color-text-title;
                 font-size: @font-size-text;
                 text-align: right;
@@ -160,7 +160,7 @@
             }
 
             /* list右侧箭头*/
-            .wme-list-arrow {
+            .yuso-list-arrow {
                 display: block;
                 margin-left: @h-spacing-md;
                 visibility: hidden;
@@ -182,7 +182,7 @@
                 }
             }
             /* 菜单选中效果 */
-            .wme-list-underline {
+            .yuso-list-underline {
                 display: flex;
                 bottom: 0;
                 left: @h-spacing-xxl;
@@ -193,8 +193,8 @@
             }
 
             &-ellipsis {
-                .wme-list-content,
-                .wme-list-extra {
+                .yuso-list-content,
+                .yuso-list-extra {
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     max-width: calc(85% - 1.5rem);
@@ -203,13 +203,13 @@
             }
 
             &-wrap{
-                .wme-list-content{
+                .yuso-list-content{
                     white-space: nowrap;
                 }
             }
 
             &-selected {
-                .wme-list-content {
+                .yuso-list-content {
                     color: @brand-primary;
                 }
             }
@@ -217,13 +217,13 @@
 
         &-view {
             min-height: calc(@em * 1.75);
-            .wme-list-line {
-                .wme-list-content{
+            .yuso-list-line {
+                .yuso-list-content{
                     flex-grow: 0;
                     min-width: auto;
                     flex-shrink: 0;
                 }
-                .wme-list-extra{
+                .yuso-list-extra{
                     min-width: auto;
                     max-width: none;
                     text-align: left;

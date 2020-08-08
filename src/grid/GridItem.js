@@ -7,7 +7,7 @@ import classnames from 'classnames';
 
 export default class GridItem extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-grid',
+    prefixCls: 'yuso-grid',
     align: 'middle',
   }
 

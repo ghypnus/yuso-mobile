@@ -75,7 +75,7 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-textarea {
+.yuso-textarea {
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
@@ -83,17 +83,17 @@
   position: relative;
   flex-flow: column;
 }
-.wme-textarea-title {
+.yuso-textarea-title {
   width: calc(100% - 2 * calc(1.25 * 1rem));
   padding: calc(0.75 * 1rem) calc(1.25 * 1rem) 0 calc(10 * 1px);
 }
-.wme-textarea-title span {
+.yuso-textarea-title span {
   display: inline-block;
   width: 10px;
   color: #ff6454;
   margin-right: calc(3 * 1px);
 }
-.wme-textarea textarea {
+.yuso-textarea textarea {
   color: #4285f4;
   font: unset;
   font-size: calc(0.9375 * 1rem);
@@ -110,34 +110,34 @@
   word-break: break-all;
   word-wrap: break-word;
 }
-.wme-textarea textarea::-moz-placeholder {
+.yuso-textarea textarea::-moz-placeholder {
   color: rgba(0, 0, 0, 0.25);
 }
-.wme-textarea textarea:-ms-input-placeholder {
+.yuso-textarea textarea:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.25);
 }
-.wme-textarea textarea::-ms-input-placeholder {
+.yuso-textarea textarea::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.25);
 }
-.wme-textarea textarea::placeholder {
+.yuso-textarea textarea::placeholder {
   color: rgba(0, 0, 0, 0.25);
 }
-.wme-textarea textarea:disabled {
+.yuso-textarea textarea:disabled {
   color: rgba(0, 0, 0, 0.45);
 }
-.wme-textarea-length {
+.yuso-textarea-length {
   position: absolute;
   bottom: calc(6 * 1px);
   right: calc(6 * 1px);
   color: rgba(0, 0, 0, 0.25);
   font-size: calc(0.9375 * 1rem);
 }
-.wme-textarea-length span {
+.yuso-textarea-length span {
   color: rgba(0, 0, 0, 0.65);
 }
-.wme-textarea-disabled textarea {
+.yuso-textarea-disabled textarea {
   color: rgba(0, 0, 0, 0.45);
 }
-.wme-textarea-read-only textarea {
+.yuso-textarea-read-only textarea {
   color: rgba(0, 0, 0, 0.85);
 }

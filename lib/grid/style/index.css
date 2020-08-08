@@ -78,12 +78,12 @@
 /* svg - 箭头 */
 /* 超出省略号 */
 /* 边框阴影 */
-.wme-grid {
+.yuso-grid {
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
 }
-.wme-grid .wme-grid-item {
+.yuso-grid .yuso-grid-item {
   display: flex;
   position: relative;
   align-items: center;
@@ -93,26 +93,26 @@
   overflow: hidden;
   cursor: pointer;
 }
-.wme-grid .wme-grid-item img {
+.yuso-grid .yuso-grid-item img {
   width: 25px;
   height: 25px;
 }
-.wme-grid .wme-grid-item-left {
+.yuso-grid .yuso-grid-item-left {
   flex-flow: column;
   align-items: flex-start;
 }
-.wme-grid .wme-grid-item-center {
+.yuso-grid .yuso-grid-item-center {
   flex-flow: column;
   align-items: center;
 }
-.wme-grid .wme-grid-item-right {
+.yuso-grid .yuso-grid-item-right {
   flex-flow: column;
   align-items: flex-end;
 }
-.wme-grid .wme-grid-item-divider:not(:last-child) {
+.yuso-grid .yuso-grid-item-divider:not(:last-child) {
   border-bottom: 1px solid #f0f0f0;
 }
-.wme-grid .wme-grid-item-content {
+.yuso-grid .yuso-grid-item-content {
   font-size: calc(0.875 * 1rem);
   color: rgba(0, 0, 0, 0.65);
 }

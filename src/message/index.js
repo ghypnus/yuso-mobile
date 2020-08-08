@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 import Message from './Message';
 
 let messageInstance;
-const prefixCls = 'wme-message';
+const prefixCls = 'yuso-message';
 
 
 /**

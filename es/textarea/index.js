@@ -256,7 +256,7 @@ var TextArea = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(TextArea, "defaultProps", {
-  prefixCls: 'wme-textarea',
+  prefixCls: 'yuso-textarea',
   autoHeight: false,
   disabled: false,
   rows: 2,

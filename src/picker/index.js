@@ -1,5 +1,5 @@
 /**
- * WmePicker
+ * YusoPicker
  * @author john.gao
  */
 
@@ -29,9 +29,9 @@ function arrayRecurrenceFilter(data, filterFn, options) {
   return result;
 }
 
-export default class WmePicker extends React.Component {
+export default class YusoPicker extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-picker',
+    prefixCls: 'yuso-picker',
     cols: 3, // 列
     cascade: false, // 是否级联
     title: '', // 标题

@@ -134,7 +134,7 @@ var ListItem = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(ListItem, "defaultProps", {
-  prefixCls: 'wme-list',
+  prefixCls: 'yuso-list',
   align: 'center',
   error: false,
   multipleLine: false,

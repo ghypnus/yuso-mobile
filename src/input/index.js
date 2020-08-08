@@ -10,7 +10,7 @@ import Icon from '../icon/index';
 
 export default class Input extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-input',
+    prefixCls: 'yuso-input',
     type: 'text',
     size: 'large',
     align: 'left',

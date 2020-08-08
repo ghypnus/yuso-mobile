@@ -9,7 +9,7 @@ import classnames from 'classnames';
 
 export default class PopLayer extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-pop-layer',
+    prefixCls: 'yuso-pop-layer',
   };
 
   constructor(props) {

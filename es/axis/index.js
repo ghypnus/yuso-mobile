@@ -107,7 +107,7 @@ var Axis = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Axis, "defaultProps", {
-  prefixCls: 'wme-axis'
+  prefixCls: 'yuso-axis'
 });
 
 export { Axis as default };

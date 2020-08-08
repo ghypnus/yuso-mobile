@@ -18,7 +18,7 @@ class FlexItem extends React.Component {
 }
 
 FlexItem.defaultProps = {
-  prefixCls: 'wme-flexbox',
+  prefixCls: 'yuso-flexbox',
 };
 
 export default FlexItem;

@@ -43,7 +43,7 @@ class List extends React.Component {
 }
 
 List.defaultProps = {
-  prefixCls: 'wme-list',
+  prefixCls: 'yuso-list',
   direction: 'row',
 };
 

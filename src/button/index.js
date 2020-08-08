@@ -10,7 +10,7 @@ import Icon from '../icon/index';
 
 export default class Button extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-button',
+    prefixCls: 'yuso-button',
     size: 'large',
     type: '',
   }

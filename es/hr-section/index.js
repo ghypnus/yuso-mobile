@@ -62,7 +62,7 @@ var HrSection = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(HrSection, "defaultProps", {
-  prefixCls: 'wme-section'
+  prefixCls: 'yuso-section'
 });
 
 export { HrSection as default };

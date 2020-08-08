@@ -266,7 +266,7 @@ var Input = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Input, "defaultProps", {
-  prefixCls: 'wme-input',
+  prefixCls: 'yuso-input',
   type: 'text',
   size: 'large',
   align: 'left'

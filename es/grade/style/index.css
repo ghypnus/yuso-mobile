@@ -78,7 +78,7 @@
 /* svg - 箭头 */
 /* 超出省略号 */
 /* 边框阴影 */
-.wme-grade {
+.yuso-grade {
   display: flex;
   padding: calc(1.25 * 1rem);
   font-size: 1rem;
@@ -87,34 +87,34 @@
   flex-direction: column;
   background-color: #fff;
 }
-.wme-grade-title {
+.yuso-grade-title {
   color: rgba(0, 0, 0, 0.85);
 }
-.wme-grade-stars {
+.yuso-grade-stars {
   margin: 1.5rem auto;
 }
-.wme-grade-stars .wme-grade-star {
+.yuso-grade-stars .yuso-grade-star {
   width: 2.6rem !important;
   height: 2.6rem !important;
   fill: rgba(0, 0, 0, 0.04);
   margin-right: 0.5rem;
 }
-.wme-grade-stars .wme-grade-star :last-child {
+.yuso-grade-stars .yuso-grade-star :last-child {
   margin-right: 0;
 }
-.wme-grade-stars .wme-grade-star-active {
+.yuso-grade-stars .yuso-grade-star-active {
   fill: #FADB14;
 }
-.wme-grade-content {
+.yuso-grade-content {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.wme-grade .wme-button {
+.yuso-grade .yuso-button {
   margin-bottom: 1rem;
   border-radius: 1.5rem;
 }
-.wme-grade .wme-textarea {
+.yuso-grade .yuso-textarea {
   background-color: #F9FAFC;
   border-radius: 4px;
   margin-bottom: 1.5rem;

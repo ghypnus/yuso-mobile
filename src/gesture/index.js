@@ -10,7 +10,7 @@ import { Consumer } from '../locale-provider/HrContext';
 
 export default class Gesture extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-gesture',
+    prefixCls: 'yuso-gesture',
     roundRadii: 30, // 大圆点的半径
     pointRadii: 10, // 大圆点被选中时显示的圆心的半径
     width: document.body.clientWidth * 0.83, // 整个组件的宽度百分比
@@ -286,24 +286,26 @@ export default class Gesture extends React.Component {
   render() {
     const { prefixCls, width, height, roundRadii, tips } = this.props;
     this.space = parseInt((width - roundRadii * 2 * 3) / 3); // 间隙
-    return <Consumer>
-      {({ Gesture }) => {
-        return <div
-          ref="container"
-          className={prefixCls}
-          style={{ width, height }}
-          onTouchStart={(e) => this.handleTouchStart(e)}
-          onTouchEnd={(e) => this.handleTouchEnd(e, tips || Gesture.tips)}
-          onTouchMove={(e) => this.handleTouchMove(e)}
-        >
-          <canvas
-            ref="cvs"
-            style={{ zoom: 0.5 }}
-            width={width * 2}
-            height={height * 2}
-          />
-        </div>
-      }}
-    </Consumer>
+    return (
+      <Consumer>
+        {({ Gesture }) => (
+          <div
+            ref="container"
+            className={prefixCls}
+            style={{ width, height }}
+            onTouchStart={(e) => this.handleTouchStart(e)}
+            onTouchEnd={(e) => this.handleTouchEnd(e, tips || Gesture.tips)}
+            onTouchMove={(e) => this.handleTouchMove(e)}
+          >
+            <canvas
+              ref="cvs"
+              style={{ zoom: 0.5 }}
+              width={width * 2}
+              height={height * 2}
+            />
+          </div>
+        )}
+      </Consumer>
+    );
   }
 }

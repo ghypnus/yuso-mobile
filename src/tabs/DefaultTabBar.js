@@ -5,7 +5,7 @@ import { setPxStyle, getTransformPropValue, getPxStyle } from '../_utils/animate
 
 export default class DefaultTabBar extends React.PureComponent {
   static defaultProps = {
-    prefixCls: 'wme-tabs-tab-bar',
+    prefixCls: 'yuso-tabs-tab-bar',
     animated: true,
     tabs: [],
     goToTab: () => { },
@@ -167,7 +167,7 @@ export default class DefaultTabBar extends React.PureComponent {
   }
 
   renderTabBar() {
-     const {
+    const {
       prefixCls,
       animated,
       tabs = [],
@@ -190,14 +190,14 @@ export default class DefaultTabBar extends React.PureComponent {
 
     let cls = classnames(prefixCls, {
       [`${prefixCls}-animated`]: animated && !isMoving,
-      [`${prefixCls}-affix`]: affix
+      [`${prefixCls}-affix`]: affix,
     });
     const style = {};
     // const style = {
     //   backgroundColor: tabBarBackgroundColor || '',
     // };
-    if(affix) {
-      style.top = affixTop + 'px';
+    if (affix) {
+      style.top = `${affixTop}px`;
     }
 
     const transformStyle = needScroll ? {
@@ -213,19 +213,22 @@ export default class DefaultTabBar extends React.PureComponent {
       },
       className: `${prefixCls}-underline`,
     };
-    return <div
-      className={`${cls} ${prefixCls}-${tabBarPosition}`}
-      style={style}>
-      {showPrev && <div className={`${prefixCls}-prevpage`} />}
-      <div role="tablist" className={`${prefixCls}-content`} style={transformStyle} ref={this.setContentLayout}>
-        {Tabs}
-        {
+    return (
+      <div
+        className={`${cls} ${prefixCls}-${tabBarPosition}`}
+        style={style}
+      >
+        {showPrev && <div className={`${prefixCls}-prevpage`} />}
+        <div role="tablist" className={`${prefixCls}-content`} style={transformStyle} ref={this.setContentLayout}>
+          {Tabs}
+          {
           renderUnderline ? renderUnderline(underlineProps)
             : <div {...underlineProps} />
         }
+        </div>
+        {showNext && <div className={`${prefixCls}-nextpage`} />}
       </div>
-      {showNext && <div className={`${prefixCls}-nextpage`} />}
-    </div>
+    );
   }
 
   setContentLayout = (div) => {
@@ -237,7 +240,7 @@ export default class DefaultTabBar extends React.PureComponent {
   render() {
     const { affix } = this.props;
     return affix ? createPortal(
-      this.renderTabBar(), this.rootEl
-    ) : this.renderTabBar()
+      this.renderTabBar(), this.rootEl,
+    ) : this.renderTabBar();
   }
 }

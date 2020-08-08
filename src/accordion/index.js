@@ -14,7 +14,7 @@ function toArray(activeKey) {
 
 class Accordion extends Component {
   static defaultProps = {
-    prefixCls: 'wme-accordion',
+    prefixCls: 'yuso-accordion',
     onChange() { },
     accordion: false,
     destroyInactivePanel: false,

@@ -75,7 +75,7 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-pop-layer {
+.yuso-pop-layer {
   display: none;
   position: fixed;
   width: 100%;
@@ -86,16 +86,16 @@
   align-items: flex-end;
   bottom: 0;
 }
-.wme-pop-layer-top {
+.yuso-pop-layer-top {
   align-items: flex-start;
 }
-.wme-pop-layer-bottom {
+.yuso-pop-layer-bottom {
   align-items: flex-end;
 }
-.wme-pop-layer-visible {
+.yuso-pop-layer-visible {
   display: flex;
 }
-.wme-pop-layer .wme-pop-layer-container {
+.yuso-pop-layer .yuso-pop-layer-container {
   display: flex;
   flex-flow: column;
   width: 100%;

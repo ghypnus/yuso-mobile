@@ -8952,7 +8952,7 @@ var Accordion = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 _defineProperty(Accordion, "defaultProps", {
-  prefixCls: 'wme-accordion',
+  prefixCls: 'yuso-accordion',
   onChange: function onChange() {},
   accordion: false,
   destroyInactivePanel: false
@@ -9254,7 +9254,7 @@ var Avatar = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Avatar, "defaultProps", {
-  prefixCls: 'wme-avatar'
+  prefixCls: 'yuso-avatar'
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (Avatar);
@@ -9502,7 +9502,7 @@ var Axis = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Axis, "defaultProps", {
-  prefixCls: 'wme-axis'
+  prefixCls: 'yuso-axis'
 });
 
 
@@ -9804,7 +9804,7 @@ var Button = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Button, "defaultProps", {
-  prefixCls: 'wme-button',
+  prefixCls: 'yuso-button',
   size: 'large',
   type: ''
 });
@@ -10165,12 +10165,12 @@ var Calendar = /*#__PURE__*/function (_React$Component) {
           type: 'current'
         };
       });
-      var days = [].concat(_toConsumableArray(prevMonthDays), _toConsumableArray(currentMonthDays)); //下月天数=42-上月-当月
+      var days = [].concat(_toConsumableArray(prevMonthDays), _toConsumableArray(currentMonthDays)); // 下月天数=42-上月-当月
 
       var nextNum = 42 - days.length;
 
       if (!!onlyCurrentMonth && nextNum > 6) {
-        nextNum = nextNum - 7;
+        nextNum -= 7;
       }
 
       var nextMonthDays = this.rangeArr(nextNum).map(function (_, index) {
@@ -10499,16 +10499,16 @@ var Calendar = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Calendar, "defaultProps", {
-  prefixCls: 'wme-calendar',
+  prefixCls: 'yuso-calendar',
   zIndex: 2,
   week: ['一', '二', '三', '四', '五', '六', '日'],
   onlyCurrentMonth: true,
-  //只显示当月日期
+  // 只显示当月日期
   selectedValue: [],
-  //选中的日期
+  // 选中的日期
   view: 'grid',
-  //显示方式 grid/list
-  mode: 'view' //模式 view/edit
+  // 显示方式 grid/list
+  mode: 'view' // 模式 view/edit
 
 });
 
@@ -10804,7 +10804,7 @@ var Input = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Input, "defaultProps", {
-  prefixCls: 'wme-checkbox',
+  prefixCls: 'yuso-checkbox',
   size: 'large'
 });
 
@@ -11308,7 +11308,7 @@ var MutilDatePicker = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(MutilDatePicker, "defaultProps", {
-  prefixCls: 'wme-picker',
+  prefixCls: 'yuso-picker',
   cols: 3,
   // 列
   cascade: false,
@@ -11618,7 +11618,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           case 'yyyy/MM/dd':
-            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_picker_index__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("yusoPicker", {
               title: _pickerTitle,
               defaultValue: value || defaultDateV,
               cascade: true,
@@ -11645,7 +11645,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           case 'yyyy/MM':
-            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_picker_index__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("yusoPicker", {
               title: _pickerTitle,
               defaultValue: value || defaultYearMonthV,
               data: _this2.yearMonthList,
@@ -11671,7 +11671,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           case 'HH:mm:ss':
-            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_picker_index__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("yusoPicker", {
               title: _pickerTitle,
               defaultValue: value || defaultSecondV,
               data: _this2.secondList,
@@ -11697,7 +11697,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           case 'HH:mm':
-            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_picker_index__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("yusoPicker", {
               title: _pickerTitle,
               defaultValue: value || defaultTimeV,
               data: _this2.timeList,
@@ -11723,7 +11723,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
             break;
 
           default:
-            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_picker_index__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("yusoPicker", {
               title: _pickerTitle,
               value: value,
               data: data,
@@ -12086,7 +12086,7 @@ var DatePicker = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(DatePicker, "defaultProps", {
-  prefixCls: 'wme-date-picker',
+  prefixCls: 'yuso-date-picker',
   arrow: 'horizontal',
   yearStep: 100 // 取前后100年的日期
 
@@ -12296,7 +12296,7 @@ var Flex = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 Flex.defaultProps = {
-  prefixCls: 'wme-flexbox',
+  prefixCls: 'yuso-flexbox',
   align: 'center'
 };
 /* harmony default export */ __webpack_exports__["default"] = (Flex);
@@ -12465,7 +12465,7 @@ var FlexItem = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 FlexItem.defaultProps = {
-  prefixCls: 'wme-flexbox'
+  prefixCls: 'yuso-flexbox'
 };
 /* harmony default export */ __webpack_exports__["default"] = (FlexItem);
 
@@ -13053,7 +13053,7 @@ var Gesture = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Gesture, "defaultProps", {
-  prefixCls: 'wme-gesture',
+  prefixCls: 'yuso-gesture',
   roundRadii: 30,
   // 大圆点的半径
   pointRadii: 10,
@@ -13352,7 +13352,7 @@ var Grade = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Grade, "defaultProps", {
-  prefixCls: 'wme-grade',
+  prefixCls: 'yuso-grade',
   visible: false,
   title: '',
   value: function value() {}
@@ -13629,7 +13629,7 @@ var GridItem = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(GridItem, "defaultProps", {
-  prefixCls: 'wme-grid',
+  prefixCls: 'yuso-grid',
   align: 'middle'
 });
 
@@ -13841,7 +13841,7 @@ var Grid = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Grid, "defaultProps", {
-  prefixCls: 'wme-grid',
+  prefixCls: 'yuso-grid',
   cols: 4
 });
 
@@ -15711,7 +15711,7 @@ var HrSection = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(HrSection, "defaultProps", {
-  prefixCls: 'wme-section'
+  prefixCls: 'yuso-section'
 });
 
 
@@ -16175,7 +16175,7 @@ var Icon = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Icon, "defaultProps", {
-  prefixCls: 'wme-icon'
+  prefixCls: 'yuso-icon'
 });
 
 
@@ -16552,8 +16552,8 @@ var IMagePicker = /*#__PURE__*/function (_React$Component) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
             key: idx,
             style: {
-              maxHeight: "100%",
-              maxWidth: "100%"
+              maxHeight: '100%',
+              maxWidth: '100%'
             },
             src: item.src,
             onClick: function onClick(_) {
@@ -16571,7 +16571,7 @@ var IMagePicker = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(IMagePicker, "defaultProps", {
-  prefixCls: 'wme-image-picker',
+  prefixCls: 'yuso-image-picker',
   count: 9,
   onSelect: function onSelect() {}
 });
@@ -16842,7 +16842,7 @@ _defineProperty(ImageViewer, "defaultProps", {
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! exports provided: Version, Button, Input, Toast, Flex, Menu, List, Switch, SwitchItem, Message, Avatar, Upload, ImagePicker, Calendar, Gesture, TextArea, Picker, MultiPicker, WmePicker, Scroller, PullToRefresh, Grid, PopLayer, SelectPicker, DatePicker, Swipe, Loading, Text, Checkbox, Axis, Icon, HrSection, HrConstantCode, HrDynamic, HrComboBox, HrSetId, HrModal, HrImagePicker, Tabs, Accordion, Grade, ImageViewer, LocaleProvider */
+/*! exports provided: Version, Button, Input, Toast, Flex, Menu, List, Switch, SwitchItem, Message, Avatar, Upload, ImagePicker, Calendar, Gesture, TextArea, Picker, MultiPicker, YusoPicker, Scroller, PullToRefresh, Grid, PopLayer, SelectPicker, DatePicker, Swipe, Loading, Text, Checkbox, Axis, Icon, HrSection, HrConstantCode, HrDynamic, HrComboBox, HrSetId, HrModal, HrImagePicker, Tabs, Accordion, Grade, ImageViewer, LocaleProvider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16902,7 +16902,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MultiPicker", function() { return _picker_MultiPicker__WEBPACK_IMPORTED_MODULE_17__["default"]; });
 
 /* harmony import */ var _picker_index__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./picker/index */ "./src/picker/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "WmePicker", function() { return _picker_index__WEBPACK_IMPORTED_MODULE_18__["default"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "YusoPicker", function() { return _picker_index__WEBPACK_IMPORTED_MODULE_18__["default"]; });
 
 /* harmony import */ var _scroller_index__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./scroller/index */ "./src/scroller/index.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Scroller", function() { return _scroller_index__WEBPACK_IMPORTED_MODULE_19__["default"]; });
@@ -17460,7 +17460,7 @@ var Input = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Input, "defaultProps", {
-  prefixCls: 'wme-input',
+  prefixCls: 'yuso-input',
   type: 'text',
   size: 'large',
   align: 'left'
@@ -17739,7 +17739,7 @@ var ListItem = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(ListItem, "defaultProps", {
-  prefixCls: 'wme-list',
+  prefixCls: 'yuso-list',
   align: 'center',
   error: false,
   multipleLine: false,
@@ -17947,7 +17947,7 @@ var List = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 List.defaultProps = {
-  prefixCls: 'wme-list',
+  prefixCls: 'yuso-list',
   direction: 'row'
 };
 List.Item = _ListItem__WEBPACK_IMPORTED_MODULE_2__["default"];
@@ -18150,7 +18150,7 @@ var Loading = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Loading, "defaultProps", {
-  prefixCls: 'wme-loading'
+  prefixCls: 'yuso-loading'
 });
 
 
@@ -18179,7 +18179,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var loadingInstance;
-var prefixCls = 'wme-loading';
+var prefixCls = 'yuso-loading';
 
 function newInstance() {
   var div = document.createElement('div');
@@ -18812,7 +18812,7 @@ var Menu = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Menu, "defaultProps", {
-  prefixCls: 'wme-menu',
+  prefixCls: 'yuso-menu',
   direction: 'row',
   height: '3rem',
   data: []
@@ -19139,7 +19139,7 @@ var Message = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 Message.defaultProps = {
-  prefixCls: 'wme-message',
+  prefixCls: 'yuso-message',
   direction: 'row'
 };
 /* harmony default export */ __webpack_exports__["default"] = (Message);
@@ -19223,7 +19223,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 
 var messageInstance;
-var prefixCls = 'wme-message';
+var prefixCls = 'yuso-message';
 /**
  * opts: 参数
  * @param {String}  title       标题
@@ -19534,7 +19534,7 @@ var MultiPicker = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(MultiPicker, "defaultProps", {
-  prefixCls: 'wme-multi-picker',
+  prefixCls: 'yuso-multi-picker',
   onValueChange: function onValueChange() {}
 });
 
@@ -20185,7 +20185,7 @@ var Picker = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Picker, "defaultProps", {
-  prefixCls: 'wme-picker'
+  prefixCls: 'yuso-picker'
 });
 
 _defineProperty(Picker, "Item", _PickerItem__WEBPACK_IMPORTED_MODULE_2__["default"]);
@@ -20371,7 +20371,7 @@ var PickerItem = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(PickerItem, "defaultProps", {
-  prefixCls: 'wme-picker',
+  prefixCls: 'yuso-picker',
   value: null
 });
 
@@ -20388,7 +20388,7 @@ _defineProperty(PickerItem, "defaultProps", {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WmePicker; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return YusoPicker; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _MultiPicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MultiPicker */ "./src/picker/MultiPicker.js");
@@ -20578,7 +20578,7 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 /**
- * WmePicker
+ * YusoPicker
  * @author john.gao
  */
 
@@ -20613,15 +20613,15 @@ function arrayRecurrenceFilter(data, filterFn, options) {
   return result;
 }
 
-var WmePicker = /*#__PURE__*/function (_React$Component) {
-  _inherits(WmePicker, _React$Component);
+var YusoPicker = /*#__PURE__*/function (_React$Component) {
+  _inherits(YusoPicker, _React$Component);
 
-  var _super = _createSuper(WmePicker);
+  var _super = _createSuper(YusoPicker);
 
-  function WmePicker(props) {
+  function YusoPicker(props) {
     var _this;
 
-    _classCallCheck(this, WmePicker);
+    _classCallCheck(this, YusoPicker);
 
     _this = _super.call(this, props);
 
@@ -20678,7 +20678,7 @@ var WmePicker = /*#__PURE__*/function (_React$Component) {
     return _this;
   }
 
-  _createClass(WmePicker, [{
+  _createClass(YusoPicker, [{
     key: "componentDidMount",
     value: function componentDidMount() {} // 组件接收新的props时触发，render时不触发
 
@@ -20865,11 +20865,11 @@ var WmePicker = /*#__PURE__*/function (_React$Component) {
     }
   }]);
 
-  return WmePicker;
+  return YusoPicker;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-_defineProperty(WmePicker, "defaultProps", {
-  prefixCls: 'wme-picker',
+_defineProperty(YusoPicker, "defaultProps", {
+  prefixCls: 'yuso-picker',
   cols: 3,
   // 列
   cascade: false,
@@ -21178,7 +21178,7 @@ var PopLayer = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(PopLayer, "defaultProps", {
-  prefixCls: 'wme-pop-layer'
+  prefixCls: 'yuso-pop-layer'
 });
 
 
@@ -21732,7 +21732,7 @@ var PullToRefresh = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(PullToRefresh, "defaultProps", {
-  prefixCls: 'wme-pull-to-refresh',
+  prefixCls: 'yuso-pull-to-refresh',
   startX: 0,
   startY: 0,
   scrollbars: true // 是否有滚动条
@@ -22403,7 +22403,7 @@ var Scroller = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Scroller, "defaultProps", {
-  prefixCls: 'wme-scroller',
+  prefixCls: 'yuso-scroller',
   startX: 0,
   startY: 0,
   bounce: true,
@@ -22612,7 +22612,7 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
     _this.state = {
       visible: false,
-      useDefaultValue: true //是否使用默认值
+      useDefaultValue: true // 是否使用默认值
 
     };
     return _this;
@@ -22632,12 +22632,12 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
       if (value) {
         if (typeof value === 'string' || typeof value === 'number') {
           return [value];
-        } else {
-          return value;
         }
-      } else {
-        return useDefaultValue ? defaultValue : null;
+
+        return value;
       }
+
+      return useDefaultValue ? defaultValue : null;
     }
     /**
      * 递归获取值数组
@@ -22710,7 +22710,7 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
     }
     /**
      * 获取显示名称
-     * @param {Any} selectedValues 
+     * @param {Any} selectedValues
      */
 
   }, {
@@ -22783,13 +22783,13 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
             onOk && onOk(resetVal);
           }
         });
-      } else {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icon_index__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          type: "enter",
-          size: "small",
-          className: arrowCls
-        });
       }
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icon_index__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        type: "enter",
+        size: "small",
+        className: arrowCls
+      });
     }
   }, {
     key: "render",
@@ -22842,7 +22842,7 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
         }, placeholder)), _this4.renderSuffixIcon()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pop_layer_index__WEBPACK_IMPORTED_MODULE_4__["default"], {
           visible: _this4.state.visible,
           direction: "bottom"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_picker_index__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("yusoPicker", {
           title: pickerTitle || SelectPicker.pickerTitle,
           defaultValue: _this4.getValue(value),
           cascade: cascade,
@@ -22877,7 +22877,7 @@ var SelectPicker = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(SelectPicker, "defaultProps", {
-  prefixCls: 'wme-select-picker',
+  prefixCls: 'yuso-select-picker',
   arrow: 'horizontal',
   showSelectedType: SHOW_ALL
 });
@@ -22913,9 +22913,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var swipe_js_iso__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swipe-js-iso */ "./node_modules/swipe-js-iso/swipe.js");
 /* harmony import */ var swipe_js_iso__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(swipe_js_iso__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _icon_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../icon/index */ "./src/icon/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _icon_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../icon/index */ "./src/icon/index.js");
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
@@ -23250,19 +23250,20 @@ var Swipe = /*#__PURE__*/function (_React$Component) {
           id = _this$props2.id,
           className = _this$props2.className,
           defaultStyle = _this$props2.defaultStyle,
-          style = _this$props2.style,
+          _this$props2$style = _this$props2.style,
+          style = _this$props2$style === void 0 ? {} : _this$props2$style,
           children = _this$props2.children,
           prefixCls = _this$props2.prefixCls,
           indicator = _this$props2.indicator,
           showCloseBtn = _this$props2.showCloseBtn,
           close = _this$props2.close;
       var syl = {
-        container: _objectSpread({}, style && style.container, {}, defaultStyle.container),
-        wrapper: _objectSpread({}, style && style.wrapper, {}, defaultStyle.wrapper),
-        child: _objectSpread({}, style && style.child, {}, defaultStyle.child),
+        container: _objectSpread({}, defaultStyle.container, {}, style.container),
+        wrapper: _objectSpread({}, defaultStyle.wrapper, {}, style.wrapper),
+        child: _objectSpread({}, defaultStyle.child, {}, style.child),
         pagination: style && style.pagination || null
       };
-      var wrapCls = classnames__WEBPACK_IMPORTED_MODULE_3___default()(prefixCls, className);
+      var wrapCls = classnames__WEBPACK_IMPORTED_MODULE_2___default()(prefixCls, className);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: id,
         ref: function ref(container) {
@@ -23286,13 +23287,13 @@ var Swipe = /*#__PURE__*/function (_React$Component) {
           close && close();
         },
         className: "".concat(prefixCls, "-close")
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icon_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icon_index__WEBPACK_IMPORTED_MODULE_3__["default"], {
         type: "delete_fill"
       })), indicator && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "".concat(prefixCls, "-pagination"),
         style: syl.pagination
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.map(children, function (child, index) {
-        var childCls = classnames__WEBPACK_IMPORTED_MODULE_3___default()("".concat(prefixCls, "-pagination-bullet"), _defineProperty({}, "".concat(prefixCls, "-pagination-bullet-active"), _this4.state.currentIndex === index));
+        var childCls = classnames__WEBPACK_IMPORTED_MODULE_2___default()("".concat(prefixCls, "-pagination-bullet"), _defineProperty({}, "".concat(prefixCls, "-pagination-bullet-active"), _this4.state.currentIndex === index));
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: childCls
         });
@@ -23304,7 +23305,7 @@ var Swipe = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Swipe, "defaultProps", {
-  prefixCls: 'swipe-container',
+  prefixCls: 'yuso-swipe',
   swipeOptions: {},
   defaultStyle: {
     container: {
@@ -23597,7 +23598,7 @@ var SwitchItem = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(SwitchItem, "defaultProps", {
-  prefixCls: 'wme-switch-item'
+  prefixCls: 'yuso-switch-item'
 });
 
 
@@ -23814,7 +23815,7 @@ var Switch = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 Switch.defaultProps = {
-  prefixCls: 'wme-switch',
+  prefixCls: 'yuso-switch',
   name: '',
   value: false,
   disabled: false,
@@ -24275,7 +24276,7 @@ var DefaultTabBar = /*#__PURE__*/function (_React$PureComponent) {
       // };
 
       if (affix) {
-        style.top = affixTop + 'px';
+        style.top = "".concat(affixTop, "px");
       }
 
       var transformStyle = needScroll ? _objectSpread({}, Object(_utils_animate__WEBPACK_IMPORTED_MODULE_3__["getTransformPropValue"])(transform)) : {};
@@ -24322,7 +24323,7 @@ var DefaultTabBar = /*#__PURE__*/function (_React$PureComponent) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
 
 _defineProperty(DefaultTabBar, "defaultProps", {
-  prefixCls: 'wme-tabs-tab-bar',
+  prefixCls: 'yuso-tabs-tab-bar',
   animated: true,
   tabs: [],
   goToTab: function goToTab() {},
@@ -24666,7 +24667,7 @@ _defineProperty(TabPane, "defaultProps", {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WmeTabs; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return YusoTabs; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _TabPane__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TabPane */ "./src/tabs/TabPane.js");
@@ -24856,15 +24857,15 @@ var getPanDirection = function getPanDirection(direction) {
   }
 };
 
-var WmeTabs = /*#__PURE__*/function (_Component) {
-  _inherits(WmeTabs, _Component);
+var YusoTabs = /*#__PURE__*/function (_Component) {
+  _inherits(YusoTabs, _Component);
 
-  var _super = _createSuper(WmeTabs);
+  var _super = _createSuper(YusoTabs);
 
-  function WmeTabs(props) {
+  function YusoTabs(props) {
     var _this;
 
-    _classCallCheck(this, WmeTabs);
+    _classCallCheck(this, YusoTabs);
 
     _this = _super.call(this, props);
 
@@ -25061,7 +25062,7 @@ var WmeTabs = /*#__PURE__*/function (_Component) {
     return _this;
   }
 
-  _createClass(WmeTabs, [{
+  _createClass(YusoTabs, [{
     key: "getTabBarBaseProps",
     value: function getTabBarBaseProps() {
       var currentTab = this.state.currentTab;
@@ -25304,12 +25305,12 @@ var WmeTabs = /*#__PURE__*/function (_Component) {
     }
   }]);
 
-  return WmeTabs;
+  return YusoTabs;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-_defineProperty(WmeTabs, "DefaultTabBar", _DefaultTabBar__WEBPACK_IMPORTED_MODULE_2__["default"]);
+_defineProperty(YusoTabs, "DefaultTabBar", _DefaultTabBar__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
-_defineProperty(WmeTabs, "defaultProps", {
+_defineProperty(YusoTabs, "defaultProps", {
   tabBarPosition: 'top',
   initialPage: 0,
   swipeable: true,
@@ -25320,7 +25321,7 @@ _defineProperty(WmeTabs, "defaultProps", {
   usePaged: true,
   tabDirection: 'horizontal',
   distanceToChangeTab: 0.3,
-  prefixCls: 'wme-tabs',
+  prefixCls: 'yuso-tabs',
   useOnPan: true
 });
 
@@ -26297,7 +26298,7 @@ var TextArea = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(TextArea, "defaultProps", {
-  prefixCls: 'wme-textarea',
+  prefixCls: 'yuso-textarea',
   autoHeight: false,
   disabled: false,
   rows: 2,
@@ -26531,7 +26532,7 @@ var Toast = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 Toast.defaultProps = {
-  prefixCls: 'wme-toast',
+  prefixCls: 'yuso-toast',
   duration: 2.5
 };
 /* harmony default export */ __webpack_exports__["default"] = (Toast);
@@ -26560,7 +26561,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var toastInstance;
-var prefixCls = 'wme-toast';
+var prefixCls = 'yuso-toast';
 
 function newInstance(content, duration, _onClose) {
   var div = document.createElement('div');
@@ -27111,7 +27112,7 @@ var Upload = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 _defineProperty(Upload, "defaultProps", {
-  prefixCls: 'wme-upload',
+  prefixCls: 'yuso-upload',
   fileTypes: '*.*',
   // 允许上传的文件类型，格式'*.jpg,*.doc'
   isPress: true,

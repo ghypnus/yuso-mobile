@@ -380,7 +380,7 @@ var PullToRefresh = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(PullToRefresh, "defaultProps", {
-  prefixCls: 'wme-pull-to-refresh',
+  prefixCls: 'yuso-pull-to-refresh',
   startX: 0,
   startY: 0,
   scrollbars: true // 是否有滚动条

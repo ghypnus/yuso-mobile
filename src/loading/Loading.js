@@ -10,7 +10,7 @@ import Icon from '../icon/index';
 
 export default class Loading extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-loading',
+    prefixCls: 'yuso-loading',
   }
 
   render() {

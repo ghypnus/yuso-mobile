@@ -112,7 +112,7 @@ var Button = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Button, "defaultProps", {
-  prefixCls: 'wme-button',
+  prefixCls: 'yuso-button',
   size: 'large',
   type: ''
 });

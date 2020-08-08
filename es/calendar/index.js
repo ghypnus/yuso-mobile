@@ -190,12 +190,12 @@ var Calendar = /*#__PURE__*/function (_React$Component) {
           type: 'current'
         };
       });
-      var days = [].concat(_toConsumableArray(prevMonthDays), _toConsumableArray(currentMonthDays)); //下月天数=42-上月-当月
+      var days = [].concat(_toConsumableArray(prevMonthDays), _toConsumableArray(currentMonthDays)); // 下月天数=42-上月-当月
 
       var nextNum = 42 - days.length;
 
       if (!!onlyCurrentMonth && nextNum > 6) {
-        nextNum = nextNum - 7;
+        nextNum -= 7;
       }
 
       var nextMonthDays = this.rangeArr(nextNum).map(function (_, index) {
@@ -524,16 +524,16 @@ var Calendar = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Calendar, "defaultProps", {
-  prefixCls: 'wme-calendar',
+  prefixCls: 'yuso-calendar',
   zIndex: 2,
   week: ['一', '二', '三', '四', '五', '六', '日'],
   onlyCurrentMonth: true,
-  //只显示当月日期
+  // 只显示当月日期
   selectedValue: [],
-  //选中的日期
+  // 选中的日期
   view: 'grid',
-  //显示方式 grid/list
-  mode: 'view' //模式 view/edit
+  // 显示方式 grid/list
+  mode: 'view' // 模式 view/edit
 
 });
 

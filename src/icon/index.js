@@ -3,14 +3,14 @@ import classnames from 'classnames';
 
 export default class Icon extends React.Component {
     static defaultProps = {
-      prefixCls: 'wme-icon',
+      prefixCls: 'yuso-icon',
     }
 
     render() {
       const { type, size, onClick, prefixCls, className, style } = this.props;
 
       const wrapCls = classnames(prefixCls, className, {
-        [`${prefixCls}-${size}`]: size
+        [`${prefixCls}-${size}`]: size,
       });
       return (
         <svg

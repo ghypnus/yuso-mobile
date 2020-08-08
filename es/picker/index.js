@@ -29,7 +29,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 /**
- * WmePicker
+ * YusoPicker
  * @author john.gao
  */
 import React from 'react';
@@ -62,15 +62,15 @@ function arrayRecurrenceFilter(data, filterFn, options) {
   return result;
 }
 
-var WmePicker = /*#__PURE__*/function (_React$Component) {
-  _inherits(WmePicker, _React$Component);
+var YusoPicker = /*#__PURE__*/function (_React$Component) {
+  _inherits(YusoPicker, _React$Component);
 
-  var _super = _createSuper(WmePicker);
+  var _super = _createSuper(YusoPicker);
 
-  function WmePicker(props) {
+  function YusoPicker(props) {
     var _this;
 
-    _classCallCheck(this, WmePicker);
+    _classCallCheck(this, YusoPicker);
 
     _this = _super.call(this, props);
 
@@ -127,7 +127,7 @@ var WmePicker = /*#__PURE__*/function (_React$Component) {
     return _this;
   }
 
-  _createClass(WmePicker, [{
+  _createClass(YusoPicker, [{
     key: "componentDidMount",
     value: function componentDidMount() {} // 组件接收新的props时触发，render时不触发
 
@@ -314,11 +314,11 @@ var WmePicker = /*#__PURE__*/function (_React$Component) {
     }
   }]);
 
-  return WmePicker;
+  return YusoPicker;
 }(React.Component);
 
-_defineProperty(WmePicker, "defaultProps", {
-  prefixCls: 'wme-picker',
+_defineProperty(YusoPicker, "defaultProps", {
+  prefixCls: 'yuso-picker',
   cols: 3,
   // 列
   cascade: false,
@@ -331,4 +331,4 @@ _defineProperty(WmePicker, "defaultProps", {
   onChange: function onChange(v, i) {}
 });
 
-export { WmePicker as default };
+export { YusoPicker as default };

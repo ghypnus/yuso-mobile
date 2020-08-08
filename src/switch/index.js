@@ -34,7 +34,7 @@ class Switch extends React.Component {
 }
 
 Switch.defaultProps = {
-  prefixCls: 'wme-switch',
+  prefixCls: 'yuso-switch',
   name: '',
   value: false,
   disabled: false,

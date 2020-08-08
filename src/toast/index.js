@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 import Toast from './Toast';
 
 let toastInstance;
-const prefixCls = 'wme-toast';
+const prefixCls = 'yuso-toast';
 
 
 function newInstance(content, duration, onClose) {

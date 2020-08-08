@@ -9,7 +9,7 @@ import classnames from 'classnames';
 
 export default class Input extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-checkbox',
+    prefixCls: 'yuso-checkbox',
     size: 'large',
   }
 

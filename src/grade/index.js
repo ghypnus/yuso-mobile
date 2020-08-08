@@ -14,7 +14,7 @@ import { Consumer } from '../locale-provider/HrContext';
 
 export default class Grade extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-grade',
+    prefixCls: 'yuso-grade',
     visible: false,
     title: '',
     value: () => { },

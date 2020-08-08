@@ -81,7 +81,7 @@ var Grid = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Grid, "defaultProps", {
-  prefixCls: 'wme-grid',
+  prefixCls: 'yuso-grid',
   cols: 4
 });
 

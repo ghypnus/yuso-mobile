@@ -75,24 +75,24 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-icon {
+.yuso-icon {
   width: 1rem;
   height: 1rem;
   fill: rgba(0, 0, 0, 0.45);
 }
-.wme-icon-small {
+.yuso-icon-small {
   width: 0.875rem;
   height: 0.875rem;
 }
-.wme-icon-middle {
+.yuso-icon-middle {
   width: 1.125rem;
   height: 1.125rem;
 }
-.wme-icon-large {
+.yuso-icon-large {
   width: 1.25rem;
   height: 1.25rem;
 }
-.wme-icon-xl {
+.yuso-icon-xl {
   width: 1.5rem;
   height: 1.5rem;
 }

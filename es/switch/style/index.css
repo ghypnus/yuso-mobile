@@ -75,7 +75,7 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-switch {
+.yuso-switch {
   width: 3rem;
   height: 1.5rem;
   border-radius: calc(0.75 * 1rem);
@@ -88,22 +88,22 @@
   transition: border 0.4s, box-shadow 0.4s;
   position: relative;
 }
-.wme-switch-disabled {
+.yuso-switch-disabled {
   border-color: #d5d5d5;
   background-color: #d5d5d5;
   opacity: 0.5;
 }
-.wme-switch-checked {
+.yuso-switch-checked {
   border-color: #4285f4;
   background-color: #4285f4;
   box-shadow: #4285f4 0px 0px 0px 1rem inset;
   transition: border 0.4s, box-shadow 0.2s, background-color 1.2s;
 }
-.wme-switch-checked .slider {
+.yuso-switch-checked .slider {
   left: calc(0.5 * 3rem + 3px) !important;
   transition: background-color 0.4s, left 0.2s;
 }
-.wme-switch .slider {
+.yuso-switch .slider {
   left: 0;
   top: 1.5px;
   width: calc(0.5 * 3rem - 3px);

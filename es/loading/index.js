@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Loading from './Loading';
 var loadingInstance;
-var prefixCls = 'wme-loading';
+var prefixCls = 'yuso-loading';
 
 function newInstance() {
   var div = document.createElement('div');

@@ -78,7 +78,7 @@
 /* svg - 箭头 */
 /* 超出省略号 */
 /* 边框阴影 */
-.wme-switch-item {
+.yuso-switch-item {
   display: flex;
   background-color: #fff;
   height: calc(3 * 1rem);
@@ -87,10 +87,10 @@
   padding-right: calc(1.25 * 1rem);
   border-radius: calc(4 * 1px);
 }
-.wme-switch-item-title {
+.yuso-switch-item-title {
   flex-grow: 1;
 }
-.wme-switch-item-title span {
+.yuso-switch-item-title span {
   display: inline-block;
   width: 10px;
   color: #ff6454;

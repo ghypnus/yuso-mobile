@@ -75,7 +75,7 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-loading {
+.yuso-loading {
   width: 100%;
   height: 100%;
   display: flex;
@@ -85,7 +85,7 @@
   z-index: 1998;
   background: transparent;
 }
-.wme-loading > svg {
+.yuso-loading > svg {
   fill: #4285f4;
   width: calc(2.5 * 1rem) !important;
   height: calc(2.5 * 1rem) !important;

@@ -75,82 +75,82 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-flexbox {
+.yuso-flexbox {
   text-align: center;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
-.wme-flexbox.wme-flexbox-dir-row {
+.yuso-flexbox.yuso-flexbox-dir-row {
   flex-direction: row;
 }
-.wme-flexbox.wme-flexbox-dir-row-reverse {
+.yuso-flexbox.yuso-flexbox-dir-row-reverse {
   flex-direction: row-reverse;
 }
-.wme-flexbox.wme-flexbox-dir-column {
+.yuso-flexbox.yuso-flexbox-dir-column {
   flex-direction: column;
 }
-.wme-flexbox.wme-flexbox-dir-column-reverse {
+.yuso-flexbox.yuso-flexbox-dir-column-reverse {
   flex-direction: column-reverse;
 }
-.wme-flexbox.wme-flexbox-nowrap {
+.yuso-flexbox.yuso-flexbox-nowrap {
   flex-wrap: nowrap;
 }
-.wme-flexbox.wme-flexbox-wrap {
+.yuso-flexbox.yuso-flexbox-wrap {
   flex-wrap: wrap;
 }
-.wme-flexbox.wme-flexbox-wrap-reverse {
+.yuso-flexbox.yuso-flexbox-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
-.wme-flexbox.wme-flexbox-justify-start {
+.yuso-flexbox.yuso-flexbox-justify-start {
   justify-content: flex-start;
 }
-.wme-flexbox.wme-flexbox-justify-end {
+.yuso-flexbox.yuso-flexbox-justify-end {
   justify-content: flex-end;
 }
-.wme-flexbox.wme-flexbox-justify-center {
+.yuso-flexbox.yuso-flexbox-justify-center {
   justify-content: center;
 }
-.wme-flexbox.wme-flexbox-justify-between {
+.yuso-flexbox.yuso-flexbox-justify-between {
   justify-content: space-between;
 }
-.wme-flexbox.wme-flexbox-justify-around {
+.yuso-flexbox.yuso-flexbox-justify-around {
   justify-content: space-around;
 }
-.wme-flexbox.wme-flexbox-align-start {
+.yuso-flexbox.yuso-flexbox-align-start {
   align-items: flex-start;
 }
-.wme-flexbox.wme-flexbox-align-end {
+.yuso-flexbox.yuso-flexbox-align-end {
   align-items: flex-end;
 }
-.wme-flexbox.wme-flexbox-align-center {
+.yuso-flexbox.yuso-flexbox-align-center {
   align-items: center;
 }
-.wme-flexbox.wme-flexbox-align-stretch {
+.yuso-flexbox.yuso-flexbox-align-stretch {
   align-items: stretch;
 }
-.wme-flexbox.wme-flexbox-align-baseline {
+.yuso-flexbox.yuso-flexbox-align-baseline {
   align-items: baseline;
 }
-.wme-flexbox.wme-flexbox-align-content-start {
+.yuso-flexbox.yuso-flexbox-align-content-start {
   align-content: flex-start;
 }
-.wme-flexbox.wme-flexbox-align-content-end {
+.yuso-flexbox.yuso-flexbox-align-content-end {
   align-items: flex-end;
 }
-.wme-flexbox.wme-flexbox-align-content-center {
+.yuso-flexbox.yuso-flexbox-align-content-center {
   align-items: center;
 }
-.wme-flexbox.wme-flexbox-align-content-between {
+.yuso-flexbox.yuso-flexbox-align-content-between {
   align-items: stretch;
 }
-.wme-flexbox.wme-flexbox-align-content-around {
+.yuso-flexbox.yuso-flexbox-align-content-around {
   align-items: baseline;
 }
-.wme-flexbox.wme-flexbox-align-content-stretch {
+.yuso-flexbox.yuso-flexbox-align-content-stretch {
   align-items: baseline;
 }
-.wme-flexbox .wme-flexbox-item {
+.yuso-flexbox .yuso-flexbox-item {
   flex: 1;
   display: flex;
   box-sizing: border-box;
@@ -158,6 +158,6 @@
   height: 100%;
   align-items: center;
 }
-.wme-flexbox .wme-flexbox-item:first-child {
+.yuso-flexbox .yuso-flexbox-item:first-child {
   margin-left: 0;
 }

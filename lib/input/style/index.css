@@ -78,7 +78,7 @@
 /* svg - 箭头 */
 /* 超出省略号 */
 /* 边框阴影 */
-.wme-input {
+.yuso-input {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -86,7 +86,7 @@
   height: calc(3 * 1rem);
   background: #fff;
 }
-.wme-input input {
+.yuso-input input {
   display: flex;
   flex-grow: 1;
   height: calc(3 * 1rem);
@@ -96,71 +96,71 @@
   width: 0;
   color: #4285f4;
 }
-.wme-input i {
+.yuso-input i {
   width: calc(3 * 1rem);
   height: calc(1.2 * 1rem);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-.wme-input .eye {
+.yuso-input .eye {
   display: flex;
   align-items: center;
   justify-content: center;
   width: calc(3 * 1rem);
   height: 100%;
 }
-.wme-input .eye i {
+.yuso-input .eye i {
   width: calc(1.25 * 1rem);
   height: calc(1.7 * 1rem);
 }
-.wme-input-close {
+.yuso-input-close {
   display: block;
   margin-right: calc(0.75 * 1rem);
   fill: rgba(0, 0, 0, 0.45);
 }
-.wme-input-align-left input {
+.yuso-input-align-left input {
   text-align: left;
 }
-.wme-input-align-center input {
+.yuso-input-align-center input {
   padding-left: 0;
   text-align: center;
 }
-.wme-input-align-right input {
+.yuso-input-align-right input {
   padding-right: calc(1.25 * 1rem);
   text-align: right;
 }
-.wme-input-search {
+.yuso-input-search {
   /*border: calc(2 * @hd) solid @brand-primary;*/
   background-color: rgba(0, 0, 0, 0.06);
   box-shadow: none;
 }
-.wme-input-small {
+.yuso-input-small {
   height: calc(2 * 1rem);
   box-sizing: border-box;
 }
-.wme-input-small input {
+.yuso-input-small input {
   font-size: calc(0.875 * 1rem);
 }
-.wme-input-icon input {
+.yuso-input-icon input {
   padding-left: 0;
 }
-.wme-input-title {
+.yuso-input-title {
   margin-left: calc(10 * 1px);
   flex-shrink: 0;
 }
-.wme-input-title span {
+.yuso-input-title span {
   width: 10px;
   display: inline-block;
   color: #ff6454;
   margin-right: calc(3 * 1px);
 }
-.wme-input-unit {
+.yuso-input-unit {
   margin-right: calc(0.75 * 1rem);
 }
-.wme-input-disabled input {
+.yuso-input-disabled input {
   color: rgba(0, 0, 0, 0.45);
 }
-.wme-input-read-only input {
+.yuso-input-read-only input {
   color: rgba(0, 0, 0, 0.85);
 }

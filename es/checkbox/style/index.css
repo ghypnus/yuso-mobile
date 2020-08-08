@@ -78,7 +78,7 @@
 /* svg - 箭头 */
 /* 超出省略号 */
 /* 边框阴影 */
-.wme-checkbox {
+.yuso-checkbox {
   width: 100%;
   display: flex;
   align-items: center;
@@ -87,7 +87,7 @@
   padding-left: calc(0.75 * 1rem);
   /* 选中状态 */
 }
-.wme-checkbox > span {
+.yuso-checkbox > span {
   white-space: nowrap;
   cursor: pointer;
   outline: none;
@@ -95,10 +95,10 @@
   position: relative;
   align-items: center;
 }
-.wme-checkbox-title {
+.yuso-checkbox-title {
   margin-left: calc(0.75 * 1rem);
 }
-.wme-checkbox-inner {
+.yuso-checkbox-inner {
   display: inline-block;
   position: relative;
   width: calc(calc(3 * 1rem) / 2);
@@ -109,7 +109,7 @@
   box-sizing: border-box;
   background-color: #fff;
 }
-.wme-checkbox-inner:after {
+.yuso-checkbox-inner:after {
   position: absolute;
   display: none;
   top: 3px;
@@ -122,7 +122,7 @@
   content: " ";
   transform: rotate(45deg);
 }
-.wme-checkbox input {
+.yuso-checkbox input {
   position: absolute;
   width: 100%;
   top: 0;
@@ -136,49 +136,49 @@
   cursor: pointer;
   line-height: normal;
 }
-.wme-checkbox-small {
+.yuso-checkbox-small {
   height: calc(2 * 1rem);
 }
-.wme-checkbox-small .wme-checkbox-inner {
+.yuso-checkbox-small .yuso-checkbox-inner {
   width: 20px;
   height: 20px;
   top: 6px;
 }
-.wme-checkbox-small .wme-checkbox-inner:after {
+.yuso-checkbox-small .yuso-checkbox-inner:after {
   top: 1px;
   right: 6px;
 }
-.wme-checkbox-mini {
+.yuso-checkbox-mini {
   height: calc(2 * 1rem);
 }
-.wme-checkbox-mini .wme-checkbox-inner {
+.yuso-checkbox-mini .yuso-checkbox-inner {
   width: 16px;
   height: 16px;
   top: 9px;
 }
-.wme-checkbox-mini .wme-checkbox-inner:after {
+.yuso-checkbox-mini .yuso-checkbox-inner:after {
   top: -1px;
   right: 4px;
 }
-.wme-checkbox-checked .wme-checkbox-inner {
+.yuso-checkbox-checked .yuso-checkbox-inner {
   border-color: #4285f4;
   background-color: #4285f4;
 }
-.wme-checkbox-checked .wme-checkbox-inner-blue {
+.yuso-checkbox-checked .yuso-checkbox-inner-blue {
   border-color: #3b95c8;
   background-color: #3b95c8;
 }
-.wme-checkbox-checked .wme-checkbox-inner:after {
+.yuso-checkbox-checked .yuso-checkbox-inner:after {
   display: block;
   border-color: #fff;
 }
-.wme-checkbox-disabled {
+.yuso-checkbox-disabled {
   opacity: 0.3;
 }
-.wme-checkbox-disabled .wme-checkbox-checked .wme-checkbox-inner {
+.yuso-checkbox-disabled .yuso-checkbox-checked .yuso-checkbox-inner {
   background-color: #f3f3f3;
   border-color: #d9d9d9;
 }
-.wme-checkbox-disabled .wme-checkbox-checked .wme-checkbox-inner:after {
+.yuso-checkbox-disabled .yuso-checkbox-checked .yuso-checkbox-inner:after {
   border-color: #888;
 }

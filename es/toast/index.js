@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Toast from './Toast';
 var toastInstance;
-var prefixCls = 'wme-toast';
+var prefixCls = 'yuso-toast';
 
 function newInstance(content, duration, _onClose) {
   var div = document.createElement('div');

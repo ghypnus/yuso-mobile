@@ -338,7 +338,7 @@ var MutilDatePicker = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(MutilDatePicker, "defaultProps", {
-  prefixCls: 'wme-picker',
+  prefixCls: 'yuso-picker',
   cols: 3,
   // 列
   cascade: false,

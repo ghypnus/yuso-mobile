@@ -75,7 +75,7 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-picker-action {
+.yuso-picker-action {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
@@ -84,8 +84,8 @@
   max-height: calc(3 * 1rem);
   font-size: calc(1 * 1rem);
 }
-.wme-picker-action-ok,
-.wme-picker-action-cancel {
+.yuso-picker-action-ok,
+.yuso-picker-action-cancel {
   padding: 0 1rem;
   height: 100%;
   display: flex;
@@ -93,28 +93,28 @@
   justify-content: center;
   cursor: pointer;
 }
-.wme-picker-action-ok {
+.yuso-picker-action-ok {
   color: #4285f4;
   cursor: pointer;
 }
-.wme-picker-action-title {
+.yuso-picker-action-title {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
 }
-.wme-picker,
-.wme-multi-picker {
+.yuso-picker,
+.yuso-multi-picker {
   background-color: #fff;
   flex-grow: 1;
   height: 238px;
   z-index: 1000;
 }
-.wme-multi-picker {
+.yuso-multi-picker {
   display: flex;
   align-items: center;
 }
-.wme-picker-item {
+.yuso-picker-item {
   font-size: 14px;
   height: 34px;
   line-height: 34px;
@@ -126,7 +126,7 @@
   width: 100%;
   box-sizing: border-box;
 }
-.wme-picker {
+.yuso-picker {
   display: block;
   position: relative;
   overflow: hidden;
@@ -134,7 +134,7 @@
   flex: 1;
   text-align: center;
 }
-.wme-picker-mask {
+.yuso-picker-mask {
   position: absolute;
   left: 0;
   top: 0;
@@ -147,13 +147,13 @@
   background-size: 100% 204px;
   background-repeat: no-repeat;
 }
-.wme-picker-content {
+.yuso-picker-content {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
 }
-.wme-picker-indicator {
+.yuso-picker-indicator {
   box-sizing: border-box;
   width: 100%;
   height: 34px;

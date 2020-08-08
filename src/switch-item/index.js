@@ -3,7 +3,7 @@ import Switch from '../switch/index';
 
 export default class SwitchItem extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-switch-item',
+    prefixCls: 'yuso-switch-item',
   }
 
   constructor(props) {

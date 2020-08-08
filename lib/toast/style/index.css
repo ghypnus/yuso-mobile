@@ -75,7 +75,7 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-toast {
+.yuso-toast {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -84,7 +84,7 @@
   transform: translateX(-50%) translateY(-50%);
   z-index: 1999;
 }
-.wme-toast .wme-toast-content {
+.yuso-toast .yuso-toast-content {
   min-width: calc(4 * 1rem);
   border-radius: calc(3 * 1px);
   color: #fff;

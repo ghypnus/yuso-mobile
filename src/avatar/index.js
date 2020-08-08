@@ -9,7 +9,7 @@ import classnames from 'classnames';
 
 class Avatar extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-avatar',
+    prefixCls: 'yuso-avatar',
   }
 
   constructor(props) {
@@ -40,7 +40,7 @@ class Avatar extends React.Component {
     if (typeof size === 'number') {
       newStyle.width = size;
       newStyle.height = size;
-      newStyle.fontSize = '1rem'
+      newStyle.fontSize = '1rem';
     }
 
     let avaTitle = title;
@@ -62,9 +62,10 @@ class Avatar extends React.Component {
       >
         <div className={cls}>
           {this.state.src ? '' : avaTitle}
-          {this.state.src && <img
+          {this.state.src && (
+          <img
             src={this.state.src}
-            onLoad={e => {
+            onLoad={(e) => {
               let width = e.target.clientWidth;
               let height = e.target.clientHeight;
               if (width > height) {
@@ -79,7 +80,8 @@ class Avatar extends React.Component {
                 src: url,
               });
             }}
-          />}
+          />
+          )}
         </div>
 
       </div>

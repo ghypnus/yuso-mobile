@@ -29,7 +29,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 import React, { Component } from 'react';
-import WmeTabs from './Tabs';
+import YusoTabs from './Tabs';
 import DefaultTabBar from './DefaultTabBar';
 /**
  * Tabs标签页
@@ -70,7 +70,7 @@ var Tabs = /*#__PURE__*/function (_Component) {
           className = _this$props.className,
           restProps = _objectWithoutProperties(_this$props, ["className"]);
 
-      return /*#__PURE__*/React.createElement(WmeTabs, _extends({
+      return /*#__PURE__*/React.createElement(YusoTabs, _extends({
         className: className,
         renderTabBar: this.renderTabBar
       }, restProps));

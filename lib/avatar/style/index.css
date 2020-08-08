@@ -75,23 +75,23 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-avatar {
+.yuso-avatar {
   width: calc(2.5 * 1rem);
   height: calc(2.5 * 1rem);
   border-radius: 50%;
   overflow: hidden;
   font-size: calc(0.75 * 1rem);
 }
-.wme-avatar-small {
+.yuso-avatar-small {
   width: calc(2.25 * 1rem);
   height: calc(2.25 * 1rem);
 }
-.wme-avatar-large {
+.yuso-avatar-large {
   width: calc(3.75 * 1rem);
   height: calc(3.75 * 1rem);
   font-size: calc(0.875 * 1rem);
 }
-.wme-avatar-content {
+.yuso-avatar-content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -99,11 +99,11 @@
   justify-content: center;
   color: rgba(0, 0, 0, 0.65);
 }
-.wme-avatar-image {
+.yuso-avatar-image {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
-.wme-avatar-title {
+.yuso-avatar-title {
   background-color: #f0f0f0;
 }

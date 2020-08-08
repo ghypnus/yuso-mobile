@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WmeTabs from './Tabs';
+import YusoTabs from './Tabs';
 import DefaultTabBar from './DefaultTabBar';
 
 /**
@@ -15,6 +15,6 @@ export default class Tabs extends Component {
 
   render() {
     const { className, ...restProps } = this.props;
-    return <WmeTabs className={className} renderTabBar={this.renderTabBar} {...restProps} />;
+    return <YusoTabs className={className} renderTabBar={this.renderTabBar} {...restProps} />;
   }
 }

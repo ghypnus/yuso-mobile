@@ -78,10 +78,10 @@
 /* svg - 箭头 */
 /* 超出省略号 */
 /* 边框阴影 */
-.wme-image-picker {
+.yuso-image-picker {
   background-color: #fff;
 }
-.wme-image-picker ul {
+.yuso-image-picker ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -89,14 +89,14 @@
   padding: 0 0.875em 0.875em 0.875em;
   overflow: hidden;
 }
-.wme-image-picker ul li {
+.yuso-image-picker ul li {
   width: 33.333%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: calc(0.75 * 1rem);
 }
-.wme-image-picker ul li .wme-image-picker-outer {
+.yuso-image-picker ul li .yuso-image-picker-outer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,20 +104,20 @@
   background-color: #fff;
   border-radius: calc(4 * 1px);
 }
-.wme-image-picker ul li .wme-image-picker-outer .wme-image-picker-close {
+.yuso-image-picker ul li .yuso-image-picker-outer .yuso-image-picker-close {
   position: absolute;
   top: calc(-8 * 1px);
   right: calc(-8 * 1px);
   cursor: pointer;
   fill: rgba(0, 0, 0, 0.45);
 }
-.wme-image-picker ul li .wme-image-picker-img-wrap {
+.yuso-image-picker ul li .yuso-image-picker-img-wrap {
   width: calc(4.75 * 1rem);
   height: calc(4.75 * 1rem);
   border-radius: calc(4 * 1px);
   overflow: hidden;
 }
-.wme-image-picker ul li.noData {
+.yuso-image-picker ul li.noData {
   padding: 0;
   margin: -1rem 0 0 0;
   color: rgba(0, 0, 0, 0.45);
@@ -125,7 +125,7 @@
   padding: 0 0 0 10px;
   margin: 0;
 }
-.wme-image-picker-title {
+.yuso-image-picker-title {
   height: calc(3 * 1rem);
   padding-left: calc(10 * 1px);
   /* border-bottom: @hd solid @border-color-divider; */
@@ -133,17 +133,17 @@
   line-height: calc(3 * 1rem);
   color: rgba(0, 0, 0, 0.85);
 }
-.wme-image-picker-title span {
+.yuso-image-picker-title span {
   width: 10px;
   display: inline-block;
   color: #ff6454;
   margin-right: calc(3 * 1px);
 }
-.wme-image-picker-upload {
+.yuso-image-picker-upload {
   flex-direction: column;
   position: relative;
 }
-.wme-image-picker-upload-outer {
+.yuso-image-picker-upload-outer {
   border: 1px solid #e1e1e1;
   width: calc(4.75 * 1rem);
   height: calc(4.75 * 1rem);
@@ -153,10 +153,10 @@
   box-sizing: border-box;
   border-radius: calc(4 * 1px);
 }
-.wme-image-picker-upload-icon {
+.yuso-image-picker-upload-icon {
   fill: rgba(0, 0, 0, 0.45);
 }
-.wme-image-picker-upload input {
+.yuso-image-picker-upload input {
   display: block;
   top: 0;
   left: 0;
@@ -165,11 +165,11 @@
   position: absolute;
   opacity: 0;
 }
-.wme-image-picker-upload > div {
+.yuso-image-picker-upload > div {
   color: rgba(0, 0, 0, 0.65);
   font-size: calc(0.875 * 1rem);
 }
-.wme-image-picker-placeholder {
+.yuso-image-picker-placeholder {
   color: rgba(0, 0, 0, 0.45);
   font-size: calc(0.875 * 1rem);
   padding: 0 1.25rem 0.875rem 1.25rem;

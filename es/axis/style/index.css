@@ -75,10 +75,10 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.wme-axis {
+.yuso-axis {
   background-color: #fff;
 }
-.wme-axis-header {
+.yuso-axis-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,61 +86,61 @@
   color: rgba(0, 0, 0, 0.85);
   padding: 0 1rem;
 }
-.wme-axis-header-undeline {
+.yuso-axis-header-undeline {
   border-bottom: 1px solid #f0f0f0;
 }
-.wme-axis-container {
+.yuso-axis-container {
   padding: calc(1.25 * 1rem) calc(1.25 * 1rem) 0 calc(1.25 * 1rem);
 }
-.wme-axis-container .wme-axis-item {
+.yuso-axis-container .yuso-axis-item {
   display: flex;
   align-items: flex-start;
   position: relative;
 }
-.wme-axis-container .wme-axis-item:last-child {
+.yuso-axis-container .yuso-axis-item:last-child {
   padding-bottom: calc(0.5 * 1rem);
 }
-.wme-axis-container .wme-axis-item:not(:last-child) {
+.yuso-axis-container .yuso-axis-item:not(:last-child) {
   padding-bottom: calc(1.25 * 1rem);
 }
-.wme-axis-container .wme-axis-item-center {
+.yuso-axis-container .yuso-axis-item-center {
   flex-grow: 1;
 }
-.wme-axis-container .wme-axis-item-center-date {
+.yuso-axis-container .yuso-axis-item-center-date {
   color: rgba(0, 0, 0, 0.65);
   margin-bottom: 1rem;
 }
-.wme-axis-container .wme-axis-item-center-title {
+.yuso-axis-container .yuso-axis-item-center-title {
   color: rgba(0, 0, 0, 0.85);
   margin-bottom: calc(0.5 * 1rem);
   font-weight: bold;
   display: flex;
   align-items: center;
 }
-.wme-axis-container .wme-axis-item-center-title-right {
+.yuso-axis-container .yuso-axis-item-center-title-right {
   justify-content: space-between;
 }
-.wme-axis-container .wme-axis-item-center-title-extra {
+.yuso-axis-container .yuso-axis-item-center-title-extra {
   padding: 0 calc(0.625 * 1rem);
   flex-shrink: 0;
 }
-.wme-axis-container .wme-axis-item-center-content {
+.yuso-axis-container .yuso-axis-item-center-content {
   color: rgba(0, 0, 0, 0.65);
 }
-.wme-axis-container .wme-axis-item-center-content .wme-list .wme-list-item-view {
+.yuso-axis-container .yuso-axis-item-center-content .yuso-list .yuso-list-item-view {
   margin-left: -1.25rem;
   margin-top: -0.5rem;
 }
-.wme-axis-container .wme-axis-item-extra {
+.yuso-axis-container .yuso-axis-item-extra {
   align-self: center;
 }
-.wme-axis-container .wme-axis-item-node {
+.yuso-axis-container .yuso-axis-item-node {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 0 calc(0.625 * 1rem) 0 0;
 }
-.wme-axis-container .wme-axis-item-node-point {
+.yuso-axis-container .yuso-axis-item-node-point {
   width: calc(0.875 * 1rem);
   height: calc(0.875 * 1rem);
   background-color: rgba(66, 133, 244, 0.18);
@@ -149,14 +149,14 @@
   align-items: center;
   justify-content: center;
 }
-.wme-axis-container .wme-axis-item-node-point i {
+.yuso-axis-container .yuso-axis-item-node-point i {
   display: block;
   width: calc(0.5 * 1rem);
   height: calc(0.5 * 1rem);
   background-color: #4285f4;
   border-radius: 50%;
 }
-.wme-axis-container .wme-axis-item-node-line {
+.yuso-axis-container .yuso-axis-item-node-line {
   width: 1px;
   position: absolute;
   background-color: #f0f0f0;

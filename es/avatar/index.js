@@ -128,7 +128,7 @@ var Avatar = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Avatar, "defaultProps", {
-  prefixCls: 'wme-avatar'
+  prefixCls: 'yuso-avatar'
 });
 
 export default Avatar;

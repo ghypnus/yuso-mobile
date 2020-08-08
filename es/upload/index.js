@@ -327,7 +327,7 @@ var Upload = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(Upload, "defaultProps", {
-  prefixCls: 'wme-upload',
+  prefixCls: 'yuso-upload',
   fileTypes: '*.*',
   // 允许上传的文件类型，格式'*.jpg,*.doc'
   isPress: true,

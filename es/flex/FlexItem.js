@@ -54,6 +54,6 @@ var FlexItem = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 FlexItem.defaultProps = {
-  prefixCls: 'wme-flexbox'
+  prefixCls: 'yuso-flexbox'
 };
 export default FlexItem;

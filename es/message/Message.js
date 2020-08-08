@@ -181,7 +181,7 @@ var Message = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 Message.defaultProps = {
-  prefixCls: 'wme-message',
+  prefixCls: 'yuso-message',
   direction: 'row'
 };
 export default Message;

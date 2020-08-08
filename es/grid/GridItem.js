@@ -85,7 +85,7 @@ var GridItem = /*#__PURE__*/function (_React$Component) {
 }(React.Component);
 
 _defineProperty(GridItem, "defaultProps", {
-  prefixCls: 'wme-grid',
+  prefixCls: 'yuso-grid',
   align: 'middle'
 });
 

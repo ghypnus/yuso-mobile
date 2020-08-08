@@ -75,7 +75,7 @@
 /* actonsheet 会放到 popup / modal 中 */
 /* modal.alert 应该最大，其他应该较小 */
 /* 手势解锁 */
-.swipe-container-pagination {
+.yuso-swipe-pagination {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -83,7 +83,7 @@
   position: fixed;
   bottom: 10px;
 }
-.swipe-container-pagination-bullet {
+.yuso-swipe-pagination-bullet {
   margin: 0 3px;
   width: 6px;
   height: 6px;
@@ -91,16 +91,16 @@
   border-radius: 100%;
   background-color: #cad1db;
 }
-.swipe-container-pagination-bullet-active {
+.yuso-swipe-pagination-bullet-active {
   width: 18px;
   border-radius: 6px;
 }
-.swipe-container-close {
+.yuso-swipe-close {
   position: fixed;
   top: 5px;
   right: 5px;
   padding: 4px;
 }
-.swipe-container-close .wme-icon {
+.yuso-swipe-close .yuso-icon {
   fill: rgba(255, 255, 255, 0.45);
 }

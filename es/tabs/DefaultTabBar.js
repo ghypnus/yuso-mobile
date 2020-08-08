@@ -253,7 +253,7 @@ var DefaultTabBar = /*#__PURE__*/function (_React$PureComponent) {
       // };
 
       if (affix) {
-        style.top = affixTop + 'px';
+        style.top = "".concat(affixTop, "px");
       }
 
       var transformStyle = needScroll ? _objectSpread({}, getTransformPropValue(transform)) : {};
@@ -300,7 +300,7 @@ var DefaultTabBar = /*#__PURE__*/function (_React$PureComponent) {
 }(React.PureComponent);
 
 _defineProperty(DefaultTabBar, "defaultProps", {
-  prefixCls: 'wme-tabs-tab-bar',
+  prefixCls: 'yuso-tabs-tab-bar',
   animated: true,
   tabs: [],
   goToTab: function goToTab() {},

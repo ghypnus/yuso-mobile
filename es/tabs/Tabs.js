@@ -46,15 +46,15 @@ var getPanDirection = function getPanDirection(direction) {
   }
 };
 
-var WmeTabs = /*#__PURE__*/function (_Component) {
-  _inherits(WmeTabs, _Component);
+var YusoTabs = /*#__PURE__*/function (_Component) {
+  _inherits(YusoTabs, _Component);
 
-  var _super = _createSuper(WmeTabs);
+  var _super = _createSuper(YusoTabs);
 
-  function WmeTabs(props) {
+  function YusoTabs(props) {
     var _this;
 
-    _classCallCheck(this, WmeTabs);
+    _classCallCheck(this, YusoTabs);
 
     _this = _super.call(this, props);
 
@@ -251,7 +251,7 @@ var WmeTabs = /*#__PURE__*/function (_Component) {
     return _this;
   }
 
-  _createClass(WmeTabs, [{
+  _createClass(YusoTabs, [{
     key: "getTabBarBaseProps",
     value: function getTabBarBaseProps() {
       var currentTab = this.state.currentTab;
@@ -494,12 +494,12 @@ var WmeTabs = /*#__PURE__*/function (_Component) {
     }
   }]);
 
-  return WmeTabs;
+  return YusoTabs;
 }(Component);
 
-_defineProperty(WmeTabs, "DefaultTabBar", DefaultTabBar);
+_defineProperty(YusoTabs, "DefaultTabBar", DefaultTabBar);
 
-_defineProperty(WmeTabs, "defaultProps", {
+_defineProperty(YusoTabs, "defaultProps", {
   tabBarPosition: 'top',
   initialPage: 0,
   swipeable: true,
@@ -510,8 +510,8 @@ _defineProperty(WmeTabs, "defaultProps", {
   usePaged: true,
   tabDirection: 'horizontal',
   distanceToChangeTab: 0.3,
-  prefixCls: 'wme-tabs',
+  prefixCls: 'yuso-tabs',
   useOnPan: true
 });
 
-export { WmeTabs as default };
+export { YusoTabs as default };

@@ -208,7 +208,7 @@ var Accordion = /*#__PURE__*/function (_Component) {
 }(Component);
 
 _defineProperty(Accordion, "defaultProps", {
-  prefixCls: 'wme-accordion',
+  prefixCls: 'yuso-accordion',
   onChange: function onChange() {},
   accordion: false,
   destroyInactivePanel: false

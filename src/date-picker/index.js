@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import moment from 'moment';
-import WmePicker from '../picker/index';
+import YusoPicker from '../picker/index';
 import MutilDatePicker from './MutilDatePicker';
 import PopLayer from '../pop-layer/index';
 import Icon from '../icon/index';
@@ -10,7 +10,7 @@ import { Consumer } from '../locale-provider/HrContext';
 
 export default class DatePicker extends React.Component {
   static defaultProps = {
-    prefixCls: 'wme-date-picker',
+    prefixCls: 'yuso-date-picker',
     arrow: 'horizontal',
     yearStep: 100, // 取前后100年的日期
   }
@@ -69,176 +69,178 @@ export default class DatePicker extends React.Component {
     if (!this.state.visible) {
       return null;
     }
-    return <Consumer>
-      {({ DatePicker }) => {
-        document.activeElement.blur();
-        fn && fn();
-        const value = this.getValue(this.props.value);
-        const _pickerTitle = pickerTitle || DatePicker.pickerTitle;
-        let content;
-        const date = new Date();
-        const defaultDateV = [date.getFullYear(), date.getMonth() + 1, date.getDate()];
-        const defaultYearMonthV = [date.getFullYear(), date.getMonth() + 1];
-        const defaultTimeV = [date.getHours(), date.getMinutes()];
-        const defaultSecondV = [date.getHours(), date.getMinutes(), date.getSeconds()];
-        switch (type) {
-          case 'yyyy/MM/dd HH:mm':
-            content = (
-              <MutilDatePicker
-                title={_pickerTitle}
-                defaultValue={value || defaultDateV.concat(defaultTimeV)}
-                cascade
-                dateList={this.dateList}
-                timeList={this.timeList}
-                onOk={(value) => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onOk) {
-                    onOk(value);
-                  }
-                }}
-                onCancel={() => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onCancel) {
-                    onCancel();
-                  }
-                }}
-              />
-            );
-            break;
-          case 'yyyy/MM/dd':
-            content = (
-              <WmePicker
-                title={_pickerTitle}
-                defaultValue={value || defaultDateV}
-                cascade
-                data={this.dateList}
-                onOk={(value) => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onOk) {
-                    onOk(value);
-                  }
-                }}
-                onCancel={() => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onCancel) {
-                    onCancel();
-                  }
-                }}
-              />
-            );
-            break;
-          case 'yyyy/MM':
-            content = (
-              <WmePicker
-                title={_pickerTitle}
-                defaultValue={value || defaultYearMonthV}
-                data={this.yearMonthList}
-                onOk={(value) => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onOk) {
-                    onOk(value);
-                  }
-                }}
-                onCancel={() => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onCancel) {
-                    onCancel();
-                  }
-                }}
-              />
-            );
-            break;
-          case 'HH:mm:ss':
-            content = (
-              <WmePicker
-                title={_pickerTitle}
-                defaultValue={value || defaultSecondV}
-                data={this.secondList}
-                onOk={(value) => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onOk) {
-                    onOk(value);
-                  }
-                }}
-                onCancel={() => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onCancel) {
-                    onCancel();
-                  }
-                }}
-              />
-            );
-            break;
-          case 'HH:mm':
-            content = (
-              <WmePicker
-                title={_pickerTitle}
-                defaultValue={value || defaultTimeV}
-                data={this.timeList}
-                onOk={(value) => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onOk) {
-                    onOk(value);
-                  }
-                }}
-                onCancel={(value) => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onCancel) {
-                    onCancel();
-                  }
-                }}
-              />
-            );
-            break;
-          default:
-            content = (
-              <WmePicker
-                title={_pickerTitle}
-                value={value}
-                data={data}
-                onOk={(value) => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onOk) {
-                    onOk(value);
-                  }
-                }}
-                onCancel={() => {
-                  this.setState({
-                    visible: false,
-                  });
-                  if (onCancel) {
-                    onCancel();
-                  }
-                }}
-              />
-            );
-            break;
-        }
-        return content;
-      }}
-    </Consumer>
+    return (
+      <Consumer>
+        {({ DatePicker }) => {
+          document.activeElement.blur();
+          fn && fn();
+          const value = this.getValue(this.props.value);
+          const _pickerTitle = pickerTitle || DatePicker.pickerTitle;
+          let content;
+          const date = new Date();
+          const defaultDateV = [date.getFullYear(), date.getMonth() + 1, date.getDate()];
+          const defaultYearMonthV = [date.getFullYear(), date.getMonth() + 1];
+          const defaultTimeV = [date.getHours(), date.getMinutes()];
+          const defaultSecondV = [date.getHours(), date.getMinutes(), date.getSeconds()];
+          switch (type) {
+            case 'yyyy/MM/dd HH:mm':
+              content = (
+                <MutilDatePicker
+                  title={_pickerTitle}
+                  defaultValue={value || defaultDateV.concat(defaultTimeV)}
+                  cascade
+                  dateList={this.dateList}
+                  timeList={this.timeList}
+                  onOk={(value) => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onOk) {
+                      onOk(value);
+                    }
+                  }}
+                  onCancel={() => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onCancel) {
+                      onCancel();
+                    }
+                  }}
+                />
+              );
+              break;
+            case 'yyyy/MM/dd':
+              content = (
+                <yusoPicker
+                  title={_pickerTitle}
+                  defaultValue={value || defaultDateV}
+                  cascade
+                  data={this.dateList}
+                  onOk={(value) => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onOk) {
+                      onOk(value);
+                    }
+                  }}
+                  onCancel={() => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onCancel) {
+                      onCancel();
+                    }
+                  }}
+                />
+              );
+              break;
+            case 'yyyy/MM':
+              content = (
+                <yusoPicker
+                  title={_pickerTitle}
+                  defaultValue={value || defaultYearMonthV}
+                  data={this.yearMonthList}
+                  onOk={(value) => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onOk) {
+                      onOk(value);
+                    }
+                  }}
+                  onCancel={() => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onCancel) {
+                      onCancel();
+                    }
+                  }}
+                />
+              );
+              break;
+            case 'HH:mm:ss':
+              content = (
+                <yusoPicker
+                  title={_pickerTitle}
+                  defaultValue={value || defaultSecondV}
+                  data={this.secondList}
+                  onOk={(value) => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onOk) {
+                      onOk(value);
+                    }
+                  }}
+                  onCancel={() => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onCancel) {
+                      onCancel();
+                    }
+                  }}
+                />
+              );
+              break;
+            case 'HH:mm':
+              content = (
+                <yusoPicker
+                  title={_pickerTitle}
+                  defaultValue={value || defaultTimeV}
+                  data={this.timeList}
+                  onOk={(value) => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onOk) {
+                      onOk(value);
+                    }
+                  }}
+                  onCancel={(value) => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onCancel) {
+                      onCancel();
+                    }
+                  }}
+                />
+              );
+              break;
+            default:
+              content = (
+                <yusoPicker
+                  title={_pickerTitle}
+                  value={value}
+                  data={data}
+                  onOk={(value) => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onOk) {
+                      onOk(value);
+                    }
+                  }}
+                  onCancel={() => {
+                    this.setState({
+                      visible: false,
+                    });
+                    if (onCancel) {
+                      onCancel();
+                    }
+                  }}
+                />
+              );
+              break;
+          }
+          return content;
+        }}
+      </Consumer>
+    );
   }
 
   getTimeList() {
@@ -445,10 +447,13 @@ export default class DatePicker extends React.Component {
         />
       );
     }
-    return !disabled && !readOnly ? <Icon
-      type="time"
-      size="small"
-      className={arrowCls} /> : null;
+    return !disabled && !readOnly ? (
+      <Icon
+        type="time"
+        size="small"
+        className={arrowCls}
+      />
+    ) : null;
   }
 
   render() {
@@ -488,8 +493,8 @@ export default class DatePicker extends React.Component {
     }
 
     const wrapCls = classnames(prefixCls, className, {
-      [`${prefixCls}-read-only`]: readOnly
-    })
+      [`${prefixCls}-read-only`]: readOnly,
+    });
 
     return (
       <div
