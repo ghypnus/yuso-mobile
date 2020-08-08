@@ -1,0 +1,50 @@
+@import "../../style/theme/default.less";
+@import "../../style/mixin/common.less";
+
+.wme-grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: @fill-base;
+
+    & &-item {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        min-height: @list-item-height;
+        vertical-align: middle;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        &-left {
+            flex-flow: column;
+            align-items: flex-start;
+        }
+
+        &-center {
+            flex-flow: column;
+            align-items: center;
+        }
+
+        &-right {
+            flex-flow: column;
+            align-items: flex-end;
+        }
+
+        &-divider {
+            &:not(:last-child) {
+                border-bottom: 1px solid @border-color-divider;
+            }
+        }
+
+        &-content {
+            font-size: @font-size-secondary;
+            color: @color-text-base;
+        }
+    }
+}

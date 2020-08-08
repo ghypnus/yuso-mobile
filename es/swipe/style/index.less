@@ -1,0 +1,35 @@
+@import "../../style/theme/default.less";
+
+.swipe-container {
+    &-pagination {
+    	width: 100%;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+        position: fixed;
+        bottom: 10px;
+
+        &-bullet {
+            margin: 0 3px;
+            width: 6px;
+            height: 6px;
+            display: inline-block;
+            border-radius: 100%;
+            background-color: @swipe-pagination-fill;
+
+            &-active {
+            	width: 18px;
+            	border-radius: 6px;
+            }
+        }
+    }
+    &-close{
+        position: fixed;
+        top:5px;
+        right: 5px;
+        padding:4px;
+        .wme-icon {
+            fill: rgba(255,255,255, 0.45);
+        }
+    }
+}

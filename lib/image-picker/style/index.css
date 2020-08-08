@@ -1,0 +1,176 @@
+/* 基本px单位 */
+/* 基本rem单位 */
+/* 色彩 - 文字色 */
+/* 基本 */
+/* 基本 - 反色 */
+/* 标题色 */
+/* 辅助色 */
+/* 文字高亮 */
+/* 文本框提示 */
+/* 失效 */
+/* 只读 */
+/* 辅助描述 */
+/* 链接 */
+/* 背景色 */
+/* 组件默认背景 */
+/* 页面背景 */
+/* 组件默认背景 - 按下 */
+/* 通用失效背景 */
+/* 遮罩背景 */
+/* 许多小图标的背景，比如一些小圆点，加减号 */
+/* 透明度 */
+/* switch checkbox radio 等组件禁用的透明度 */
+/* 全局/品牌色 */
+/* 边框色 */
+/* 深色边框 */
+/* 箭头边框色 */
+/* 分割线色 */
+/* 字体尺寸 */
+/* 特殊 */
+/* 正文 */
+/* 标题 */
+/* 头部 */
+/* 圆角 */
+/* 边框尺寸 */
+/* 间距 */
+/* 水平间距 */
+/* 垂直间距 */
+/* 高度 */
+/* 单行行高 */
+/* 多行行高 */
+/* 图标尺寸 */
+/* 导航条上的图标、grid的图标大小 */
+/* 动画缓动 */
+/* 组件变量 */
+/* button */
+/* checkbox */
+/* calendar */
+/* 选中背景色 */
+/* gesture */
+/* 同时应用于背景、文字颜色、边框色 */
+/* modal */
+/* image-picker */
+/* 按钮字号 */
+/* 按钮高度 */
+/* list */
+/* input */
+/* input clear icon 的背景色 */
+/* tabs */
+/* message */
+/* swipe */
+/* avatar */
+/* picker */
+/* grade */
+/* toast */
+/* toast, activity-indicator 的背景颜色 */
+/* search-bar */
+/* input search icon 的背景色 */
+/* notice-bar */
+/* switch */
+/* tag */
+/* keyboard */
+/* picker */
+/* picker 标题的高度 */
+/* z-index */
+/* actonsheet 会放到 popup / modal 中 */
+/* modal.alert 应该最大，其他应该较小 */
+/* 手势解锁 */
+/* svg - 箭头 */
+/* 超出省略号 */
+/* 边框阴影 */
+.wme-image-picker {
+  background-color: #fff;
+}
+.wme-image-picker ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: calc(4 * 1px);
+  padding: 0 0.875em 0.875em 0.875em;
+  overflow: hidden;
+}
+.wme-image-picker ul li {
+  width: 33.333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(0.75 * 1rem);
+}
+.wme-image-picker ul li .wme-image-picker-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+  border-radius: calc(4 * 1px);
+}
+.wme-image-picker ul li .wme-image-picker-outer .wme-image-picker-close {
+  position: absolute;
+  top: calc(-8 * 1px);
+  right: calc(-8 * 1px);
+  cursor: pointer;
+  fill: rgba(0, 0, 0, 0.45);
+}
+.wme-image-picker ul li .wme-image-picker-img-wrap {
+  width: calc(4.75 * 1rem);
+  height: calc(4.75 * 1rem);
+  border-radius: calc(4 * 1px);
+  overflow: hidden;
+}
+.wme-image-picker ul li.noData {
+  padding: 0;
+  margin: -1rem 0 0 0;
+  color: rgba(0, 0, 0, 0.45);
+  align-items: flex-start;
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+.wme-image-picker-title {
+  height: calc(3 * 1rem);
+  padding-left: calc(10 * 1px);
+  /* border-bottom: @hd solid @border-color-divider; */
+  box-sizing: border-box;
+  line-height: calc(3 * 1rem);
+  color: rgba(0, 0, 0, 0.85);
+}
+.wme-image-picker-title span {
+  width: 10px;
+  display: inline-block;
+  color: #ff6454;
+  margin-right: calc(3 * 1px);
+}
+.wme-image-picker-upload {
+  flex-direction: column;
+  position: relative;
+}
+.wme-image-picker-upload-outer {
+  border: 1px solid #e1e1e1;
+  width: calc(4.75 * 1rem);
+  height: calc(4.75 * 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: calc(4 * 1px);
+}
+.wme-image-picker-upload-icon {
+  fill: rgba(0, 0, 0, 0.45);
+}
+.wme-image-picker-upload input {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+.wme-image-picker-upload > div {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: calc(0.875 * 1rem);
+}
+.wme-image-picker-placeholder {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: calc(0.875 * 1rem);
+  padding: 0 1.25rem 0.875rem 1.25rem;
+}

@@ -1,0 +1,86 @@
+@import "../../style/theme/default.less";
+
+.wme-button {
+  display: block;
+  text-align: center;
+  line-height: @button-height;
+  height: @button-height;
+  border-radius: @radius-md;
+  font-size: @button-font-size;
+  color: @color-text-base;
+  background-color: @fill-base;
+  border-color: @border-color-base;
+  border-style: solid;
+  border-width: @border-width-md;
+  box-sizing: border-box;
+
+  &-search {
+    width: calc(3.75 * @em);
+    background-color: @brand-primary;
+    border-radius: @radius-md;
+    font-size: @button-font-size-sm;
+  }
+
+  &-primary {
+    color: @color-text-base-inverse;
+    background-color: @brand-primary;
+    border-color: @brand-primary;
+
+    &.wme-button-disabled {
+      color: hsla(0, 0%, 100%, 0.6);
+      opacity: 0.4;
+    }
+  }
+
+  &-warning {
+    color: @color-text-base-inverse;
+    background-color: @brand-warning;
+    border-color: @brand-warning;
+
+    &.wme-button-disabled {
+      color: hsla(0, 0%, 100%, 0.6);
+      opacity: 0.4;
+    }
+  }
+
+  &-ghost {
+    color: @brand-primary;
+    background-color: transparent;
+    border-color: @brand-primary;
+
+    &.wme-button-disabled {
+      color: hsla(0, 0%, 100%, 0.2);
+      border: 1px solid hsla(0, 0%, 100%, 0.2);
+      opacity: 1;
+    }
+  }
+
+  &-inline {
+    display: inline-block;
+    padding: 0 1rem;
+  }
+
+  &-small {
+    height: @button-height-sm;
+    line-height: @button-height-sm;
+    padding: 0 1rem;
+    font-size: .875rem;
+  }
+
+  &-disabled {
+    color: hsla(0, 0%, 100%, 0.3);
+    opacity: 0.6;
+  }
+
+  &-link {
+    color: @brand-primary;
+    background-color: transparent;
+    border-color: transparent;
+
+    .wme-icon {
+      vertical-align: middle;
+      margin-right: 5px;
+      fill: @brand-primary;
+    }
+  }
+}

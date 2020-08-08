@@ -1,0 +1,14 @@
+@import "../../style/theme/default.less";
+
+.hr-modal {
+  width: 100%;
+  height: calc(100% - 3rem);
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  z-index: @modal-zindex;
+  display: none;
+  &-show {
+    display: block;
+  }
+}

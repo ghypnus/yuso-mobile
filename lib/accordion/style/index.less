@@ -1,0 +1,70 @@
+@import "../../style/theme/default.less";
+
+.wme-accordion {
+  border-radius: 3px;
+  background-color: @fill-base;
+
+  & > &-item {
+
+    &:first-child {
+        > .wme-accordion-title {
+          border-top: 0;
+        }
+      }
+
+    > .wme-accordion-title {
+      display: flex;
+      align-items: center;
+      line-height: 22px;
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: @font-size-title;
+      border-top: 1px solid @border-color-base;
+      position: relative;
+      
+      .arrow {
+        position: absolute;
+        right: 1rem;
+        fill: @color-icon-base;
+      }
+
+      .wme-accordion-extra {
+        margin: 0 2rem 0 auto;
+      }
+    }
+  }
+
+  & > &-item-disabled > .wme-accordion-title {
+    cursor: not-allowed;
+    color: #999;
+    background-color: #f3f3f3;
+  }
+
+  &-content {
+    overflow: hidden;
+    padding: 0 1rem;
+    transition: all 0.2s ease-out;
+    
+    & > &-box {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    &-inactive {
+      height: 0;
+    }
+
+    &-active {
+      height: auto;
+    }
+  }
+
+  & > &-item-active {
+    > .wme-accordion-title {
+      border-bottom: 1px solid @border-color-base;
+      .arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+/* 基本px单位 */
+/* 基本rem单位 */
+/* 色彩 - 文字色 */
+/* 基本 */
+/* 基本 - 反色 */
+/* 标题色 */
+/* 辅助色 */
+/* 文字高亮 */
+/* 文本框提示 */
+/* 失效 */
+/* 只读 */
+/* 辅助描述 */
+/* 链接 */
+/* 背景色 */
+/* 组件默认背景 */
+/* 页面背景 */
+/* 组件默认背景 - 按下 */
+/* 通用失效背景 */
+/* 遮罩背景 */
+/* 许多小图标的背景，比如一些小圆点，加减号 */
+/* 透明度 */
+/* switch checkbox radio 等组件禁用的透明度 */
+/* 全局/品牌色 */
+/* 边框色 */
+/* 深色边框 */
+/* 箭头边框色 */
+/* 分割线色 */
+/* 字体尺寸 */
+/* 特殊 */
+/* 正文 */
+/* 标题 */
+/* 头部 */
+/* 圆角 */
+/* 边框尺寸 */
+/* 间距 */
+/* 水平间距 */
+/* 垂直间距 */
+/* 高度 */
+/* 单行行高 */
+/* 多行行高 */
+/* 图标尺寸 */
+/* 导航条上的图标、grid的图标大小 */
+/* 动画缓动 */
+/* 组件变量 */
+/* button */
+/* checkbox */
+/* calendar */
+/* 选中背景色 */
+/* gesture */
+/* 同时应用于背景、文字颜色、边框色 */
+/* modal */
+/* image-picker */
+/* 按钮字号 */
+/* 按钮高度 */
+/* list */
+/* input */
+/* input clear icon 的背景色 */
+/* tabs */
+/* message */
+/* swipe */
+/* avatar */
+/* picker */
+/* grade */
+/* toast */
+/* toast, activity-indicator 的背景颜色 */
+/* search-bar */
+/* input search icon 的背景色 */
+/* notice-bar */
+/* switch */
+/* tag */
+/* keyboard */
+/* picker */
+/* picker 标题的高度 */
+/* z-index */
+/* actonsheet 会放到 popup / modal 中 */
+/* modal.alert 应该最大，其他应该较小 */
+/* 手势解锁 */
+.wme-button {
+  display: block;
+  text-align: center;
+  line-height: calc(3 * 1rem);
+  height: calc(3 * 1rem);
+  border-radius: calc(4 * 1px);
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border-color: #e1e1e1;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+}
+.wme-button-search {
+  width: calc(3.75 * 1rem);
+  background-color: #4285f4;
+  border-radius: calc(4 * 1px);
+  font-size: calc(0.875 * 1rem);
+}
+.wme-button-primary {
+  color: #fff;
+  background-color: #4285f4;
+  border-color: #4285f4;
+}
+.wme-button-primary.wme-button-disabled {
+  color: hsla(0, 0%, 100%, 0.6);
+  opacity: 0.4;
+}
+.wme-button-warning {
+  color: #fff;
+  background-color: #e94f4f;
+  border-color: #e94f4f;
+}
+.wme-button-warning.wme-button-disabled {
+  color: hsla(0, 0%, 100%, 0.6);
+  opacity: 0.4;
+}
+.wme-button-ghost {
+  color: #4285f4;
+  background-color: transparent;
+  border-color: #4285f4;
+}
+.wme-button-ghost.wme-button-disabled {
+  color: hsla(0, 0%, 100%, 0.2);
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  opacity: 1;
+}
+.wme-button-inline {
+  display: inline-block;
+  padding: 0 1rem;
+}
+.wme-button-small {
+  height: calc(2 * 1rem);
+  line-height: calc(2 * 1rem);
+  padding: 0 1rem;
+  font-size: 0.875rem;
+}
+.wme-button-disabled {
+  color: hsla(0, 0%, 100%, 0.3);
+  opacity: 0.6;
+}
+.wme-button-link {
+  color: #4285f4;
+  background-color: transparent;
+  border-color: transparent;
+}
+.wme-button-link .wme-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  fill: #4285f4;
+}

@@ -1,0 +1,70 @@
+@import "../../style/theme/default.less";
+
+.wme-textarea {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  background-color: @fill-base;
+  position: relative;
+  flex-flow: column;
+
+  &-title {
+    width: calc(100% - 2 * @h-spacing-xxl);
+    padding: @h-spacing-lg @h-spacing-xxl 0 @h-spacing-common;
+
+    span {
+      display: inline-block;
+      width: 10px;
+      color: @brand-important;
+      margin-right: calc(3 * @hd);
+    }
+  }
+
+  textarea {
+    color: @color-text-highlight;
+    font: unset;
+    font-size: @font-size-text;
+    appearance: none;
+    width: calc(100% - calc(2 * @h-spacing-xxl));
+    padding: @h-spacing-lg @h-spacing-xxl;
+    border: 0;
+    background-color: transparent;
+    overflow: visible;
+    display: block;
+    resize: none;
+    word-break: break-all;
+    word-wrap: break-word;
+
+    &::placeholder {
+      color: @color-text-placeholder;
+    }
+
+    &:disabled {
+      color: @color-text-disabled;
+    }
+  }
+
+  &-length {
+    position: absolute;
+    bottom: @v-spacing-sm;
+    right: @v-spacing-sm;
+    color: @color-text-placeholder;
+    font-size: @font-size-text;
+
+    span {
+      color: @color-text-base;
+    }
+  }
+
+  &-disabled {
+    textarea {
+      color: @color-text-disabled;
+    }
+  }
+
+  &-read-only {
+    textarea {
+      color: @color-text-read-only;
+    }
+  }
+}

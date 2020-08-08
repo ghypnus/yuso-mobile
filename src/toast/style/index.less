@@ -1,0 +1,20 @@
+@import "../../style/theme/default.less";
+
+.wme-toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: @font-size-title;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: @toast-zindex;
+
+    & &-content {
+        min-width: calc(4 * @em);
+        border-radius: @radius-sm;
+        color: @color-text-base-inverse;
+        background-color: @toast-fill;
+        line-height: @line-height-paragraph;
+        padding: @v-spacing-md @h-spacing-xl;
+    }
+}

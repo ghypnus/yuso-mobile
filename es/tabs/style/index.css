@@ -1,0 +1,254 @@
+/* 基本px单位 */
+/* 基本rem单位 */
+/* 色彩 - 文字色 */
+/* 基本 */
+/* 基本 - 反色 */
+/* 标题色 */
+/* 辅助色 */
+/* 文字高亮 */
+/* 文本框提示 */
+/* 失效 */
+/* 只读 */
+/* 辅助描述 */
+/* 链接 */
+/* 背景色 */
+/* 组件默认背景 */
+/* 页面背景 */
+/* 组件默认背景 - 按下 */
+/* 通用失效背景 */
+/* 遮罩背景 */
+/* 许多小图标的背景，比如一些小圆点，加减号 */
+/* 透明度 */
+/* switch checkbox radio 等组件禁用的透明度 */
+/* 全局/品牌色 */
+/* 边框色 */
+/* 深色边框 */
+/* 箭头边框色 */
+/* 分割线色 */
+/* 字体尺寸 */
+/* 特殊 */
+/* 正文 */
+/* 标题 */
+/* 头部 */
+/* 圆角 */
+/* 边框尺寸 */
+/* 间距 */
+/* 水平间距 */
+/* 垂直间距 */
+/* 高度 */
+/* 单行行高 */
+/* 多行行高 */
+/* 图标尺寸 */
+/* 导航条上的图标、grid的图标大小 */
+/* 动画缓动 */
+/* 组件变量 */
+/* button */
+/* checkbox */
+/* calendar */
+/* 选中背景色 */
+/* gesture */
+/* 同时应用于背景、文字颜色、边框色 */
+/* modal */
+/* image-picker */
+/* 按钮字号 */
+/* 按钮高度 */
+/* list */
+/* input */
+/* input clear icon 的背景色 */
+/* tabs */
+/* message */
+/* swipe */
+/* avatar */
+/* picker */
+/* grade */
+/* toast */
+/* toast, activity-indicator 的背景颜色 */
+/* search-bar */
+/* input search icon 的背景色 */
+/* notice-bar */
+/* switch */
+/* tag */
+/* keyboard */
+/* picker */
+/* picker 标题的高度 */
+/* z-index */
+/* actonsheet 会放到 popup / modal 中 */
+/* modal.alert 应该最大，其他应该较小 */
+/* 手势解锁 */
+.wme-tabs {
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.wme-tabs * {
+  box-sizing: border-box;
+}
+.wme-tabs-tab-bar {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  width: 100%;
+  height: 48px;
+  overflow: visible;
+  z-index: 1;
+  background-color: #fff;
+}
+.wme-tabs-tab-bar-tab {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 14px;
+}
+.wme-tabs-tab-bar-tab-active {
+  color: #4285f4;
+}
+.wme-tabs-tab-bar-underline {
+  position: absolute;
+  border: 1px #4285f4 solid;
+  box-sizing: border-box;
+}
+.wme-tabs-tab-bar-animated .wme-tabs-tab-bar-content {
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  will-change: transform;
+}
+.wme-tabs-tab-bar-animated .wme-tabs-tab-bar-underline {
+  transition: top 0.3s cubic-bezier(0.35, 0, 0.25, 1), left 0.3s cubic-bezier(0.35, 0, 0.25, 1), color 0.3s cubic-bezier(0.35, 0, 0.25, 1), width 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  will-change: top, left, width, color;
+}
+.wme-tabs-tab-bar-top,
+.wme-tabs-tab-bar-bottom {
+  flex-direction: row;
+}
+.wme-tabs-tab-bar-top .wme-tabs-tab-bar-content,
+.wme-tabs-tab-bar-bottom .wme-tabs-tab-bar-content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.wme-tabs-tab-bar-top .wme-tabs-tab-bar-prevpage,
+.wme-tabs-tab-bar-bottom .wme-tabs-tab-bar-prevpage {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 59px;
+  height: 100%;
+  content: " ";
+  z-index: 1;
+  left: 0;
+  background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0));
+}
+.wme-tabs-tab-bar-top .wme-tabs-tab-bar-nextpage,
+.wme-tabs-tab-bar-bottom .wme-tabs-tab-bar-nextpage {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 59px;
+  height: 100%;
+  content: " ";
+  z-index: 1;
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+.wme-tabs-tab-bar-top .wme-tabs-tab-bar-tab,
+.wme-tabs-tab-bar-bottom .wme-tabs-tab-bar-tab {
+  height: 3rem;
+  line-height: 3rem;
+}
+.wme-tabs-tab-bar-top .wme-tabs-tab-bar-underline,
+.wme-tabs-tab-bar-bottom .wme-tabs-tab-bar-underline {
+  bottom: 0;
+}
+.wme-tabs-tab-bar-top {
+  border-bottom: 1px #e1e1e1 solid;
+}
+.wme-tabs-tab-bar-bottom {
+  border-top: 1px #e1e1e1 solid;
+}
+.wme-tabs-tab-bar-left,
+.wme-tabs-tab-bar-right {
+  flex-direction: column;
+}
+.wme-tabs-tab-bar-left .wme-tabs-tab-bar-content,
+.wme-tabs-tab-bar-right .wme-tabs-tab-bar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.wme-tabs-tab-bar-left .wme-tabs-tab-bar-tab,
+.wme-tabs-tab-bar-right .wme-tabs-tab-bar-tab {
+  padding: 0 8px;
+}
+.wme-tabs-tab-bar-left {
+  border-right: 1px #e1e1e1 solid;
+}
+.wme-tabs-tab-bar-left .wme-tabs-tab-bar-underline {
+  right: 0;
+}
+.wme-tabs-tab-bar-right {
+  border-left: 1px #e1e1e1 solid;
+}
+.wme-tabs-tab-bar-right .wme-tabs-tab-bar-underline {
+  left: 0;
+}
+.wme-tabs-tab-bar-affix {
+  position: fixed;
+}
+.wme-tabs-content-wrap {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+.wme-tabs-content-wrap-animated {
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), left 0.3s cubic-bezier(0.35, 0, 0.25, 1), top 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  will-change: transform, left, top;
+}
+.wme-tabs-pane-wrap {
+  width: 100%;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+.wme-tabs-tab-bar-wrap {
+  flex-shrink: 0;
+  height: 49px;
+}
+.wme-tabs-horizontal .wme-tabs-pane-wrap-active {
+  height: auto;
+}
+.wme-tabs-horizontal .wme-tabs-pane-wrap-inactive {
+  height: 0;
+  overflow: visible;
+}
+.wme-tabs-vertical .wme-tabs-content-wrap {
+  flex-direction: column;
+}
+.wme-tabs-vertical .wme-tabs-tab-bar-wrap {
+  height: 100%;
+}
+.wme-tabs-vertical .wme-tabs-pane-wrap {
+  height: 100%;
+}
+.wme-tabs-vertical .wme-tabs-pane-wrap-active {
+  overflow: auto;
+}
+.wme-tabs-vertical .wme-tabs-pane-wrap-inactive {
+  overflow: hidden;
+}
+.wme-tabs-top,
+.wme-tabs-bottom {
+  flex-direction: column;
+}
+.wme-tabs-left,
+.wme-tabs-right {
+  flex-direction: row;
+}

@@ -1,0 +1,263 @@
+/* 基本px单位 */
+/* 基本rem单位 */
+/* 色彩 - 文字色 */
+/* 基本 */
+/* 基本 - 反色 */
+/* 标题色 */
+/* 辅助色 */
+/* 文字高亮 */
+/* 文本框提示 */
+/* 失效 */
+/* 只读 */
+/* 辅助描述 */
+/* 链接 */
+/* 背景色 */
+/* 组件默认背景 */
+/* 页面背景 */
+/* 组件默认背景 - 按下 */
+/* 通用失效背景 */
+/* 遮罩背景 */
+/* 许多小图标的背景，比如一些小圆点，加减号 */
+/* 透明度 */
+/* switch checkbox radio 等组件禁用的透明度 */
+/* 全局/品牌色 */
+/* 边框色 */
+/* 深色边框 */
+/* 箭头边框色 */
+/* 分割线色 */
+/* 字体尺寸 */
+/* 特殊 */
+/* 正文 */
+/* 标题 */
+/* 头部 */
+/* 圆角 */
+/* 边框尺寸 */
+/* 间距 */
+/* 水平间距 */
+/* 垂直间距 */
+/* 高度 */
+/* 单行行高 */
+/* 多行行高 */
+/* 图标尺寸 */
+/* 导航条上的图标、grid的图标大小 */
+/* 动画缓动 */
+/* 组件变量 */
+/* button */
+/* checkbox */
+/* calendar */
+/* 选中背景色 */
+/* gesture */
+/* 同时应用于背景、文字颜色、边框色 */
+/* modal */
+/* image-picker */
+/* 按钮字号 */
+/* 按钮高度 */
+/* list */
+/* input */
+/* input clear icon 的背景色 */
+/* tabs */
+/* message */
+/* swipe */
+/* avatar */
+/* picker */
+/* grade */
+/* toast */
+/* toast, activity-indicator 的背景颜色 */
+/* search-bar */
+/* input search icon 的背景色 */
+/* notice-bar */
+/* switch */
+/* tag */
+/* keyboard */
+/* picker */
+/* picker 标题的高度 */
+/* z-index */
+/* actonsheet 会放到 popup / modal 中 */
+/* modal.alert 应该最大，其他应该较小 */
+/* 手势解锁 */
+/* svg - 箭头 */
+/* 超出省略号 */
+/* 边框阴影 */
+.wme-list {
+  background-color: #fff;
+  flex-grow: 1;
+}
+.wme-list-header {
+  font-size: calc(0.9375 * 1rem);
+  color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  padding-left: calc(1.25 * 1rem);
+  height: calc(3 * 1rem);
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: bold;
+}
+.wme-list-footer {
+  padding: calc(0.625 * 1rem) 1rem 1rem 1rem;
+  font-size: calc(0.9375 * 1rem);
+  color: #888;
+}
+.wme-list-body {
+  display: flex;
+}
+.wme-list-body-view {
+  padding: 0.5rem 0;
+}
+.wme-list-body-row {
+  flex-direction: row;
+}
+.wme-list-body-column {
+  flex-direction: column;
+}
+.wme-list .wme-list-item {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(3 * 1rem);
+  vertical-align: middle;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.wme-list .wme-list-item-top .wme-list-line {
+  align-items: flex-start;
+}
+.wme-list .wme-list-item-center .wme-list-line {
+  align-items: center;
+}
+.wme-list .wme-list-item-bottom .wme-list-line {
+  align-items: flex-end;
+}
+.wme-list .wme-list-item-text-left .wme-list-content {
+  text-align: left;
+}
+.wme-list .wme-list-item-divider:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+.wme-list .wme-list-item-title {
+  background-color: #ff9388;
+}
+.wme-list .wme-list-item-title .wme-list-line .wme-list-content,
+.wme-list .wme-list-item-title .wme-list-line .wme-list-extra {
+  color: #fff !important;
+}
+.wme-list .wme-list-item .wme-list-thumb {
+  margin-left: calc(1.25 * 1rem);
+  width: calc(1.6 * 1rem);
+  height: calc(1.6 * 1rem);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.wme-list .wme-list-item .wme-list-thumb-large {
+  width: calc(2.25 * 1rem);
+  height: calc(2.25 * 1rem);
+}
+.wme-list .wme-list-item .wme-list-thumb-small {
+  width: calc(1 * 1rem);
+  height: calc(1 * 1rem);
+}
+.wme-list .wme-list-item .wme-list-thumb-normal {
+  width: calc(1.2 * 1rem);
+  height: calc(1.2 * 1rem);
+  border-radius: 0;
+  margin: calc(0.4 * 1rem) 0 0;
+}
+.wme-list .wme-list-item .wme-list-thumb-square {
+  border-radius: 0;
+}
+.wme-list .wme-list-item .wme-list-icon {
+  margin-top: 0.4rem;
+  margin-bottom: -5px;
+}
+.wme-list .wme-list-item .wme-list-icon-active {
+  fill: #4285f4;
+}
+.wme-list .wme-list-item .wme-list-icon-unactive {
+  fill: #888;
+}
+.wme-list .wme-list-item .wme-list-line {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  padding-left: calc(1.25 * 1rem);
+  padding-right: calc(1.25 * 1rem);
+  overflow: hidden;
+  /* list左侧主内容*/
+  /* list右补充内容*/
+  /* list右侧箭头*/
+  /* 菜单选中效果 */
+}
+.wme-list .wme-list-item .wme-list-line .wme-list-content {
+  flex-grow: 1;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: calc(0.9375 * 1rem);
+  min-width: 15%;
+  /* 超出省略号 */
+}
+.wme-list .wme-list-item .wme-list-line .wme-list-extra {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: calc(0.9375 * 1rem);
+  text-align: right;
+  min-width: 15%;
+  max-width: 85%;
+  display: flex;
+  justify-content: flex-end;
+  /* 超出省略号 */
+}
+.wme-list .wme-list-item .wme-list-line .wme-list-arrow {
+  display: block;
+  margin-left: calc(0.625 * 1rem);
+  visibility: hidden;
+  flex-shrink: 0;
+  fill: #c7c7cc;
+}
+.wme-list .wme-list-item .wme-list-line .wme-list-arrow-horizontal {
+  visibility: visible;
+}
+.wme-list .wme-list-item .wme-list-line .wme-list-arrow-vertical {
+  visibility: visible;
+  transform: rotate(90deg);
+}
+.wme-list .wme-list-item .wme-list-line .wme-list-arrow-vertical-up {
+  visibility: visible;
+  transform: rotate(270deg);
+}
+.wme-list .wme-list-item .wme-list-line .wme-list-underline {
+  display: flex;
+  bottom: 0;
+  left: calc(1.25 * 1rem);
+  position: absolute;
+  width: calc(100% - 2 * calc(1.25 * 1rem));
+  height: calc(2 * 1px);
+  background-color: #4285f4;
+}
+.wme-list .wme-list-item .wme-list-line-ellipsis .wme-list-content,
+.wme-list .wme-list-item .wme-list-line-ellipsis .wme-list-extra {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: calc(85% - 1.5rem);
+  overflow: hidden;
+}
+.wme-list .wme-list-item .wme-list-line-wrap .wme-list-content {
+  white-space: nowrap;
+}
+.wme-list .wme-list-item .wme-list-line-selected .wme-list-content {
+  color: #4285f4;
+}
+.wme-list .wme-list-item-view {
+  min-height: calc(1rem * 1.75);
+}
+.wme-list .wme-list-item-view .wme-list-line .wme-list-content {
+  flex-grow: 0;
+  min-width: auto;
+  flex-shrink: 0;
+}
+.wme-list .wme-list-item-view .wme-list-line .wme-list-extra {
+  min-width: auto;
+  max-width: none;
+  text-align: left;
+  word-break: break-all;
+}

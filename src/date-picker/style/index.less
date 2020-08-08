@@ -1,0 +1,104 @@
+@import "../../style/theme/default.less";
+@import "../../style/mixin/common.less";
+@datePrefixCls: wme-date-picker;
+
+.@{datePrefixCls} {
+  display: flex;
+  background-color: @fill-base;
+  height: calc(3 *@em);
+  padding-left: @h-spacing-common;
+  padding-right: @h-spacing-xxl;
+  border-radius: @radius-md;
+
+  &-title {
+    flex-grow: 1;
+
+    span {
+      width: 10px;
+      display: inline-block;
+      color: @brand-important;
+      margin-right: calc(3 * @hd);
+    }
+  }
+
+  &-area {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &-content {
+    color: @color-text-highlight;
+  }
+
+  &-place-holder {
+    color: @color-text-placeholder;
+  }
+
+  &-close {
+    cursor: pointer;
+    margin-left: @h-spacing-md;
+    align-self: center;
+    fill: @color-icon-base;
+  }
+
+  /* 右侧箭头*/
+  &-arrow {
+    display: block;
+    margin-left: @h-spacing-md;
+    fill: @color-icon-base;
+    visibility: hidden;
+
+    &-horizontal {
+      visibility: visible;
+    }
+
+    &-vertical {
+      visibility: visible;
+      transform: rotate(90deg);
+    }
+
+    &-vertical-up {
+      visibility: visible;
+      transform: rotate(270deg);
+    }
+  }
+
+  &-read-only {
+    .@{datePrefixCls}-content {
+      color: @color-text-read-only;
+    }
+  }
+
+  &-action {
+    display: flex;
+    align-items: center;
+    border-bottom: @hd solid @border-color-divider;
+    background-color: @fill-base;
+    height: calc(3 * @em);
+    max-height: calc(3 * @em);
+    font-size: @font-size-title;
+    // color: @color-text-title;
+
+    &-ok,
+    &-cancel {
+      width: calc(4 * @em);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-ok {
+      color: @brand-primary;
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+  }
+}

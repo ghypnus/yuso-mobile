@@ -1,0 +1,145 @@
+@import "../../style/theme/default.less";
+@import "../../style/mixin/common.less";
+
+.wme-input {
+  display: flex;
+  align-items: center;
+  background-color: @input-fill;
+  flex-grow: 1;
+  height: @input-height;
+  background: @input-fill;
+
+  input {
+    display: flex;
+    flex-grow: 1;
+    height: calc(3 * @em);
+    padding-left: @h-spacing-lg;
+    background: transparent;
+    font-size: @input-font-size;
+    width: 0;
+    color: @color-text-highlight;
+  }
+
+  i {
+    width: calc(3 * @em);
+    height: calc(1.2 * @em);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .eye {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(3 * @em);
+    height: 100%;
+
+    i {
+      width: calc(1.25 * @em);
+      height: calc(1.7 * @em);
+      // background-image: url(../image/closeEye.png);
+      // &.active {
+      //     background-image: url(../image/openEye.png);
+      // }
+    }
+  }
+
+  &-close {
+    display: block;
+    margin-right: calc(.75 * @em);
+    fill: @color-icon-base;
+  }
+
+  &-align-left {
+    input {
+      text-align: left;
+    }
+  }
+
+  &-align-center {
+    input {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+  &-align-right {
+    input {
+      padding-right: calc(1.25 * @em);
+      text-align: right;
+    }
+  }
+
+
+  &-search {
+    /*border: calc(2 * @hd) solid @brand-primary;*/
+    background-color: rgba(0, 0, 0, 0.06);
+    box-shadow: none;
+  }
+
+  &-small {
+    height: @input-height-small;
+    box-sizing: border-box;
+
+    input {
+      font-size: @input-font-size-sm;
+    }
+  }
+
+  &-icon {
+
+    // &-company {
+    //     background-image: url('../image/company.png');
+    // }
+    // &-user {
+    //     background-image: url('../image/user.png');
+    // }
+    // &-pwd {
+    //     background-image: url('../image/pwd_reset.png');
+    // }
+    // &-mobile {
+    //     background-image: url('../image/mobile.png');
+    // }
+    // &-mobile-active {
+    //     background-image: url('../image/mobile_focus.png');
+    // }
+    // &-code {
+    //     background-image: url('../image/code.png');
+    // }
+    // &-search{
+    //     background-image: svg-load('../image/search.svg');
+    // }
+    input {
+      padding-left: 0;
+    }
+  }
+
+  &-title {
+    margin-left: @h-spacing-common;
+    flex-shrink: 0;
+
+    span {
+      width: 10px;
+      display: inline-block;
+      color: @brand-important;
+      margin-right: calc(3 * @hd);
+    }
+  }
+
+  &-unit {
+    margin-right: calc(0.75 * @em);
+  }
+
+  &-disabled {
+    input {
+      color: @color-text-disabled;
+    }
+  }
+
+  &-read-only {
+    input {
+      color: @color-text-read-only;
+    }
+  }
+}

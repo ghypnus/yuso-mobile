@@ -1,0 +1,22 @@
+@import "../../style/theme/default.less";
+@import "../../style/mixin/common.less";
+
+.wme-switch-item {
+    display: flex;
+    background-color: @fill-base;
+    height: calc(3 *@em);
+    align-items: center;
+    padding-left: @h-spacing-common;
+    padding-right: @h-spacing-xxl;
+    border-radius: @radius-md;
+    
+    &-title {
+        flex-grow: 1;
+        span {
+            display: inline-block;
+            width: 10px;
+            color: @brand-important;
+            margin-right: calc(3 * @hd);
+          }
+    }
+}
