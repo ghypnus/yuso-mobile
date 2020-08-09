@@ -23,7 +23,6 @@ export default class Grade extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: false,
       score: 0,
       content: '',
     };

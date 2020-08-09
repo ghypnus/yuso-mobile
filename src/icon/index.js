@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-export default class Icon extends React.Component {
+export default class Icon extends React.PureComponent {
     static defaultProps = {
       prefixCls: 'yuso-icon',
     }
