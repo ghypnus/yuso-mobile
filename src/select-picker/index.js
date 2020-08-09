@@ -123,7 +123,7 @@ class SelectPicker extends React.Component {
    */
   renderSuffixIcon() {
     const { useDefaultValue } = this.state;
-    const { prefixCls, value, disabled, readOnly, arrow, onOk, onReset } = this.props;
+    const { prefixCls, value, disabled, close, readOnly, arrow, onOk, onReset } = this.props;
     // 箭头方向
     const arrowCls = classnames(`${prefixCls}-arrow`, {
       [`${prefixCls}-arrow-horizontal`]: arrow === 'horizontal',
@@ -211,7 +211,7 @@ class SelectPicker extends React.Component {
               visible={this.state.visible}
               direction="bottom"
             >
-              <yusoPicker
+              <YusoPicker
                 title={pickerTitle || SelectPicker.pickerTitle}
                 defaultValue={this.getValue(value)}
                 cascade={cascade}

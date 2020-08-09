@@ -109,6 +109,7 @@ export default class Input extends React.Component {
 
     const wrapCls = classnames(prefixCls, className, {
       [`${prefixCls}-icon`]: icon !== undefined,
+      [`${prefixCls}-suffix-wrap`]: suffix,
       [`${prefixCls}-search`]: icon === 'search',
       [`${prefixCls}-small`]: size === 'small',
       [`${prefixCls}-align-left`]: align === 'left',

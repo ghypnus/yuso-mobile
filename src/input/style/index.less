@@ -87,33 +87,6 @@
     }
   }
 
-  &-icon {
-
-    // &-company {
-    //     background-image: url('../image/company.png');
-    // }
-    // &-user {
-    //     background-image: url('../image/user.png');
-    // }
-    // &-pwd {
-    //     background-image: url('../image/pwd_reset.png');
-    // }
-    // &-mobile {
-    //     background-image: url('../image/mobile.png');
-    // }
-    // &-mobile-active {
-    //     background-image: url('../image/mobile_focus.png');
-    // }
-    // &-code {
-    //     background-image: url('../image/code.png');
-    // }
-    // &-search{
-    //     background-image: svg-load('../image/search.svg');
-    // }
-    input {
-      padding-left: 0;
-    }
-  }
 
   &-title {
     margin-left: @h-spacing-common;
@@ -128,7 +101,16 @@
   }
 
   &-suffix {
+    display: flex;
     margin-right: calc(0.75 * @em);
+
+    &-wrap {
+      &.yuso-input-align-right {
+        input {
+          padding-right: 0.625rem;
+        }
+      }
+    }
   }
 
   &-disabled {
