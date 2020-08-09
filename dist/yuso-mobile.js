@@ -10778,10 +10778,11 @@ var Input = /*#__PURE__*/function (_React$Component) {
           title = _this$props.title,
           disabled = _this$props.disabled,
           color = _this$props.color,
-          restProps = _objectWithoutProperties(_this$props, ["prefixCls", "className", "size", "onChange", "style", "title", "disabled", "color"]);
+          circle = _this$props.circle,
+          restProps = _objectWithoutProperties(_this$props, ["prefixCls", "className", "size", "onChange", "style", "title", "disabled", "color", "circle"]);
 
       var value = this.state.value;
-      var wrapCls = classnames__WEBPACK_IMPORTED_MODULE_1___default()(prefixCls, className, (_classnames = {}, _defineProperty(_classnames, "".concat(prefixCls, "-checked"), value), _defineProperty(_classnames, "".concat(prefixCls, "-disabled"), disabled), _defineProperty(_classnames, "".concat(prefixCls, "-small"), size === 'small'), _defineProperty(_classnames, "".concat(prefixCls, "-mini"), size === 'mini'), _classnames));
+      var wrapCls = classnames__WEBPACK_IMPORTED_MODULE_1___default()(prefixCls, className, (_classnames = {}, _defineProperty(_classnames, "".concat(prefixCls, "-checked"), value), _defineProperty(_classnames, "".concat(prefixCls, "-disabled"), disabled), _defineProperty(_classnames, "".concat(prefixCls, "-circle"), circle), _defineProperty(_classnames, "".concat(prefixCls, "-small"), size === 'small'), _defineProperty(_classnames, "".concat(prefixCls, "-mini"), size === 'mini'), _classnames));
       var innerCls = classnames__WEBPACK_IMPORTED_MODULE_1___default()("".concat(prefixCls, "-inner"), _defineProperty({}, "".concat(prefixCls, "-inner-blue"), color === 'blue'));
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: wrapCls,
@@ -17376,7 +17377,7 @@ var Input = /*#__PURE__*/function (_React$Component) {
       var style = otherProps.style,
           title = otherProps.title,
           maxLength = otherProps.maxLength,
-          unit = otherProps.unit,
+          suffix = otherProps.suffix,
           align = otherProps.align,
           ismust = otherProps.ismust,
           disabled = otherProps.disabled,
@@ -17435,9 +17436,9 @@ var Input = /*#__PURE__*/function (_React$Component) {
         },
         autoComplete: autoComplete,
         value: value || ''
-      })), !!unit && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "".concat(prefixCls, "-unit")
-      }, unit), needClose && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icon_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      })), suffix && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "".concat(prefixCls, "-suffix")
+      }, suffix), needClose && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icon_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
         className: "".concat(prefixCls, "-close"),
         type: "delete_fill",
         onClick: function onClick(e) {

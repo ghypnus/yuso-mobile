@@ -182,7 +182,7 @@ var Input = /*#__PURE__*/function (_React$Component) {
       var style = otherProps.style,
           title = otherProps.title,
           maxLength = otherProps.maxLength,
-          unit = otherProps.unit,
+          suffix = otherProps.suffix,
           align = otherProps.align,
           ismust = otherProps.ismust,
           disabled = otherProps.disabled,
@@ -241,9 +241,9 @@ var Input = /*#__PURE__*/function (_React$Component) {
         },
         autoComplete: autoComplete,
         value: value || ''
-      })), !!unit && /*#__PURE__*/React.createElement("div", {
-        className: "".concat(prefixCls, "-unit")
-      }, unit), needClose && /*#__PURE__*/React.createElement(Icon, {
+      })), suffix && /*#__PURE__*/React.createElement("div", {
+        className: "".concat(prefixCls, "-suffix")
+      }, suffix), needClose && /*#__PURE__*/React.createElement(Icon, {
         className: "".concat(prefixCls, "-close"),
         type: "delete_fill",
         onClick: function onClick(e) {

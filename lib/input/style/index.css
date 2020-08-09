@@ -94,7 +94,7 @@
   background: transparent;
   font-size: 1rem;
   width: 0;
-  color: #4285f4;
+  color: rgba(0, 0, 0, 0.85);
 }
 .yuso-input i {
   width: calc(3 * 1rem);
@@ -155,7 +155,7 @@
   color: #ff6454;
   margin-right: calc(3 * 1px);
 }
-.yuso-input-unit {
+.yuso-input-suffix {
   margin-right: calc(0.75 * 1rem);
 }
 .yuso-input-disabled input {

@@ -51,12 +51,13 @@ export default class Input extends React.Component {
 
 
   render() {
-    const { prefixCls, className, size, onChange, style, title, disabled, color, ...restProps } = this.props;
+    const { prefixCls, className, size, onChange, style, title, disabled, color, circle, ...restProps } = this.props;
     const { value } = this.state;
 
     const wrapCls = classnames(prefixCls, className, {
       [`${prefixCls}-checked`]: value,
       [`${prefixCls}-disabled`]: disabled,
+      [`${prefixCls}-circle`]: circle,
       [`${prefixCls}-small`]: size === 'small',
       [`${prefixCls}-mini`]: size === 'mini',
     });

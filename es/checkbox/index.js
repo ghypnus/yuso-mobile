@@ -96,10 +96,11 @@ var Input = /*#__PURE__*/function (_React$Component) {
           title = _this$props.title,
           disabled = _this$props.disabled,
           color = _this$props.color,
-          restProps = _objectWithoutProperties(_this$props, ["prefixCls", "className", "size", "onChange", "style", "title", "disabled", "color"]);
+          circle = _this$props.circle,
+          restProps = _objectWithoutProperties(_this$props, ["prefixCls", "className", "size", "onChange", "style", "title", "disabled", "color", "circle"]);
 
       var value = this.state.value;
-      var wrapCls = classnames(prefixCls, className, (_classnames = {}, _defineProperty(_classnames, "".concat(prefixCls, "-checked"), value), _defineProperty(_classnames, "".concat(prefixCls, "-disabled"), disabled), _defineProperty(_classnames, "".concat(prefixCls, "-small"), size === 'small'), _defineProperty(_classnames, "".concat(prefixCls, "-mini"), size === 'mini'), _classnames));
+      var wrapCls = classnames(prefixCls, className, (_classnames = {}, _defineProperty(_classnames, "".concat(prefixCls, "-checked"), value), _defineProperty(_classnames, "".concat(prefixCls, "-disabled"), disabled), _defineProperty(_classnames, "".concat(prefixCls, "-circle"), circle), _defineProperty(_classnames, "".concat(prefixCls, "-small"), size === 'small'), _defineProperty(_classnames, "".concat(prefixCls, "-mini"), size === 'mini'), _classnames));
       var innerCls = classnames("".concat(prefixCls, "-inner"), _defineProperty({}, "".concat(prefixCls, "-inner-blue"), color === 'blue'));
       return /*#__PURE__*/React.createElement("div", {
         className: wrapCls,

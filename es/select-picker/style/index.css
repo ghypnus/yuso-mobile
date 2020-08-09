@@ -98,7 +98,7 @@
   margin-right: calc(3 * 1px);
 }
 .yuso-select-picker-content {
-  color: #4285f4;
+  color: rgba(0, 0, 0, 0.85);
   padding-left: calc(0.625 * 1rem);
 }
 .yuso-select-picker-place-holder {

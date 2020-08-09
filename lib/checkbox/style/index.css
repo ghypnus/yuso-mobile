@@ -104,7 +104,6 @@
   width: calc(calc(3 * 1rem) / 2);
   height: calc(calc(3 * 1rem) / 2);
   border: 1px solid rgba(0, 0, 0, 0.45);
-  border-radius: 50%;
   transform: rotate(0deg);
   box-sizing: border-box;
   background-color: #fff;
@@ -142,7 +141,6 @@
 .yuso-checkbox-small .yuso-checkbox-inner {
   width: 20px;
   height: 20px;
-  top: 6px;
 }
 .yuso-checkbox-small .yuso-checkbox-inner:after {
   top: 1px;
@@ -154,7 +152,6 @@
 .yuso-checkbox-mini .yuso-checkbox-inner {
   width: 16px;
   height: 16px;
-  top: 9px;
 }
 .yuso-checkbox-mini .yuso-checkbox-inner:after {
   top: -1px;
@@ -181,4 +178,7 @@
 }
 .yuso-checkbox-disabled .yuso-checkbox-checked .yuso-checkbox-inner:after {
   border-color: #888;
+}
+.yuso-checkbox-circle .yuso-checkbox-inner {
+  border-radius: 50%;
 }

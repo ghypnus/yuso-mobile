@@ -105,7 +105,7 @@ export default class Input extends React.Component {
 
   render() {
     const { prefixCls, value, className, icon, eye, type, size, search, onChange, onReset, readOnly, refCb, active, onClick, close, ...otherProps } = this.props;
-    const { style, title, maxLength, unit, align, ismust, disabled, name, placeholder, autoComplete = 'new-password' } = otherProps;
+    const { style, title, maxLength, suffix, align, ismust, disabled, name, placeholder, autoComplete = 'new-password' } = otherProps;
 
     const wrapCls = classnames(prefixCls, className, {
       [`${prefixCls}-icon`]: icon !== undefined,
@@ -169,9 +169,9 @@ export default class Input extends React.Component {
           autoComplete={autoComplete}
           value={value || ''}
         />
-        {!!unit && (
-          <div className={`${prefixCls}-unit`}>
-            {unit}
+        {suffix && (
+          <div className={`${prefixCls}-suffix`}>
+            {suffix}
           </div>
         )}
         {needClose && (
