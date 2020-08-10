@@ -2,234 +2,243 @@
 @import "../../style/mixin/common.less";
 
 .yuso-list {
-    background-color: @fill-base;
+  background-color: @fill-base;
+  flex-grow: 1;
+
+  &-header {
+    font-size: @font-size-text;
+    color: @color-text-title;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: @h-spacing-xxl;
+    height: @list-item-height;
+    border-bottom: @hd solid @border-color-divider;
+    font-weight: bold;
+  }
+
+  &-footer {
+    padding: @v-spacing-md @v-spacing-lg @v-spacing-lg @v-spacing-lg;
+    font-size: @font-size-text;
+    color: @color-text-caption;
+  }
+
+  &-body {
+    display: flex;
+
+    &-view {
+      padding: .5rem 0;
+    }
+  }
+
+  &-body-row {
+    flex-direction: row;
+  }
+
+  &-body-column {
+    flex-direction: column;
+  }
+
+  & &-item {
+    display: flex;
     flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: @list-item-height;
+    vertical-align: middle;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: @h-spacing-xxl;
+    padding-right: @h-spacing-xxl;
 
-    &-header {
-        font-size: @font-size-text;
-        color: @color-text-title;
-        display: flex;
-        box-sizing: border-box;
+    &-top {
+      .yuso-list-line {
+        align-items: flex-start;
+      }
+    }
+
+    &-center {
+      .yuso-list-line {
         align-items: center;
-        padding-left: @h-spacing-xxl;
-        height: @list-item-height;
-        border-bottom: @hd solid @border-color-divider;
-        font-weight: bold;
+      }
     }
 
-    &-footer {
-        padding: @v-spacing-md @v-spacing-lg @v-spacing-lg @v-spacing-lg;
-        font-size: @font-size-text;
-        color: @color-text-caption;
+    &-bottom {
+      .yuso-list-line {
+        align-items: flex-end;
+      }
     }
 
-    &-body {
-        display: flex;
-        &-view{
-            padding: .5rem 0;
+    &-text-left {
+      .yuso-list-content {
+        text-align: left;
+      }
+    }
+
+    &-divider {
+      &:not(:last-child) {
+        border-bottom: 1px solid @border-color-divider;
+      }
+    }
+
+    &-title {
+      background-color: @list-item-fill-title;
+
+      .yuso-list-line {
+
+        .yuso-list-content,
+        .yuso-list-extra {
+          color: @color-text-base-inverse  !important;
         }
+      }
     }
 
-    &-body-row {
-        flex-direction: row;
+    .yuso-list-thumb {
+      margin-left: @h-spacing-xxl;
+      width: calc(1.6 * @em);
+      height: calc(1.6 * @em);
+      border-radius: 50%;
+      overflow: hidden;
+
+      &-large {
+        width: calc(2.25 * @em);
+        height: calc(2.25 * @em);
+      }
+
+      &-small {
+        width: calc(1 * @em);
+        height: calc(1 * @em);
+      }
+
+      &-normal {
+        width: calc(1.2 * @em);
+        height: calc(1.2 * @em);
+        border-radius: 0;
+        margin: calc(0.4 * @em) 0 0;
+      }
+
+      &-square {
+        border-radius: 0;
+      }
     }
 
-    &-body-column {
-        flex-direction: column;
+    .yuso-list-icon {
+      margin-top: 2px;
+      margin-right: 10px;
+
+      &-active {
+        fill: @brand-primary;
+      }
+
+      &-unactive {
+        fill: @color-text-caption;
+      }
     }
 
-    & &-item {
-        display: flex;
+    .yuso-list-line {
+      position: relative;
+      display: flex;
+      flex-grow: 1;
+      align-self: stretch;
+      overflow: hidden;
+
+      /* list左侧主内容*/
+      .yuso-list-content {
         flex-grow: 1;
-        align-items: center;
-        justify-content: center;
-        min-height: @list-item-height;
-        vertical-align: middle;
-        overflow: hidden;
-        cursor: pointer;
-        box-sizing: border-box;
+        color: @color-text-base;
+        font-size: @font-size-text;
+        min-width: 15%;
+        /* 超出省略号 */
+      }
 
-        &-top {
-            .yuso-list-line {
-                align-items: flex-start;
-            }
+      /* list右补充内容*/
+      .yuso-list-extra {
+        color: @color-text-title;
+        font-size: @font-size-text;
+        text-align: right;
+        min-width: 15%;
+        max-width: 85%;
+        display: flex;
+        justify-content: flex-end;
+        /* 超出省略号 */
+      }
+
+      /* list右侧箭头*/
+      .yuso-list-arrow {
+        display: block;
+        margin-left: @h-spacing-md;
+        visibility: hidden;
+        flex-shrink: 0;
+        fill: @border-color-arrow;
+
+        &-horizontal {
+          visibility: visible;
         }
 
-        &-center {
-            .yuso-list-line {
-                align-items: center;
-            }
+        &-vertical {
+          visibility: visible;
+          transform: rotate(90deg);
         }
 
-        &-bottom {
-            .yuso-list-line {
-                align-items: flex-end;
-            }
+        &-vertical-up {
+          visibility: visible;
+          transform: rotate(270deg);
         }
+      }
 
-        &-text-left {
-            .yuso-list-content {
-                text-align: left;
-            }
+      /* 菜单选中效果 */
+      .yuso-list-underline {
+        display: flex;
+        bottom: 0;
+        left: @h-spacing-xxl;
+        position: absolute;
+        width: calc(100% - 2 * @h-spacing-xxl);
+        height: calc(2 * @hd);
+        background-color: @brand-primary;
+      }
+
+      &-ellipsis {
+
+        .yuso-list-content,
+        .yuso-list-extra {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          max-width: calc(85% - 1.5rem);
+          overflow: hidden;
         }
+      }
 
-        &-divider {
-            &:not(:last-child) {
-                border-bottom: 1px solid @border-color-divider;
-            }
+      &-wrap {
+        .yuso-list-content {
+          white-space: nowrap;
         }
+      }
 
-        &-title {
-            background-color: @list-item-fill-title;
-            .yuso-list-line {
-                .yuso-list-content,
-                .yuso-list-extra {
-                    color: @color-text-base-inverse !important;
-                }
-            }
+      &-selected {
+        .yuso-list-content {
+          color: @brand-primary;
         }
-
-        .yuso-list-thumb {
-            margin-left: @h-spacing-xxl;
-            width: calc(1.6 * @em);
-            height: calc(1.6 * @em);
-            border-radius: 50%;
-            overflow: hidden;
-
-            &-large {
-                width: calc(2.25 * @em);
-                height: calc(2.25 * @em);
-            }
-
-            &-small {
-                width: calc(1 * @em);
-                height: calc(1 * @em);
-            }
-
-            &-normal {
-                width: calc(1.2 * @em);
-                height: calc(1.2 * @em);
-                border-radius: 0;
-                margin:calc(0.4 * @em) 0 0;
-            }
-
-            &-square {
-                border-radius: 0;
-            }
-        }
-
-        .yuso-list-icon {
-          margin-top: 0.4rem;
-          margin-bottom: -5px;
-          &-active {
-            fill: @brand-primary;
-          }
-          &-unactive {
-            fill: @color-text-caption;
-          }
-        }
-
-        .yuso-list-line {
-            position: relative;
-            display: flex;
-            flex-grow: 1;
-            align-self: stretch;
-            padding-left: @h-spacing-xxl;
-            padding-right: @h-spacing-xxl;
-            overflow: hidden;
-
-            /* list左侧主内容*/
-            .yuso-list-content {
-                flex-grow: 1;
-                color: @color-text-base;
-                font-size: @font-size-text;
-                min-width: 15%;
-                /* 超出省略号 */
-            }
-
-            /* list右补充内容*/
-            .yuso-list-extra {
-                color: @color-text-title;
-                font-size: @font-size-text;
-                text-align: right;
-                min-width: 15%;
-                max-width: 85%;
-                display: flex;
-                justify-content: flex-end;
-                /* 超出省略号 */
-            }
-
-            /* list右侧箭头*/
-            .yuso-list-arrow {
-                display: block;
-                margin-left: @h-spacing-md;
-                visibility: hidden;
-                flex-shrink: 0;
-                fill: @border-color-arrow;
-
-                &-horizontal {
-                    visibility: visible;
-                }
-
-                &-vertical {
-                    visibility: visible;
-                    transform: rotate(90deg);
-                }
-
-                &-vertical-up {
-                    visibility: visible;
-                    transform: rotate(270deg);
-                }
-            }
-            /* 菜单选中效果 */
-            .yuso-list-underline {
-                display: flex;
-                bottom: 0;
-                left: @h-spacing-xxl;
-                position: absolute;
-                width: calc(100% - 2 * @h-spacing-xxl);
-                height: calc(2 * @hd);
-                background-color: @brand-primary;
-            }
-
-            &-ellipsis {
-                .yuso-list-content,
-                .yuso-list-extra {
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    max-width: calc(85% - 1.5rem);
-                    overflow: hidden;
-                }
-            }
-
-            &-wrap{
-                .yuso-list-content{
-                    white-space: nowrap;
-                }
-            }
-
-            &-selected {
-                .yuso-list-content {
-                    color: @brand-primary;
-                }
-            }
-        }
-
-        &-view {
-            min-height: calc(@em * 1.75);
-            .yuso-list-line {
-                .yuso-list-content{
-                    flex-grow: 0;
-                    min-width: auto;
-                    flex-shrink: 0;
-                }
-                .yuso-list-extra{
-                    min-width: auto;
-                    max-width: none;
-                    text-align: left;
-                    word-break: break-all;
-                }
-            }
-        }
+      }
     }
+
+    &-view {
+      min-height: calc(@em * 1.75);
+
+      .yuso-list-line {
+        .yuso-list-content {
+          flex-grow: 0;
+          min-width: auto;
+          flex-shrink: 0;
+        }
+
+        .yuso-list-extra {
+          min-width: auto;
+          max-width: none;
+          text-align: left;
+          word-break: break-all;
+        }
+      }
+    }
+  }
 }

@@ -68,7 +68,7 @@ export default class ListItem extends React.Component {
         onClick={(e) => onClick && onClick(e)}
         onClickCapture={(e) => onClickCapture && onClickCapture(e)}
       >
-        { thumb
+        {thumb
           ? (
             <img
               ref={(img) => this.img = img}
@@ -77,39 +77,35 @@ export default class ListItem extends React.Component {
               src={selected ? thumbLight : thumb}
             />
           )
-          : null }
-        { icon
-          ? (
-            <div>
-              <Icon
-                type={icon}
-                size={iconSize}
-                className={iconCls}
-              />
+          : null}
+        {icon && (
+          <Icon
+            type={icon}
+            size={iconSize}
+            className={iconCls}
+          />
+        )}
+        {children !== undefined
+          && (
+            <div className={lineCls}>
+              <div className={`${prefixCls}-content`}>
+                {children}
+              </div>
+              {extra !== undefined && (
+                <div className={`${prefixCls}-extra`}>
+                  {extra}
+                </div>
+              )}
+              {arrow && (
+                <Icon
+                  type="enter"
+                  size="small"
+                  className={arrowCls}
+                />
+              )}
+              {underline && selected && <div className={underlineCls} />}
             </div>
-          )
-          : null }
-        { children !== undefined
-                 && (
-                 <div className={lineCls}>
-                   <div className={`${prefixCls}-content`}>
-                     { children }
-                   </div>
-                   { extra !== undefined && (
-                   <div className={`${prefixCls}-extra`}>
-                     { extra }
-                   </div>
-                   ) }
-                   { arrow && (
-                   <Icon
-                     type="enter"
-                     size="small"
-                     className={arrowCls}
-                   />
-                   ) }
-                   { underline && selected && <div className={underlineCls} /> }
-                 </div>
-                 ) }
+          )}
       </div>
     );
   }

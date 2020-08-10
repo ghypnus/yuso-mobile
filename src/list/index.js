@@ -7,7 +7,7 @@ import React from 'react';
 import classnames from 'classnames';
 import Item from './ListItem';
 
-class List extends React.Component {
+class List extends React.PureComponent {
   render() {
     const { prefixCls, children, direction, className, style, type } = this.props;
     const { renderHeader, renderFooter } = this.props;
