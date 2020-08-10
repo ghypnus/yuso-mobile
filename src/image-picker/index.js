@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /**
  * 图片九宫格
  * @author john
@@ -55,43 +56,44 @@ class IMagePicker extends React.Component {
         {({ ImagePicker }) => (
           <div className={prefixCls} style={style}>
             {title && (
-            <div className={`${prefixCls}-title`}>
-              <span>{ismust ? '*' : ''}</span>
-              {title}
-            </div>
+              <div className={`${prefixCls}-title`}>
+                <span>{ismust ? '*' : ''}</span>
+                {title}
+              </div>
             )}
             <ul>
               {files.length !== 0 ? files.map((item, index) => (
                 <li key={`li-${index}`}>
                   <div className={`${prefixCls}-outer`}>
                     {onDelete && !readOnly && (
-                    <Icon
-                      className={`${prefixCls}-close`}
-                      type="delete_fill"
-                      onClick={() => {
-                  onDelete(index);
-                }}
-                    />
+                      <Icon
+                        className={`${prefixCls}-close`}
+                        type="delete_fill"
+                        onClick={() => {
+                          onDelete(index);
+                        }}
+                      />
                     )}
                     <div className={`${prefixCls}-img-wrap`}>
                       <img
                         ref={(img) => this.img = img}
+                        alt=""
                         onError={() => this.img.src = errSrc || errorPng}
                         onLoad={(e) => {
-                    let width = e.target.clientWidth;
-                    let height = e.target.clientHeight;
-                    if (width > height) {
-                      e.target.style.height = '100%';
-                    } else {
-                      e.target.style.width = '100%';
-                    }
-                  }}
+                          let width = e.target.clientWidth;
+                          let height = e.target.clientHeight;
+                          if (width > height) {
+                            e.target.style.height = '100%';
+                          } else {
+                            e.target.style.width = '100%';
+                          }
+                        }}
                         onClick={() => {
-                    this.setState({
-                      viewerVisible: true,
-                      viewerPosition: index,
-                    });
-                  }}
+                          this.setState({
+                            viewerVisible: true,
+                            viewerPosition: index,
+                          });
+                        }}
                         src={typeof item.src === 'string' ? item.src : window.URL.createObjectURL(item.src)}
                       />
                     </div>
@@ -128,18 +130,20 @@ class IMagePicker extends React.Component {
               }}
             >
               {
-              files.map((item, idx) => (
-                <img key={idx}
-                  style={{ maxHeight: '100%', maxWidth: '100%' }}
-                  src={item.src}
-                  onClick={(_) => {
-                    this.setState({
-                      viewerVisible: false,
-                    });
-                  }}
-                />
-              ))
-            }
+                files.map((item, idx) => (
+                  <img
+                    key={idx}
+                    alt=""
+                    style={{ maxHeight: '100%', maxWidth: '100%' }}
+                    src={item.src}
+                    onClick={(_) => {
+                      this.setState({
+                        viewerVisible: false,
+                      });
+                    }}
+                  />
+                ))
+              }
             </ImageViewer>
           </div>
         )}
