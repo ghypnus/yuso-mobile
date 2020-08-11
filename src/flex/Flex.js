@@ -5,7 +5,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-class Flex extends React.Component {
+class Flex extends React.PureComponent {
   render() {
     const { direction, wrap, justify, align, alignContent, className, children, prefixCls, style } = this.props;
 

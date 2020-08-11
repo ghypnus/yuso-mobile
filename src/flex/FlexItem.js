@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 
 
-class FlexItem extends React.Component {
+class FlexItem extends React.PureComponent {
   render() {
     const { children, className, prefixCls, style } = this.props;
     const wrapCls = classnames(`${prefixCls}-item`, className);
