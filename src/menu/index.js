@@ -36,7 +36,7 @@ export default class Menu extends React.Component {
       firstLevelSelectValue: dataItem.value,
     });
     if (onChange) {
-      onChange([dataItem.value]);
+      onChange(dataItem.value, dataItem);
     }
   }
 
