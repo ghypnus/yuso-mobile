@@ -334,14 +334,14 @@ export default class DatePicker extends React.Component {
   getMonthList() {
     return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => ({
       value: item,
-      label: item,
+      label: item < 10 ? `0${item}` : item,
     }));
   }
 
   getMonthAndDayList(year) {
     return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => ({
       value: item,
-      label: item,
+      label: item < 10 ? `0${item}` : item,
       children: this.getDayList(year, item),
     }));
   }
@@ -357,7 +357,7 @@ export default class DatePicker extends React.Component {
     }
     return array.map((item) => ({
       value: item,
-      label: item,
+      label: item < 10 ? `0${item}` : item,
     }));
   }
 
