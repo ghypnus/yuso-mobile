@@ -28,17 +28,10 @@ export { default as Loading } from './loading/index';
 export { default as Text } from './text/index';
 export { default as Checkbox } from './checkbox/index';
 export { default as Axis } from './axis/index';
-
 export { default as Icon } from './icon/index';
-export { default as HrSection } from './hr-section/index';
-export { default as HrConstantCode } from './hr-constant-code/index';
-export { default as HrDynamic } from './hr-dynamic/index';
-export { default as HrComboBox } from './hr-combo-box/index';
-export { default as HrSetId } from './hr-set-id/index';
-export { default as HrModal } from './hr-modal/index';
-export { default as HrImagePicker } from './hr-image-picker/index';
 export { default as Tabs } from './tabs/index';
 export { default as Accordion } from './accordion/index';
 export { default as Grade } from './grade/index';
 export { default as ImageViewer } from './image-viewer/index';
+export { default as Steps } from './steps/index';
 export { default as LocaleProvider } from './locale-provider/index';
