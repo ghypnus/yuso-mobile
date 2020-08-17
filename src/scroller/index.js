@@ -428,9 +428,9 @@ export default class Scroller extends React.Component {
     return this.scrollY;
   }
 
-  refresh() {
+  refresh(scrollX = 0, scrollY = 0) {
     this._init();
-    this.scrollTo(0, 0, 0);
+    this.scrollTo(scrollX, scrollY, 0);
   }
 
   render() {

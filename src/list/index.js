@@ -8,6 +8,11 @@ import classnames from 'classnames';
 import Item from './ListItem';
 
 class List extends React.PureComponent {
+  static defaultProps = {
+    prefixCls: 'yuso-list',
+    direction: 'column',
+  }
+
   render() {
     const { prefixCls, children, direction, className, style, type } = this.props;
     const { renderHeader, renderFooter } = this.props;
@@ -22,30 +27,25 @@ class List extends React.PureComponent {
         className={classnames(prefixCls, className)}
         style={style}
       >
-        { renderHeader ? (
+        {renderHeader ? (
           <div className={`${prefixCls}-header`}>
-            { typeof renderHeader === 'function' ? renderHeader() : renderHeader }
+            {typeof renderHeader === 'function' ? renderHeader() : renderHeader}
           </div>
-        ) : null }
-        { children ? (
+        ) : null}
+        {children ? (
           <div className={bodyCls}>
-            { children }
+            {children}
           </div>
-        ) : null }
-        { renderFooter ? (
+        ) : null}
+        {renderFooter ? (
           <div className={`${prefixCls}-footer`}>
-            { typeof renderFooter === 'function' ? renderFooter() : renderFooter }
+            {typeof renderFooter === 'function' ? renderFooter() : renderFooter}
           </div>
-        ) : null }
+        ) : null}
       </div>
     );
   }
 }
-
-List.defaultProps = {
-  prefixCls: 'yuso-list',
-  direction: 'row',
-};
 
 List.Item = Item;
 

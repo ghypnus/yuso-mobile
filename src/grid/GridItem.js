@@ -5,7 +5,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-export default class GridItem extends React.Component {
+export default class GridItem extends React.PureComponent {
   static defaultProps = {
     prefixCls: 'yuso-grid',
     align: 'middle',

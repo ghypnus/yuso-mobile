@@ -53,18 +53,21 @@
     padding-right: @h-spacing-lg;
 
     &-top {
+      align-items: flex-start;
       .yuso-list-line {
         align-items: flex-start;
       }
     }
 
     &-center {
+      align-items: center;
       .yuso-list-line {
         align-items: center;
       }
     }
 
     &-bottom {
+      align-items: flex-end;
       .yuso-list-line {
         align-items: flex-end;
       }
@@ -126,6 +129,7 @@
     .yuso-list-icon {
       margin-top: 2px;
       margin-right: 10px;
+      flex-shrink: 0;
 
       &-active {
         fill: @brand-primary;
@@ -149,6 +153,7 @@
         color: @color-text-title;
         font-size: @font-size-text;
         min-width: 15%;
+        flex-shrink: 0;
         /* 超出省略号 */
       }
 
@@ -159,15 +164,15 @@
         text-align: right;
         min-width: 15%;
         max-width: 85%;
-        display: flex;
-        justify-content: flex-end;
+        // flex-grow: 1;
+        margin-left: 10px;
         /* 超出省略号 */
       }
 
       /* list右侧箭头*/
       .yuso-list-arrow {
         display: block;
-        margin-left: @h-spacing-md;
+        margin-left: @h-spacing-sm;
         visibility: hidden;
         flex-shrink: 0;
         fill: @border-color-arrow;

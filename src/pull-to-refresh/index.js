@@ -188,8 +188,8 @@ export default class PullToRefresh extends React.Component {
     return this.scroller.getScrollX();
   }
 
-  refresh() {
-    this.scroller.refresh();
+  refresh(scrollX, scrollY) {
+    this.scroller.refresh(scrollX, scrollY);
   }
 
   initIndicators() {
