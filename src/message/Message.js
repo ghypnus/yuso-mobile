@@ -36,7 +36,7 @@ class Message extends React.Component {
   }
 
   render() {
-    const { prefixCls, icon, title, content, action, onClose, className, direction, isMaskClose = true } = this.props;
+    const { prefixCls, icon, title, content, action, onClose, className, style, direction, isMaskClose = true } = this.props;
 
     const iconWrap = classnames(`${prefixCls}-icon`, {
       [`${prefixCls}-icon-success`]: icon === 'success',
@@ -56,6 +56,7 @@ class Message extends React.Component {
       >
         <div
           className={`${prefixCls}-container`}
+          style={style}
           ref="messageContainer"
         >
           {icon && <div className={iconWrap} />}

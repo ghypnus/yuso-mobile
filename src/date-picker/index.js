@@ -112,7 +112,7 @@ export default class DatePicker extends React.Component {
               break;
             case 'yyyy/MM/dd':
               content = (
-                <yusoPicker
+                <YusoPicker
                   title={_pickerTitle}
                   defaultValue={value || defaultDateV}
                   cascade
@@ -138,7 +138,7 @@ export default class DatePicker extends React.Component {
               break;
             case 'yyyy/MM':
               content = (
-                <yusoPicker
+                <YusoPicker
                   title={_pickerTitle}
                   defaultValue={value || defaultYearMonthV}
                   data={this.yearMonthList}
@@ -163,7 +163,7 @@ export default class DatePicker extends React.Component {
               break;
             case 'HH:mm:ss':
               content = (
-                <yusoPicker
+                <YusoPicker
                   title={_pickerTitle}
                   defaultValue={value || defaultSecondV}
                   data={this.secondList}
@@ -188,7 +188,7 @@ export default class DatePicker extends React.Component {
               break;
             case 'HH:mm':
               content = (
-                <yusoPicker
+                <YusoPicker
                   title={_pickerTitle}
                   defaultValue={value || defaultTimeV}
                   data={this.timeList}
@@ -213,7 +213,7 @@ export default class DatePicker extends React.Component {
               break;
             default:
               content = (
-                <yusoPicker
+                <YusoPicker
                   title={_pickerTitle}
                   value={value}
                   data={data}
