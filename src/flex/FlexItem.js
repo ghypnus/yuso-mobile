@@ -2,10 +2,17 @@ import React from 'react';
 import classnames from 'classnames';
 
 
-class FlexItem extends React.PureComponent {
+export default class FlexItem extends React.PureComponent {
+  static defaultProps = {
+    prefixCls: 'yuso-flexbox-item',
+    direction: 'row',
+  }
+
   render() {
-    const { children, className, prefixCls, style } = this.props;
-    const wrapCls = classnames(`${prefixCls}-item`, className);
+    const { children, className, prefixCls, style, direction } = this.props;
+    const wrapCls = classnames(`${prefixCls}`, className, {
+      [`${prefixCls}-${direction}`]: direction,
+    });
     return (
       <div
         className={wrapCls}
@@ -16,9 +23,3 @@ class FlexItem extends React.PureComponent {
     );
   }
 }
-
-FlexItem.defaultProps = {
-  prefixCls: 'yuso-flexbox',
-};
-
-export default FlexItem;

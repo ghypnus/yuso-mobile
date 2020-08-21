@@ -425,7 +425,7 @@ export default class DatePicker extends React.Component {
    * 渲染组件后缀图标
    */
   renderSuffixIcon() {
-    const { prefixCls, disabled, readOnly, arrow, onOk, onReset } = this.props;
+    const { prefixCls, disabled, readOnly, arrow, onOk, onReset, close } = this.props;
     const value = this.getValue(this.props.value);
     // 箭头方向
     const arrowCls = classnames(`${prefixCls}-arrow`, {
