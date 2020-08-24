@@ -59,6 +59,13 @@ export default class Input extends React.Component {
     }
   }
 
+  handleClick(e) {
+    const { onClick } = this.props;
+    if (onClick) {
+      onClick(e);
+    }
+  }
+
   handleFocus(e) {
     this.fValue = e.target.value;
   }
@@ -86,15 +93,6 @@ export default class Input extends React.Component {
     return value;
   }
 
-  handleCapture() {
-    this.setState({
-      isEyeOpen: !this.state.isEyeOpen,
-    });
-    if (this.props.onClick) {
-      this.props.onClick(this.props.type === 'password' ? 'text' : 'password');
-    }
-  }
-
   focus() {
     this.input.focus();
   }
@@ -104,7 +102,7 @@ export default class Input extends React.Component {
   }
 
   render() {
-    const { prefixCls, value, className, icon, eye, type, size, search, onChange, onReset, readOnly, refCb, active, onClick, close, ...otherProps } = this.props;
+    const { prefixCls, value, className, icon, eye, type, size, search, onChange, onReset, readOnly, refCb, active, close, ...otherProps } = this.props;
     const { style, title, maxLength, suffix, align, ismust, disabled, name, placeholder, autoComplete = 'new-password' } = otherProps;
 
     const wrapCls = classnames(prefixCls, className, {
@@ -164,6 +162,7 @@ export default class Input extends React.Component {
           onChange={(e) => this.handleInput(e)}
           onFocus={(e) => this.handleFocus(e)}
           onBlur={(e) => this.handleBlur(e)}
+          onClick={(e) => this.handleClick(e)}
           readOnly={readOnly}
           type={inputType}
           ref={(input) => { refCb ? refCb(input) : this.input = input; }}
@@ -184,14 +183,6 @@ export default class Input extends React.Component {
               this.onInputClear(e);
             }}
           />
-        )}
-        {eye && (
-          <div
-            className="eye"
-            onClick={(e) => this.handleCapture(e)}
-          >
-            <Icon type={this.state.isEyeOpen ? 'eye-close' : 'eye'} />
-          </div>
         )}
       </div>
     );
