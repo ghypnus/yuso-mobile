@@ -34,4 +34,5 @@ export { default as Accordion } from './accordion/index';
 export { default as Grade } from './grade/index';
 export { default as ImageViewer } from './image-viewer/index';
 export { default as Steps } from './steps/index';
+export { default as Empty } from './empty/index';
 export { default as LocaleProvider } from './locale-provider/index';
