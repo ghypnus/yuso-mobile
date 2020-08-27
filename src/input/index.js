@@ -177,7 +177,7 @@ export default class Input extends React.Component {
         {needClose && (
           <Icon
             className={`${prefixCls}-close`}
-            type="delete_fill"
+            value="delete_fill"
             onClick={(e) => {
               onReset && onReset();
               this.onInputClear(e);

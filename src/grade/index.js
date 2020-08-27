@@ -43,7 +43,7 @@ export default class Grade extends React.Component {
             <div className={`${prefixCls}-stars`}>
               {[1, 2, 3, 4, 5].map((v) => (
                 <Icon
-                  type="collection_fill"
+                  value="collection_fill"
                   key={v}
                   className={classnames(`${prefixCls}-star`, {
                     [`${prefixCls}-star-active`]: score >= v,

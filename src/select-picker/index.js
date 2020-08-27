@@ -136,7 +136,7 @@ class SelectPicker extends React.Component {
       return (
         <Icon
           className={`${prefixCls}-close`}
-          type="delete_fill"
+          value="delete_fill"
           onClick={(e) => {
             document.activeElement.blur();
             e.stopPropagation();
@@ -150,7 +150,7 @@ class SelectPicker extends React.Component {
         />
       );
     }
-    return <Icon type="enter" size="small" className={arrowCls} />;
+    return <Icon value="enter" size="small" className={arrowCls} />;
   }
 
   render() {

@@ -7,10 +7,11 @@ export default class Icon extends React.PureComponent {
     }
 
     render() {
-      const { type, size, onClick, prefixCls, className, style } = this.props;
+      const { value, type, size, onClick, prefixCls, className, style } = this.props;
 
       const wrapCls = classnames(prefixCls, className, {
         [`${prefixCls}-${size}`]: size,
+        [`${prefixCls}-${type}`]: type,
       });
       return (
         <svg
@@ -21,7 +22,7 @@ export default class Icon extends React.PureComponent {
             onClick && onClick(e);
           }}
         >
-          <use href={`#${type}`} />
+          <use href={`#${value}`} />
         </svg>
       );
     }

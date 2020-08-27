@@ -277,7 +277,7 @@ export default class PullToRefresh extends React.Component {
                 style={{ display: onPullDown ? 'flex' : 'none' }}
                 className={classnames(`${prefixCls}-down`)}
               >
-                <Icon type="loading" className="loading" />
+                <Icon value="loading" className="loading" />
                 <span
                   ref={(el) => this.pullDownLabelRef = el}
                   className="label"
@@ -293,7 +293,7 @@ export default class PullToRefresh extends React.Component {
                 style={{ display: onPullUp ? 'flex' : 'none' }}
                 className={`${prefixCls}-up`}
               >
-                <Icon type="loading" className="loading" />
+                <Icon value="loading" className="loading" />
               </div>
             </Scroller>
             { /* <div

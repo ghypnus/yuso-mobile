@@ -80,7 +80,7 @@ export default class ListItem extends React.Component {
           : null}
         {icon && (
           <Icon
-            type={icon}
+            value={icon}
             size={iconSize}
             className={iconCls}
           />
@@ -98,7 +98,7 @@ export default class ListItem extends React.Component {
               )}
               {arrow && (
                 <Icon
-                  type="enter"
+                  value="enter"
                   size="small"
                   className={arrowCls}
                 />

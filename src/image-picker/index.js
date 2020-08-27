@@ -68,7 +68,7 @@ class IMagePicker extends React.Component {
                     {onDelete && !readOnly && (
                       <Icon
                         className={`${prefixCls}-close`}
-                        type="delete_fill"
+                        value="delete_fill"
                         onClick={() => {
                           onDelete(index);
                         }}
@@ -105,7 +105,7 @@ class IMagePicker extends React.Component {
                   className={`${prefixCls}-upload`}
                 >
                   <div className={`${prefixCls}-upload-outer`}>
-                    <Icon className={`${prefixCls}-upload-icon`} type="add" size="large" />
+                    <Icon className={`${prefixCls}-upload-icon`} value="add" size="large" />
                   </div>
                   {/* <div>
                   {uploadText || ImagePicker.uploadText}

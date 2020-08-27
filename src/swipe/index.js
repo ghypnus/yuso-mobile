@@ -159,7 +159,7 @@ export default class Swipe extends React.Component {
           }}
             className={`${prefixCls}-close`}
           >
-            <Icon type="delete_fill" />
+            <Icon value="delete_fill" />
           </div>
           )
         }

@@ -19,7 +19,7 @@ export default class Empty extends React.PureComponent {
         <div className={prefixCls}>
           {children || (
             <div className={`${prefixCls}-wrap`}>
-              <Icon type={icon} size="large" />
+              <Icon value={icon} size="large" />
               <div className={`${prefixCls}-title`}>{title}</div>
             </div>
           )}

@@ -41,7 +41,7 @@ class Steps extends React.PureComponent {
           // icon = 'cross-circle-o'; 错误
         }
       }
-      icon = typeof icon === 'string' ? <Icon type={icon} size={size} /> : icon;
+      icon = typeof icon === 'string' ? <Icon value={icon} size={size} /> : icon;
 
       if (!item.props.status) {
         if (index === current) {

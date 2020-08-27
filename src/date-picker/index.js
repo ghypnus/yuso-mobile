@@ -438,7 +438,7 @@ export default class DatePicker extends React.Component {
       return (
         <Icon
           className={`${prefixCls}-close`}
-          type="delete_fill"
+          value="delete_fill"
           onClick={(e) => {
             e.stopPropagation();
             onReset && onReset('');
@@ -449,7 +449,7 @@ export default class DatePicker extends React.Component {
     }
     return !disabled && !readOnly ? (
       <Icon
-        type="time"
+        value="time"
         size="small"
         className={arrowCls}
       />

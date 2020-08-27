@@ -313,7 +313,7 @@ export default class Calendar extends React.Component {
                 this.switchMonth(-1);
               }}
             >
-              <Icon type="return" />
+              <Icon value="return" />
             </div>
             <div className="current-month">
               {moment(currentDate).format('YYYY-MM')}
@@ -324,7 +324,7 @@ export default class Calendar extends React.Component {
                 this.switchMonth(1);
               }}
             >
-              <Icon type="enter" />
+              <Icon value="enter" />
             </div>
           </div>
           {Right}
