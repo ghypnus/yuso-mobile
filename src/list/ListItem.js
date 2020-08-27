@@ -21,7 +21,7 @@ export default class ListItem extends React.Component {
     // 前缀、样式名、对齐方式、文本对齐方式、超出长度省略号、换行、样式、多行文本、箭头、错误、不可编辑、分割线、类型>title:标题
     const { prefixCls, className, align, textAlign, ellipsis, wrap, style, multipleLine, arrow, error, disabled, divider, type, size } = this.props;
     // children、选中、点击事件、右侧补充内容、图片、图片高亮、Icon、Icon大小、高亮底线
-    const { children, selected, onClick, onClickCapture, extra, thumb, thumbLight, icon, iconSize, underline } = this.props;
+    const { children, selected, onClick, onClickCapture, extra, thumb, thumbLight, icon, iconSize, iconType, underline } = this.props;
     // 对齐、错误、不可编辑
     const wrapCls = classnames(`${prefixCls}-item`, className, {
       [`${prefixCls}-item-disabled`]: disabled,
@@ -82,6 +82,7 @@ export default class ListItem extends React.Component {
           <Icon
             value={icon}
             size={iconSize}
+            type={iconType}
             className={iconCls}
           />
         )}
