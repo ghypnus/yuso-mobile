@@ -12,37 +12,12 @@
   input {
     display: flex;
     flex-grow: 1;
-    height: calc(3 * @em);
+    height: 100%;
     padding-left: @h-spacing-lg;
     background: transparent;
     font-size: @input-font-size;
     width: 0;
     color: @color-text-highlight;
-  }
-
-  i {
-    width: calc(3 * @em);
-    height: calc(1.2 * @em);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .eye {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(3 * @em);
-    height: 100%;
-
-    i {
-      width: calc(1.25 * @em);
-      height: calc(1.7 * @em);
-      // background-image: url(../image/closeEye.png);
-      // &.active {
-      //     background-image: url(../image/openEye.png);
-      // }
-    }
   }
 
   &-close {
@@ -99,6 +74,11 @@
       color: @brand-important;
       margin-right: calc(3 * @hd);
     }
+  }
+
+  &-prefix {
+    display: flex;
+    margin-left: calc(0.75 * @em);
   }
 
   &-suffix {
